@@ -1,5 +1,5 @@
 {
-  "name": "DWC AGENT EDDIE",
+  "name": "EDDIE Classic",
   "version": 1,
   "canvas": {
     "width": 1080,
@@ -38,5 +38,7 @@
     "automaticIntro": false,
     "automaticOutro": false
   },
-  "calibration": "Reference coordinates are examples. Fit to the actual neckline, caption glyph bounds, image aspect ratio and canvas."
+  "calibration": "Reference coordinates are examples. Fit to the actual neckline, caption glyph bounds, image aspect ratio and canvas.",
+  "styleId": "eddie-classic",
+  "releaseVersion": "1.0.0"
 }
