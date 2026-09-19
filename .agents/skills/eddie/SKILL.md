@@ -5,7 +5,7 @@ description: Edit talking-head videos in the Digital White Coat EDDIE Classic st
 
 # EDDIE Classic — DWC Agent Eddie
 
-This release provides EDDIE Classic only. Users supply their own pictures, video and click audio. EDDIE Motion Graphics is planned and is not implemented by this skill. Preserve Classic when adding future styles.
+This skill provides EDDIE Classic. Users supply their own pictures, video and click audio. For motion-only graphics, use the separate eddie-motion skill. Preserve Classic when adding other styles.
 
 Read [the style specification](references/style.md) before editing. Current user directions override the defaults.
 
