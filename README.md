@@ -1,92 +1,86 @@
 # DWC AGENT EDDIE
 
-**Reusable Digital White Coat video-editing styles.**
+**Two reusable Digital White Coat video-editing styles: EDDIE Classic and EDDIE Motion.**
 
-## Available styles
+## Choose your style
 
-| Style | Version | Status |
-| --- | --- | --- |
-| **EDDIE Classic** | 1.0.0 | Available: neckline captions, your own images, and click-before-pop timing |
-| **EDDIE Motion Graphics** | — | Planned; not included in this release |
+| Style | Style version | Visual treatment | You provide |
+| --- | --- | --- | --- |
+| **EDDIE Classic** | 1.0.0 | Neckline captions, your pictures directly underneath, click-before-pop timing | Video, your own images, click audio |
+| **EDDIE Motion** | 1.0.0 | Animated typography, drawn connectors and explanatory diagrams; no image overlays | Video and click audio |
 
-Users provide **their own images**, video, and click audio. No image subscription, portrait library, or brand assets are bundled.
+Both keep the presenter visible and place short captions at the base of the neck. Motion adds selective serif-italic keywords, gold highlights, staged diagram builds and dark/cream graphic cards. Graphics explain the actual script.
 
-EDDIE Classic teaches an AI editing agent the DWC style: precise neckline captions, supplied pictures directly underneath, and a consistent click before each visual appears.
+Repository release **v1.1.0** introduces Motion alongside Classic. Classic's preset and visual specification remain unchanged. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
-## The style
+## Download and start
 
-- Presenter stays on screen.
-- Tight, natural edits that preserve meaning.
-- Bold white captions with gold keyword emphasis at the base of the neck.
-- Pictures sit closely below the captions, with a small visual gap.
-- Supplied pictures and the supplied click sound are reused.
-- Added graphics appear only when approved; no automatic intro or outro cards.
-
-## What this repository contains
-
-| File | Purpose |
-| --- | --- |
-| `.agents/skills/eddie/SKILL.md` | EDDIE skill for Codex |
-| `.claude/skills/eddie/SKILL.md` | Matching Claude Code skill |
-| `presets/eddie.json` | Editable layout and timing defaults |
-| `scripts/new_project.py` | Create a private project folder with EDDIE settings |
-| `AGENTS.md` / `CLAUDE.md` | Project instructions |
-
-This is an **agent-guided skill starter**, not a standalone video editor or an automatic social publishing service. It needs an editing agent and locally installed video/transcription tools. Your private footage, brand pictures and click audio are supplied separately. No paid service is required by the skill itself.
-
-## Start
-
-1. Click **Code → Download ZIP** and extract it, or clone this repository:
+1. Click **Code → Download ZIP** and extract it, or clone:
 
    ```sh
    git clone https://github.com/hrmd20/dwc-agent-eddie.git
    cd dwc-agent-eddie
    ```
 2. Open the folder in your editing agent.
-3. Provide a video, the pictures to use, your click audio, and an output folder.
-4. Say:
+3. Provide your video, click sound, chosen style and output folder. Classic also needs your own pictures. Motion does not need an image subscription or image folder.
+4. Use one of these prompts:
 
-> Use EDDIE Classic to edit this talking-head video. Keep me visible, use my supplied pictures, place captions at the base of my neck, and tuck each picture closely below them. Use my click before each picture appears. Keep the voice clear. Start with a 10-second placement preview, then apply the approved layout to the full video.
+**EDDIE Classic**
 
-A preview-only request stops at the preview. A request for a finished edit authorizes the agent to continue through ordinary editing and verification.
+> Use EDDIE Classic to edit this talking-head video. Keep me visible, use my supplied pictures, place captions at the base of my neck, and tuck each picture closely below them. Use my click before each picture appears. Start with a 10-second placement preview.
 
-Create a local project with Python 3:
+**EDDIE Motion**
+
+> Use EDDIE Motion to edit this talking-head video with motion graphics only. Keep me visible, place short captions at the base of my neck, and put animated text and diagrams immediately below them. Use white and gold type, selective italic emphasis, staged line drawing, and my click sound. Use no photos, screenshots or image overlays. Create a 20-second preview first.
+
+A preview request stops at the preview. After approval, ask for the full video. If you already specify an approved style and request a complete edit, the agent can continue through editing and verification.
+
+## Create a private project
 
 ```sh
-python3 scripts/new_project.py my-video
+python3 scripts/new_project.py my-classic-video --style classic
+python3 scripts/new_project.py my-motion-video --style motion
 ```
 
-Store footage and exports inside the generated `projects/my-video/` directory. Those files stay out of Git by default. In agents that discover repository skills, invoke `eddie` or refer directly to its SKILL.md file.
+Omitting `--style` keeps the original Classic default. The helper copies the chosen preset into an ignored `projects/<name>/` folder with assets, transcripts, renders and QA directories. It refuses to overwrite an existing project. Updating this repository does not silently change a project's copied preset.
+
+## Included files
+
+| Location | Purpose |
+| --- | --- |
+| `.agents/skills/eddie/` | EDDIE Classic skill and reference for Codex |
+| `.agents/skills/eddie-motion/` | EDDIE Motion skill and reference for Codex |
+| `.claude/skills/` | Matching skills for Claude Code |
+| `presets/eddie.json` | Original EDDIE Classic defaults |
+| `presets/eddie-motion.json` | EDDIE Motion defaults |
+| `scripts/new_project.py` | Private project starter with style selection |
+| `AGENTS.md` / `CLAUDE.md` | Style routing and workspace instructions |
+
+Invoke `eddie` for Classic or `eddie-motion` for Motion in agents that discover repository skills. You can also point the agent directly to the relevant SKILL.md.
 
 ## Requirements
 
-- An editing agent that can read skill instructions and run local tools.
-- Python 3.9+ for the project helper. It uses only the standard library.
-- FFmpeg and FFprobe for inspecting and exporting video.
-- A transcription engine that provides word timestamps, such as locally installed Whisper.
+This is an **agent-guided skill package**, not a standalone video editor. The starter creates folders and settings; it does not render videos. Install separately:
+
+- An editing agent that can read skills and run local tools.
+- Python 3.9+ for the project helper; it uses only the standard library.
+- FFmpeg and FFprobe for inspection and export.
+- A word-timestamp transcription engine, such as local Whisper.
 - A compositor supported by the agent, such as HyperFrames or Python/Pillow.
-- Your source video, licensed pictures, and click sound.
+- Locally available, properly licensed fonts. No proprietary fonts are bundled.
 
-Ask your agent to check these tools before starting. Missing dependencies must be installed separately; creating a project does not render a video.
+The agent should check tools before editing. Neither style requires a paid service. Users supply source footage, sound and any licensed music; Classic users also supply their pictures.
 
-## Editing tools
+For the broader toolkit, see [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies; EDDIE's chosen style controls the resulting edit.
 
-Use an available local video pipeline with FFmpeg/FFprobe, a word-timestamp transcription engine, and a compositor. An agent may use HyperFrames or deterministic graphics with FFmpeg. The skill specifies the output style; it does not bundle those tools.
+## Versions and sharing
 
-For the broader editing toolkit, see [Nate Herk’s HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies. You can use its editing tools alongside EDDIE, with the EDDIE style taking precedence for EDDIE projects.
+Keep new styles separate and publish numbered releases. Preserve old presets and downloads so users can repeat an approved look. Do not replace Classic with Motion.
 
-## Updates and older styles
-
-Keep this repository as the central source. Add future styles separately instead of replacing Classic. Publish numbered releases so users can download a stable version. Existing projects contain a copy of their preset: updating the repository must not silently change a project’s chosen style.
-
-The current `presets/eddie.json` is the **EDDIE Classic v1** preset. EDDIE Motion Graphics will receive its own preset and instructions when created.
-
-## Public sharing
-
-Publish the skill, presets, helper scripts and documentation. Keep footage, exports, transcripts, credentials, client records and paid stock assets local. The supplied robot portrait and click sound are not bundled. Adding public demonstration media requires a separate intentional decision about those files.
+Public files are reusable instructions, presets and helpers. Footage, exports, transcripts, reference videos, paid stock, click audio and credentials stay local under ignored project directories. No robot portrait, stock subscription, audio file or private demonstration video is bundled.
 
 ## Credits
 
-Built from the DWC editing workflow developed with Digital White Coat and informed by [Nate Herk’s HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). EDDIE’s compact neckline layout and restrained graphics are the DWC customization. This repository is not affiliated with or endorsed by Nate Herk, HeyGen, or HyperFrames.
+Built from the DWC editing workflow developed with Digital White Coat and informed by [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). EDDIE's neckline layout, Classic picture treatment and Motion graphic treatment are DWC customizations. This repository is not affiliated with or endorsed by Nate Herk, HeyGen, or HyperFrames.
 
 The upstream MIT notice is preserved in `LICENSE`. Third-party tools and assets retain their own licenses. No AIS branding or upstream showcase videos are included.

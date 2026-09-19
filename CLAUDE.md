@@ -1,3 +1,7 @@
 # DWC Agent Eddie
 
-For an EDDIE video task read `.claude/skills/eddie/SKILL.md` and its style reference. User instructions override style defaults. Keep originals intact and project media inside ignored `projects/`. Preserve an approved timeline on layout revisions. Use local tool discovery; never hardcode a developer’s filesystem or assume cloud credentials. Keep EDDIE’s Codex and Claude skill copies synchronized. Do not publish private footage or credentials with this repository.
+Choose the requested style before editing:
+- EDDIE Classic: read `.claude/skills/eddie/SKILL.md` and its reference; users supply their own pictures.
+- EDDIE Motion: read `.claude/skills/eddie-motion/SKILL.md` and its reference; use motion graphics only, with no image overlays.
+
+Honor an existing project's style selection and approved cut. If no style is specified, retain the existing selection or default to Classic. Current user instructions override style defaults. Keep originals intact and private media inside ignored `projects/`. Discover local tools rather than hardcoding a developer's paths or cloud credentials. Keep the Codex and Claude skill copies synchronized. Never publish private footage, transcripts or credentials with reusable skill files.
