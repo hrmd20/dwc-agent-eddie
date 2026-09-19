@@ -1,4 +1,4 @@
-# EDDIE style specification
+# EDDIE Classic style specification
 
 ## Picture and framing
 
