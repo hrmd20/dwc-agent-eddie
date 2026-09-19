@@ -1,0 +1,42 @@
+{
+  "name": "DWC AGENT EDDIE",
+  "version": 1,
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "captions": {
+    "position": "base-of-neck",
+    "referenceCenterY": 1150,
+    "fontSize": 67,
+    "maxWords": 3,
+    "color": "#FFFFFF",
+    "highlight": "#E8C76B",
+    "stroke": "#0D1D2B"
+  },
+  "images": {
+    "position": "directly-below-captions",
+    "referenceTopY": 1200,
+    "gapPixels": 20,
+    "maxWidth": 860,
+    "maxHeight": 540,
+    "preserveAspectRatio": true
+  },
+  "motion": {
+    "enterSeconds": 0.16,
+    "startScale": 0.87,
+    "fadeInSeconds": 0.067,
+    "exitSeconds": 0.1
+  },
+  "audio": {
+    "clickLeadFrames": 2,
+    "otherEffects": false
+  },
+  "graphics": {
+    "mode": "approved-only",
+    "automaticIntro": false,
+    "automaticOutro": false
+  },
+  "calibration": "Reference coordinates are examples. Fit to the actual neckline, caption glyph bounds, image aspect ratio and canvas."
+}
