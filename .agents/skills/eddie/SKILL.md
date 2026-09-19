@@ -1,9 +1,11 @@
 ---
 name: eddie
-description: Edit talking-head videos in the Digital White Coat EDDIE style using supplied pictures, neckline captions, tight picture spacing, and click-before-pop timing. Use for EDDIE edits, style revisions, and short layout previews.
+description: Edit talking-head videos in the Digital White Coat EDDIE Classic style using supplied pictures, neckline captions, tight picture spacing, and click-before-pop timing. Use for EDDIE edits, style revisions, and short layout previews.
 ---
 
-# EDDIE — DWC Agent Eddie
+# EDDIE Classic — DWC Agent Eddie
+
+This release provides EDDIE Classic only. Users supply their own pictures, video and click audio. EDDIE Motion Graphics is planned and is not implemented by this skill. Preserve Classic when adding future styles.
 
 Read [the style specification](references/style.md) before editing. Current user directions override the defaults.
 
