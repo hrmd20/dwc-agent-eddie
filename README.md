@@ -1,8 +1,17 @@
 # DWC AGENT EDDIE
 
-**A reusable talking-head video-editing skill for Digital White Coat.**
+**Reusable Digital White Coat video-editing styles.**
 
-EDDIE teaches an AI editing agent the DWC style: precise neckline captions, supplied pictures directly underneath, and a consistent click before each visual appears.
+## Available styles
+
+| Style | Version | Status |
+| --- | --- | --- |
+| **EDDIE Classic** | 1.0.0 | Available: neckline captions, your own images, and click-before-pop timing |
+| **EDDIE Motion Graphics** | — | Planned; not included in this release |
+
+Users provide **their own images**, video, and click audio. No image subscription, portrait library, or brand assets are bundled.
+
+EDDIE Classic teaches an AI editing agent the DWC style: precise neckline captions, supplied pictures directly underneath, and a consistent click before each visual appears.
 
 ## The style
 
@@ -37,7 +46,7 @@ This is an **agent-guided skill starter**, not a standalone video editor or an a
 3. Provide a video, the pictures to use, your click audio, and an output folder.
 4. Say:
 
-> Use EDDIE to edit this talking-head video. Keep me visible, use my supplied pictures, place captions at the base of my neck, and tuck each picture closely below them. Use my click before each picture appears. Keep the voice clear. Start with a 10-second placement preview, then apply the approved layout to the full video.
+> Use EDDIE Classic to edit this talking-head video. Keep me visible, use my supplied pictures, place captions at the base of my neck, and tuck each picture closely below them. Use my click before each picture appears. Keep the voice clear. Start with a 10-second placement preview, then apply the approved layout to the full video.
 
 A preview-only request stops at the preview. A request for a finished edit authorizes the agent to continue through ordinary editing and verification.
 
@@ -65,6 +74,12 @@ Ask your agent to check these tools before starting. Missing dependencies must b
 Use an available local video pipeline with FFmpeg/FFprobe, a word-timestamp transcription engine, and a compositor. An agent may use HyperFrames or deterministic graphics with FFmpeg. The skill specifies the output style; it does not bundle those tools.
 
 For the broader editing toolkit, see [Nate Herk’s HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies. You can use its editing tools alongside EDDIE, with the EDDIE style taking precedence for EDDIE projects.
+
+## Updates and older styles
+
+Keep this repository as the central source. Add future styles separately instead of replacing Classic. Publish numbered releases so users can download a stable version. Existing projects contain a copy of their preset: updating the repository must not silently change a project’s chosen style.
+
+The current `presets/eddie.json` is the **EDDIE Classic v1** preset. EDDIE Motion Graphics will receive its own preset and instructions when created.
 
 ## Public sharing
 
