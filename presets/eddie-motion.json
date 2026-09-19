@@ -1,0 +1,29 @@
+{
+  "name": "EDDIE Motion",
+  "styleId": "eddie-motion",
+  "version": 1,
+  "styleVersion": "1.0.0",
+  "releaseVersion": "1.1.0",
+  "canvas": {"width": 1080, "height": 1920, "fps": 30},
+  "captions": {
+    "position": "base-of-neck", "referenceCenterY": 1150,
+    "fontSize": 67, "maxWords": 3, "maxWidth": 880,
+    "color": "#FFFFFF", "highlight": "#E8C76B", "stroke": "#0D1D2B",
+    "keywordStyle": "selective-serif-italic"
+  },
+  "graphics": {
+    "mode": "motion-only", "imageOverlays": false,
+    "presenterVisible": true, "referenceTopY": 1200, "gapPixels": 20,
+    "cardWidth": 900, "cardHeight": 450, "cornerRadius": 24,
+    "optionalProcessStripTopY": 1672,
+    "callback": {"width": 940, "height": 500, "background": "#F7F5EF", "text": "#161616", "connector": "#B29A58"},
+    "automaticIntro": false, "automaticOutro": false, "fullScreenTakeovers": false
+  },
+  "motion": {
+    "enterSeconds": 0.20, "startScale": 0.90, "settlePixels": 12,
+    "fadeInSeconds": 0.067, "exitSeconds": 0.10,
+    "connectorSeconds": 0.35, "ease": "cubic-out", "transcriptAnchored": true
+  },
+  "audio": {"clickLeadFrames": 2, "deduplicateWithinSeconds": 0.15, "otherEffects": false},
+  "calibration": "Coordinates are examples. Fit captions to the actual neckline and graphics to visible glyph bounds. No picture assets are required."
+}
