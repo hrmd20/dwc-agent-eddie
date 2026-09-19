@@ -49,7 +49,7 @@ Omitting `--style` keeps the original Classic default. The helper copies the cho
 | Location | Purpose |
 | --- | --- |
 | `.agents/skills/eddie/` | EDDIE Classic skill and reference for Codex |
-| `.agents/skills/eddie-motion/` | EDDIE Motion skill and reference for Codex |
+| `.agents/skills/eddie-motion/` | Self-contained EDDIE Motion skill for Codex |
 | `.claude/skills/` | Matching skills for Claude Code |
 | `presets/eddie.json` | Original EDDIE Classic defaults |
 | `presets/eddie-motion.json` | EDDIE Motion defaults |
