@@ -1,0 +1,9 @@
+{
+  "name": "EDDIE Carousel",
+  "version": "1.0.0",
+  "type": "canva-carousel",
+  "template": {"source": "user-supplied", "requireEditAccess": true, "copyBeforeEditing": true, "preserveBranding": true, "slideCount": "follow-template"},
+  "content": {"inspiration": "user-supplied-or-topic-only", "originalWriting": true, "verifyMedicalClaims": true, "audience": null, "topic": null, "cta": null},
+  "delivery": {"editableCanvaDesign": true, "socialCaption": true, "sourceNotes": true, "export": "on-request", "autoPublish": false},
+  "monitoring": {"enabled": false, "requiresUserSetup": true, "accounts": [], "time": null, "timezone": null, "defaultOutput": "drafts-for-review"}
+}
