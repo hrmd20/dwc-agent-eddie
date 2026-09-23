@@ -1,19 +1,23 @@
 {
   "name": "EDDIE Classic",
-  "version": 1,
+  "version": 2,
   "canvas": {
     "width": 1080,
     "height": 1920,
     "fps": 30
   },
   "captions": {
-    "position": "base-of-neck",
+    "position": "fixed-below-beard-base-of-neck",
     "referenceCenterY": 1150,
     "fontSize": 67,
     "maxWords": 3,
     "color": "#FFFFFF",
-    "highlight": "#E8C76B",
-    "stroke": "#0D1D2B"
+    "highlight": null,
+    "stroke": "#000000",
+    "stationary": true,
+    "fontFamily": "Arial",
+    "fontWeight": "bold",
+    "animation": "none"
   },
   "images": {
     "position": "directly-below-captions",
@@ -21,24 +25,35 @@
     "gapPixels": 20,
     "maxWidth": 860,
     "maxHeight": 540,
-    "preserveAspectRatio": true
+    "preserveAspectRatio": true,
+    "optional": true,
+    "entry": "instant",
+    "exit": "instant",
+    "hold": "static",
+    "source": "user-supplied-or-explicitly-selected"
   },
   "motion": {
-    "enterSeconds": 0.16,
-    "startScale": 0.87,
-    "fadeInSeconds": 0.067,
-    "exitSeconds": 0.1
+    "enabled": false,
+    "enterSeconds": 0,
+    "startScale": 1,
+    "fadeInSeconds": 0,
+    "exitSeconds": 0
   },
   "audio": {
     "clickLeadFrames": 2,
-    "otherEffects": false
+    "otherEffects": false,
+    "clickOptional": true,
+    "clickEnabledWhen": "user-supplied-and-requested",
+    "clickOnExit": false,
+    "clickOnCaptionChange": false,
+    "addedMusic": false
   },
   "graphics": {
-    "mode": "approved-only",
+    "mode": "none",
     "automaticIntro": false,
     "automaticOutro": false
   },
-  "calibration": "Reference coordinates are examples. Fit to the actual neckline, caption glyph bounds, image aspect ratio and canvas.",
+  "calibration": "Calibrate once just below the beard/base of neck; keep captions stationary and pictures directly below the reserved caption bounds. Reference coordinates are starting points.",
   "styleId": "eddie-classic",
-  "releaseVersion": "1.0.0"
+  "releaseVersion": "1.1.0"
 }
