@@ -1,6 +1,6 @@
 # DWC AGENT EDDIE
 
-**Three Digital White Coat content workflows: EDDIE Classic, EDDIE Motion and EDDIE Carousel.**
+**Five Digital White Coat content workflows: EDDIE Classic, Motion, Carousel, Landscape and Reaction.**
 
 ## Choose your style
 
@@ -9,10 +9,12 @@
 | **EDDIE Classic** | 1.0.0 | Neckline captions, your pictures directly underneath, click-before-pop timing | Video, your own images, click audio |
 | **EDDIE Motion** | 1.0.0 | Animated typography, drawn connectors and explanatory diagrams; no image overlays | Video and click audio |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
+| **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
+| **EDDIE Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
 
-Both video styles keep the presenter visible and place short captions at the base of the neck. Motion adds selective serif-italic keywords, gold highlights, staged diagram builds and dark/cream graphic cards. Graphics explain the actual script.
+Classic and Motion keep the presenter visible and place short captions at the base of the neck. Motion adds selective serif-italic keywords, gold highlights, staged diagram builds and dark/cream graphic cards. Graphics explain the actual script.
 
-The latest repository adds **EDDIE Carousel 1.0.0** alongside Classic and Motion. Classic's preset and visual specification remain unchanged. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside Classic, Motion and Carousel. Classic's preset and visual specification remain unchanged. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -23,7 +25,7 @@ The latest repository adds **EDDIE Carousel 1.0.0** alongside Classic and Motion
    cd dwc-agent-eddie
    ```
 2. Open the folder in your editing agent.
-3. Choose your workflow. For videos, provide footage, click sound and an output folder; Classic also needs your own pictures. For Carousel, share your own editable Canva template, topic and inspiration.
+3. Choose your workflow. For videos, provide footage and an output folder; Classic, Motion and Reaction also use your supplied click sound. Classic needs your pictures, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
 4. Use one of these prompts:
 
 **EDDIE Classic**
@@ -91,7 +93,7 @@ This is an **agent-guided skill package**, not a standalone editor or automatic 
 - A compositor supported by the agent, such as HyperFrames or Python/Pillow.
 - Locally available, properly licensed fonts. No proprietary fonts are bundled.
 
-The agent should check tools before editing. Neither video style requires a paid service. Users supply source footage, sound and any licensed music; Classic users also supply their pictures.
+The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; Classic users also supply their pictures.
 
 For the broader toolkit, see [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies; EDDIE's chosen style controls the resulting edit.
 
@@ -106,3 +108,29 @@ Public files are reusable instructions, presets and helpers. Footage, exports, t
 Built from the DWC editing workflow developed with Digital White Coat and informed by [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). EDDIE's neckline layout, Classic picture treatment and Motion graphic treatment are DWC customizations. This repository is not affiliated with or endorsed by Nate Herk, HeyGen, or HyperFrames.
 
 The upstream MIT notice is preserved in `LICENSE`. Third-party tools and assets retain their own licenses. No AIS branding or upstream showcase videos are included.
+
+
+## EDDIE Landscape 1.0.0
+
+The approved V1 Revision 3 landscape treatment is available as **EDDIE Landscape**, alongside the existing styles. It uses 4K 16:9 presenter footage, stationary bold white lower-center captions with a black outline, and natural cuts that remove coughs, repeated takes and delays while preserving complete words. No graphics, images, music or click effects are added by default.
+
+Users supply their own footage, optional script and output folder. Lower-resolution sources are upscaled for 4K delivery; exporting in 4K does not restore missing detail.
+
+> Use EDDIE Landscape to edit my video in 4K 16:9. Use stationary bold white captions with a black outline at lower center. Remove coughs, repeated takes and long pauses, preserve every complete word and closing phrase, and deliver an MP4 plus SRT in my output folder.
+
+```sh
+python3 scripts/new_project.py my-landscape-video --style landscape
+```
+
+Invoke `eddie-landscape` in your agent, or load [.agents/skills/eddie-landscape/SKILL.md](.agents/skills/eddie-landscape/SKILL.md). Matching Claude instructions live in `.claude/skills/eddie-landscape/`; reusable defaults are in `presets/eddie-landscape.json`. The project starter creates a private brief and preset; the editing agent performs the edit using separately installed local video tools.
+
+
+## EDDIE Reaction 1.0.0
+
+> Use EDDIE Reaction with my original clip and separate reaction recording. Synchronize them, keep the original playing continuously, put me in the bottom-left corner with a click when I appear, and add the reaction captions. Then show my commentary full-screen, keeping natural laughter and removing recording setup, abandoned takes and long pauses. Save a new MP4 in my output folder.
+
+```sh
+python3 scripts/new_project.py my-reaction-video --style reaction
+```
+
+Use [.agents/skills/eddie-reaction/SKILL.md](.agents/skills/eddie-reaction/SKILL.md) for Codex or the matching `.claude/skills/eddie-reaction/SKILL.md` for Claude Code. Defaults are in `presets/eddie-reaction.json`. Each user provides their own recordings and click sound. The agent measures synchronization for each recording; the preset does not hardcode an example offset. Existing projects retain their copied settings.
