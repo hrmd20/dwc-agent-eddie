@@ -1,31 +1,32 @@
-# EDDIE Classic style specification
+# EDDIE Classic 1.1.0 — Preview 3 treatment
 
-## Picture and framing
+## Picture and cuts
 
-- Portrait 9:16, normally 1080×1920 at source-compatible frame rate (30 fps for the approved example).
-- Talking-head footage remains visible; no full-screen replacement of the presenter.
-- Preserve the approved cut, pacing, audio and image content during layout-only changes.
-- Supplied images take priority. Preserve their aspect ratios and legibility.
-- No opening “Your brand / Your AI editor” card, promotional closing cards, decorative diagrams or new animation by default.
-- The approved DWC demonstration retains only “One Connected Workflow: Record → Cut → Clip → Upload.” This is project-specific, not a mandatory insert in every EDDIE edit.
+- Portrait 9:16, normally 1080 × 1920 at 30 fps; honor an existing approved format.
+- Talking-head footage remains visible. No motion graphics, diagrams, workflow animations, title cards, animated text, decorative zooms or automatic intro/outro.
+- Start promptly on the complete first word. Remove setup, abandoned takes, coughs and excessive gaps without clipping syllables. Preserve purposeful pauses, meaning and complete closing words. Review each join against audio, not transcription alone.
+- Preserve an approved cut and picture timing for layout-only revisions.
 
-## Caption and image geometry
+## Stationary captions
 
-Caption baseline placement follows the base of the neck/V-neck. Use the actual source, not a fixed pixel coordinate for every speaker. For the approved 1080×1920 demonstration, center the caption line around y=1150 and place the top of the image around y=1200. This leaves roughly 20 px below the visible caption glyphs. The user described the desired apparent gap as about 3 mm; physical millimeters vary by display and cannot be guaranteed in a video file.
+Use Arial Bold or a similar locally available licensed sans-serif: white fill, black outline, subtle shadow. No gold highlighting or animated word emphasis. Show short phrase chunks, usually 1–3 words, synchronized to retained speech. Split long phrases rather than shifting their position or shrinking individual phrases.
 
-Treat these coordinates as calibration starting points. Determine the visible caption bounding box including stroke; set image top to caption bottom plus a small gap (roughly 12–24 px at 1080-wide output). Scale coordinates proportionally with output size. Check that both the image bottom and caption fit; reduce an oversized image proportionally rather than clipping it. Do not cover the face. Avoid large empty space between caption and picture.
+Calibrate caption placement once against the actual presenter: just below the beard at the base of the neck/V-neck, with a small visible gap (the user describes about 2 mm). Millimeters vary by display; at 1080-wide output start around 8–16 px clear of the beard and inspect the result. Keep the chosen screen position and font size fixed throughout the shot; do not track head motion. If clearance is insufficient, choose a fixed lower position for the shot.
 
-Bold white sans-serif captions, short groups of 1–3 words. Gold #E8C76B highlights for salient words only while spoken. Dark stroke for contrast. The approved example uses Arial Bold; select a locally available/licensed font rather than shipping a system font. Keep timing derived from the final edit’s words, not the uncut recording.
+The earlier 1080 × 1920 reference used approximately 67 px type and center y=1150. This is a starting point only, not a mandatory location for every face. Use actual glyph bounds including the outline to check clearance. Scale coordinates for other output sizes.
 
-## Image behavior and audio
+## Optional still-image pop-ups
 
-- Supplied click starts about two frames before a picture appears.
-- Quick scale-in, approximately 87% to 100% over 160 ms; short alpha rise around 67 ms.
-- Hold for the spoken concept; approximately 100 ms scale/fade exit.
-- Keep existing picture timing when revising layout. Do not introduce unrelated images to meet an effects quota.
-- Use the same supplied click for exits if that treatment was approved. A rapid replacement may use one shared cue to avoid doubled clicks.
-- No other sound effects by default. Keep voice dominant over quiet music; preserve approved audio when possible.
+Use the user's supplied or explicitly selected pictures. Captions-only requires no pictures. Match images to exact spoken concepts, preserving aspect ratios, legibility and face visibility. Do not generate or source extra assets without the user's request.
 
-## Review expectations
+Place each picture immediately below the caption area, about 12–24 px away at 1080-wide output (roughly the requested 3 mm visual gap). Reserve the tallest caption bounds so changing words do not move the picture. Starting maximum picture size is 860 × 540 within the canvas; fit proportionally rather than clipping.
 
-Inspect at full resolution and phone size: first seconds, every picture, the retained workflow graphic, the last phrase, and transitions. Captions and images must remain separated even on the longest caption. Check actual output rather than only a project preview or configuration. Keep source files, image permissions and private material out of public packages.
+At the concept cue, show the image instantly at final size and full opacity. Hold it still for that topic. Remove or replace it instantly at the topic change. No scale-in, bounce, pan, slide, fade or crossfade. No retained workflow-animation exception from earlier Classic versions.
+
+## Optional click
+
+If a click file is supplied and enabled, use it consistently about two frames before image entry (67 ms at 30 fps). If there is not enough pre-roll, clamp to frame zero rather than delaying speech. No click on exit or on caption changes. Remove sound cues for deleted images. With no images or click requested, keep speech only; do not add music or other effects. Preserve existing approved audio when the user asks to retain it.
+
+## Review
+
+Inspect the actual encoded video at full resolution and phone size: opening, each image cue, caption bounds, every cleaned cut and the last phrase. Captions remain fixed; pictures stay clear of both captions and face. Listen for complete words and clean joins; automated checks alone do not establish natural delivery. Save a versioned export and keep personal footage, pictures, sound and transcripts out of the public repository.
