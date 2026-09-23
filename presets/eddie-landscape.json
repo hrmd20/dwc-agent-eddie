@@ -1,0 +1,58 @@
+{
+  "name": "EDDIE Landscape",
+  "style": "landscape",
+  "version": "1.0.0",
+  "video": {
+    "width": 3840,
+    "height": 2160,
+    "fps": 30,
+    "aspectRatio": "16:9",
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "fastStart": true
+  },
+  "captions": {
+    "rendererUnits": "ASS/libass",
+    "playResX": 3840,
+    "playResY": 2160,
+    "font": "Arial",
+    "bold": true,
+    "fontSize": 172,
+    "fill": "#FFFFFF",
+    "outline": "#000000",
+    "outlineWidth": 7,
+    "shadow": 3,
+    "spacing": -3,
+    "alignment": 5,
+    "centerX": 1920,
+    "centerY": 1870,
+    "stationary": true,
+    "tracking": "none",
+    "maxWords": 5,
+    "maxCharacters": 34,
+    "sideMargin": 200,
+    "tailSeconds": 0.06,
+    "exportSrt": true
+  },
+  "audio": {
+    "sampleRate": 48000,
+    "codec": "aac",
+    "bitrate": "320k",
+    "targetLufs": -16,
+    "truePeakDb": -1.5,
+    "music": false,
+    "clickEffects": false
+  },
+  "visuals": {
+    "images": false,
+    "motionGraphics": false
+  },
+  "editing": {
+    "removeCoughs": true,
+    "removeAbandonedTakes": true,
+    "tightenPauses": true,
+    "preserveCompleteWords": true,
+    "preserveOriginals": true
+  }
+}

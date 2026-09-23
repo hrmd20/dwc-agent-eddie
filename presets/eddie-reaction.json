@@ -1,0 +1,76 @@
+{
+  "name": "EDDIE Reaction",
+  "style": "reaction",
+  "version": "1.0.0",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "sync": {
+    "offsetSeconds": null,
+    "measureEachProject": true,
+    "preserveContinuousSource": true
+  },
+  "sourceRect": {
+    "x": 60,
+    "y": 32,
+    "width": 960,
+    "height": 1706,
+    "fit": "contain"
+  },
+  "reactionInset": {
+    "x": 24,
+    "y": 1464,
+    "width": 324,
+    "height": 432,
+    "border": 3,
+    "entryFrame": 2
+  },
+  "captions": {
+    "font": "Arial",
+    "bold": true,
+    "uppercase": true,
+    "fill": "#FFFFFF",
+    "activeWord": "#F1D688",
+    "outline": "#080C12",
+    "outlineWidth": 3,
+    "shadow": 1,
+    "maxWords": 3,
+    "maxCharacters": 23,
+    "stationaryWithinLayout": true,
+    "coordinateUnits": "ASS/libass",
+    "source": {
+      "x": 540,
+      "y": 1260,
+      "size": 62
+    },
+    "insetSpeech": {
+      "x": 720,
+      "y": 1810,
+      "size": 46
+    },
+    "commentary": {
+      "x": 540,
+      "y": 930,
+      "size": 68
+    }
+  },
+  "audio": {
+    "clickCount": 1,
+    "clickLeadFrames": 2,
+    "music": false,
+    "targetLufs": -16,
+    "truePeakDb": -1.5,
+    "preserveLaughter": true,
+    "avoidDoubledSourceAudio": true
+  },
+  "export": {
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "fastStart": true
+  }
+}
