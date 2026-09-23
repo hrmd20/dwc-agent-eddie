@@ -6,7 +6,7 @@
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE Classic** | 1.0.0 | Neckline captions, your pictures directly underneath, click-before-pop timing | Video, your own images, click audio |
+| **EDDIE Classic** | 1.1.0 | Stationary white outlined captions; optional still-image pop-ups and click cues; no animations | Video, optional own images and click audio |
 | **EDDIE Motion** | 1.0.0 | Animated typography, drawn connectors and explanatory diagrams; no image overlays | Video and click audio |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
@@ -14,7 +14,7 @@
 
 Classic and Motion keep the presenter visible and place short captions at the base of the neck. Motion adds selective serif-italic keywords, gold highlights, staged diagram builds and dark/cream graphic cards. Graphics explain the actual script.
 
-The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside Classic, Motion and Carousel. Classic's preset and visual specification remain unchanged. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside Classic, Motion and Carousel. **EDDIE Classic 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. No motion graphics or animations. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -25,12 +25,12 @@ The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0*
    cd dwc-agent-eddie
    ```
 2. Open the folder in your editing agent.
-3. Choose your workflow. For videos, provide footage and an output folder; Classic, Motion and Reaction also use your supplied click sound. Classic needs your pictures, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
+3. Choose your workflow. For videos, provide footage and an output folder; Motion and Reaction use your supplied click sound. Classic supports captions-only, or your own pictures with an optional click, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
 4. Use one of these prompts:
 
 **EDDIE Classic**
 
-> Use EDDIE Classic to edit this talking-head video. Keep me visible, use my supplied pictures, place captions at the base of my neck, and tuck each picture closely below them. Use my click before each picture appears. Start with a 10-second placement preview.
+> Use EDDIE Classic to edit this talking-head video. Keep me visible with stationary bold white captions outlined in black, just below my beard at the base of my neck. Use only my supplied pictures directly below the captions, appearing and disappearing instantly with no animation. If I provide and request a click, play it just before each picture. With no pictures, use captions only. Start with a 10-second placement preview.
 
 **EDDIE Motion**
 
@@ -70,7 +70,7 @@ Omitting `--style` keeps the original Classic default. The helper copies the cho
 | `.agents/skills/eddie-motion/` | Self-contained EDDIE Motion skill for Codex |
 | `.agents/skills/eddie-carousel/` | Self-contained Canva carousel workflow for Codex |
 | `.claude/skills/` | Matching skills for Claude Code |
-| `presets/eddie.json` | Original EDDIE Classic defaults |
+| `presets/eddie.json` | EDDIE Classic 1.1.0 defaults |
 | `presets/eddie-motion.json` | EDDIE Motion defaults |
 | `presets/eddie-carousel.json` | Carousel defaults; monitoring starts disabled |
 | `scripts/new_project.py` | Private project starter with style selection |
@@ -93,7 +93,7 @@ This is an **agent-guided skill package**, not a standalone editor or automatic 
 - A compositor supported by the agent, such as HyperFrames or Python/Pillow.
 - Locally available, properly licensed fonts. No proprietary fonts are bundled.
 
-The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; Classic users also supply their pictures.
+The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; Classic users supply their own pictures if they want image pop-ups; click audio is optional for Classic.
 
 For the broader toolkit, see [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies; EDDIE's chosen style controls the resulting edit.
 
