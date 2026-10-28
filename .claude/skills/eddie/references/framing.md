@@ -1,6 +1,6 @@
 # Subject framing across Master Editor modes
 
-Apply this pass before placing captions, hooks, images or iPhone messages in all three modes. Inspect actual footage; a script cannot establish camera angle or framing. Preserve explicit user framing and an approved crop during unrelated revisions.
+Apply this pass before placing captions, hooks, images or iPhone messages in all four modes. Inspect actual footage; a script cannot establish camera angle or framing. Preserve explicit user framing and an approved crop during unrelated revisions.
 
 ## Identify the shot
 - Direct-to-camera, single presenter: center the head and upper torso horizontally when the original is unintentionally off-center. Preserve recorded eye contact; this is reframing, not synthetic gaze correction.
@@ -17,7 +17,7 @@ Apply this pass before placing captions, hooks, images or iPhone messages in all
 ## Overlay zones and the supplied example
 Use the supplied example as a centered, upper-body, direct-eye-contact composition, not as a universal font/color treatment or a requirement to copy its product branding.
 
-Default Master Editor/Rapid Fire hooks remain below captions for 0–4 seconds. The reference's **top-hook layout** is an alternate when requested or already approved for the project. It uses the same framing checks in all three modes. Keep the user's selected hook typography; do not automatically change black-on-white/red emphasis to the example's black panel/yellow lettering.
+Default Master Editor/Rapid Fire hooks remain below captions for 0–4 seconds. The reference's **top-hook layout** is an alternate when requested or already approved for the project. It uses the same framing checks in all four modes. Keep the user's selected hook typography; do not automatically change black-on-white/red emphasis to the example's black panel/yellow lettering.
 
 Approximate portrait zones for the top-hook layout:
 - Hook: top 0–20% (0–384 px), inset from the edges. Keep it above the actual hairline; use natural line breaks.
