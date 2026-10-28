@@ -1,20 +1,19 @@
 # DWC AGENT EDDIE
 
-**Five Digital White Coat content workflows: EDDIE Classic, Motion, Carousel, Landscape and Reaction.**
+**Five Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Reaction and Rapid Fire.**
 
 ## Choose your style
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE Classic** | 1.1.0 | Stationary white outlined captions; optional still-image pop-ups and click cues; no animations | Video, optional own images and click audio |
-| **EDDIE Motion** | 1.0.0 | Animated typography, drawn connectors and explanatory diagrams; no image overlays | Video and click audio |
+| **EDDIE MASTER EDITOR** | 1.1.0 | Stationary white outlined captions; optional still-image pop-ups and click cues; no animations | Video, optional own images and click audio |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
 
-Classic and Motion keep the presenter visible and place short captions at the base of the neck. Motion adds selective serif-italic keywords, gold highlights, staged diagram builds and dark/cream graphic cards. Graphics explain the actual script.
+MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
-The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside Classic, Motion and Carousel. **EDDIE Classic 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. No motion graphics or animations. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. No motion graphics or animations. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -25,16 +24,12 @@ The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0*
    cd dwc-agent-eddie
    ```
 2. Open the folder in your editing agent.
-3. Choose your workflow. For videos, provide footage and an output folder; Motion and Reaction use your supplied click sound. Classic supports captions-only, or your own pictures with an optional click, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
+3. Choose your workflow. For videos, provide footage and an output folder; Reaction uses your supplied click sound. MASTER EDITOR supports captions-only, or your own pictures with an optional click, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
 4. Use one of these prompts:
 
-**EDDIE Classic**
+**EDDIE MASTER EDITOR**
 
-> Use EDDIE Classic to edit this talking-head video. Keep me visible with stationary bold white captions outlined in black, just below my beard at the base of my neck. Use only my supplied pictures directly below the captions, appearing and disappearing instantly with no animation. If I provide and request a click, play it just before each picture. With no pictures, use captions only. Start with a 10-second placement preview.
-
-**EDDIE Motion**
-
-> Use EDDIE Motion to edit this talking-head video with motion graphics only. Keep me visible, place short captions at the base of my neck, and put animated text and diagrams immediately below them. Use white and gold type, selective italic emphasis, staged line drawing, and my click sound. Use no photos, screenshots or image overlays. Create a 20-second preview first.
+> Use EDDIE MASTER EDITOR to edit this talking-head video. Keep me visible with stationary bold white captions outlined in black, just below my beard at the base of my neck. Use only my supplied pictures directly below the captions, appearing and disappearing instantly with no animation. If I provide and request a click, play it just before each picture. With no pictures, use captions only. Start with a 10-second placement preview.
 
 **EDDIE Carousel**
 
@@ -55,28 +50,25 @@ A video preview request stops at the preview. After approval, ask for the full v
 ## Create a private project
 
 ```sh
-python3 scripts/new_project.py my-classic-video --style classic
-python3 scripts/new_project.py my-motion-video --style motion
+python3 scripts/new_project.py my-master-video --style master
 python3 scripts/new_project.py my-carousel --style carousel
 ```
 
-Omitting `--style` keeps the original Classic default. The helper copies the chosen preset into an ignored `projects/<name>/` folder. Video projects contain assets, transcripts, renders and QA; Carousel projects contain sources, copy, exports, QA and a private setup brief. It refuses to overwrite an existing project. Updating this repository does not silently change a project's copied preset.
+Omitting `--style` keeps the original MASTER EDITOR default. The helper copies the chosen preset into an ignored `projects/<name>/` folder. Video projects contain assets, transcripts, renders and QA; Carousel projects contain sources, copy, exports, QA and a private setup brief. It refuses to overwrite an existing project. Updating this repository does not silently change a project's copied preset.
 
 ## Included files
 
 | Location | Purpose |
 | --- | --- |
-| `.agents/skills/eddie/` | EDDIE Classic skill and reference for Codex |
-| `.agents/skills/eddie-motion/` | Self-contained EDDIE Motion skill for Codex |
+| `.agents/skills/eddie/` | EDDIE MASTER EDITOR skill and reference for Codex |
 | `.agents/skills/eddie-carousel/` | Self-contained Canva carousel workflow for Codex |
 | `.claude/skills/` | Matching skills for Claude Code |
-| `presets/eddie.json` | EDDIE Classic 1.1.0 defaults |
-| `presets/eddie-motion.json` | EDDIE Motion defaults |
+| `presets/eddie.json` | EDDIE MASTER EDITOR 1.1.0 defaults |
 | `presets/eddie-carousel.json` | Carousel defaults; monitoring starts disabled |
 | `scripts/new_project.py` | Private project starter with style selection |
 | `AGENTS.md` / `CLAUDE.md` | Style routing and workspace instructions |
 
-Invoke `eddie` for Classic, `eddie-motion` for Motion or `eddie-carousel` for Carousel in agents that discover repository skills. You can also point the agent directly to the relevant SKILL.md.
+Invoke `eddie` for MASTER EDITOR, `eddie-carousel` for Carousel in agents that discover repository skills. You can also point the agent directly to the relevant SKILL.md.
 
 ## Requirements
 
@@ -93,19 +85,19 @@ This is an **agent-guided skill package**, not a standalone editor or automatic 
 - A compositor supported by the agent, such as HyperFrames or Python/Pillow.
 - Locally available, properly licensed fonts. No proprietary fonts are bundled.
 
-The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; Classic users supply their own pictures if they want image pop-ups; click audio is optional for Classic.
+The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; MASTER EDITOR users supply their own pictures if they want image pop-ups; click audio is optional for MASTER EDITOR.
 
 For the broader toolkit, see [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies; EDDIE's chosen style controls the resulting edit.
 
 ## Versions and sharing
 
-Keep new styles separate and publish numbered releases. Preserve old presets and downloads so users can repeat an approved look. Classic, Motion and Carousel remain separate workflows.
+Keep new styles separate and publish numbered releases. Preserve old presets and downloads so users can repeat an approved look. MASTER EDITOR and Carousel remain separate workflows.
 
 Public files are reusable instructions, presets and helpers. Footage, exports, transcripts, private Canva links, account preferences, source notes, reference videos, paid stock, click audio and credentials stay local under ignored project directories. No robot portrait, stock subscription, audio file or private demonstration video is bundled.
 
 ## Credits
 
-Built from the DWC editing workflow developed with Digital White Coat and informed by [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). EDDIE's neckline layout, Classic picture treatment and Motion graphic treatment are DWC customizations. This repository is not affiliated with or endorsed by Nate Herk, HeyGen, or HyperFrames.
+Built from the DWC editing workflow developed with Digital White Coat and informed by [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). EDDIE's neckline layout, MASTER EDITOR picture treatment are DWC customizations. This repository is not affiliated with or endorsed by Nate Herk, HeyGen, or HyperFrames.
 
 The upstream MIT notice is preserved in `LICENSE`. Third-party tools and assets retain their own licenses. No AIS branding or upstream showcase videos are included.
 
@@ -142,3 +134,9 @@ Rapid-fire questions and rankings with original audio, stationary Eddie captions
 > Use EDDIE Rapid Fire to edit my recording. Add the hook directly below the captions for 0–3.5 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
 
 Create a private project with `python3 scripts/new_project.py my-rapid-fire --style rapid-fire`. Read [.agents/skills/eddie-rapid-fire/SKILL.md](.agents/skills/eddie-rapid-fire/SKILL.md) for Codex or the matching `.claude/skills/eddie-rapid-fire/SKILL.md` for Claude. Defaults: [presets/eddie-rapid-fire.json](presets/eddie-rapid-fire.json).
+
+## EDDIE MASTER EDITOR naming and optional messages
+
+EDDIE MASTER EDITOR is the new name for EDDIE Classic. The `eddie` skill path and `presets/eddie.json` remain stable. Use `--style master`; legacy `--style classic` commands still work. Existing projects keep their copied settings.
+
+Request iPhone messages or notifications on screen to enable the optional glass-message treatment: sender and timestamp, smooth upward entrance, notification sound, and optional blurred introduction followed by a readable reveal. Captions or a text hook alone do not enable it.
