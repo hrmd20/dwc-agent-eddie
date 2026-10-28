@@ -1,4 +1,6 @@
-# EDDIE Classic 1.1.0 — Preview 3 treatment
+# EDDIE MASTER EDITOR 1.1.0 — Preview 3 treatment
+
+The main skill defines three modes, 4-second hooks and 200% audio. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
 
 ## Picture and cuts
 
@@ -21,7 +23,7 @@ Use the user's supplied or explicitly selected pictures. Captions-only requires 
 
 Place each picture immediately below the caption area, about 12–24 px away at 1080-wide output (roughly the requested 3 mm visual gap). Reserve the tallest caption bounds so changing words do not move the picture. Starting maximum picture size is 860 × 540 within the canvas; fit proportionally rather than clipping.
 
-At the concept cue, show the image instantly at final size and full opacity. Hold it still for that topic. Remove or replace it instantly at the topic change. No scale-in, bounce, pan, slide, fade or crossfade. No retained workflow-animation exception from earlier Classic versions.
+At the concept cue, show the image instantly at final size and full opacity. Hold it still for that topic. Remove or replace it instantly at the topic change. No scale-in, bounce, pan, slide, fade or crossfade. No retained workflow-animation exception from earlier MASTER EDITOR versions.
 
 ## Optional click
 
