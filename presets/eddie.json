@@ -1,5 +1,5 @@
 {
-  "name": "EDDIE Classic",
+  "name": "EDDIE MASTER EDITOR",
   "version": 2,
   "canvas": {
     "width": 1080,
@@ -55,5 +55,46 @@
   },
   "calibration": "Calibrate once just below the beard/base of neck; keep captions stationary and pictures directly below the reserved caption bounds. Reference coordinates are starting points.",
   "styleId": "eddie-classic",
-  "releaseVersion": "1.1.0"
+  "releaseVersion": "1.1.0",
+  "iphoneMessages": {
+    "enabled": false,
+    "activation": "Explicit request for text messages or iPhone notifications on screen",
+    "reference": "references/iphone-messages.md"
+  },
+  "rapidFire": {
+    "selection": "Auto-detect repeated short Q&A, yes/no or ranking script unless user specifies otherwise",
+    "reference": "references/rapid-fire.md",
+    "hookDurationSeconds": 4,
+    "imageSource": "Google images, unless user supplies or selects alternatives"
+  },
+  "audioGain": {
+    "multiplier": 2.0,
+    "decibels": 6.0206,
+    "applyOnceToCleanSource": true,
+    "peakProtection": true
+  },
+  "modes": [
+    "captions-hook",
+    "captions-google-images-hook",
+    "rapid-fire"
+  ],
+  "hook": {
+    "enabled": true,
+    "durationSeconds": 4,
+    "background": "white rounded rectangle",
+    "textColor": "black",
+    "emphasisColor": "#FF0000",
+    "position": "below captions"
+  },
+  "framing": {
+    "enabled": true,
+    "appliesTo": "all three Master Editor modes",
+    "reference": "references/framing.md",
+    "directToCamera": "center unintentionally off-center single presenter",
+    "preserveIntentionalAngles": true,
+    "scale": "uniform",
+    "crop": "stable per shot; smooth follow only when needed",
+    "syntheticEyeContact": false,
+    "topHookLayout": "optional; preserve below-caption hook default"
+  }
 }

@@ -20,7 +20,7 @@
   },
   "hook": {
     "start": 0,
-    "end": 3.5,
+    "end": 4.0,
     "top": 1120,
     "height": 240,
     "font_size": 60,
@@ -36,13 +36,32 @@
     "max_height": 470,
     "fit": "contain",
     "transition": "hard pop",
-    "timing": "question through answer"
+    "timing": "question through answer",
+    "source": "Google Images unless supplied or explicitly selected alternatives"
   },
   "audio": {
     "source": "original recording",
-    "gain": 1,
+    "gain": 2,
     "voiceover": false,
     "music": false,
     "sound_effects": false
+  },
+  "interviewer": {
+    "mode": "infer from brief or ask",
+    "supported_modes": [
+      "recorded interviewer",
+      "AI-generated interviewer"
+    ],
+    "recorded_camera_layout": "preserve shared shot or cut nurse questions to doctor answers",
+    "ai_voice": "user-selected provider and voice",
+    "ai_speed": "user-selected",
+    "response_gap_seconds": "user-selected; reference example 5",
+    "embedded_question_audio": "reuse; never duplicate"
+  },
+  "audioGain": {
+    "multiplier": 2.0,
+    "decibels": 6.0206,
+    "applyOnceToCleanSource": true,
+    "peakProtection": true
   }
 }
