@@ -9,7 +9,7 @@ import re
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('name', help='Project name using letters, digits and hyphens')
-    parser.add_argument('--style', choices=('classic', 'motion', 'carousel'), default='classic',
+    parser.add_argument('--style', choices=('classic', 'motion', 'carousel', 'rapid-fire'), default='classic',
                         help='Editing style; existing commands keep Classic')
     args = parser.parse_args()
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.name):
@@ -19,7 +19,7 @@ def main():
     if project.exists():
         parser.error(f'Project already exists: {project}')
     preset_name = {'classic': 'eddie.json', 'motion': 'eddie-motion.json',
-                   'carousel': 'eddie-carousel.json'}[args.style]
+                   'carousel': 'eddie-carousel.json', 'rapid-fire': 'eddie-rapid-fire.json'}[args.style]
     preset = json.loads((root / 'presets' / preset_name).read_text())
     project.mkdir(parents=True)
     folders = ('sources', 'copy', 'exports', 'qa') if args.style == 'carousel' else ('assets', 'transcripts', 'renders', 'qa')
