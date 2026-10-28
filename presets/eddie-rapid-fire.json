@@ -1,0 +1,48 @@
+{
+  "name": "EDDIE Rapid Fire (Text hook, captions, images)",
+  "version": "1.0.0",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "captions": {
+    "font": "Arial Bold",
+    "size": 67,
+    "color": "#FFFFFF",
+    "outline_color": "#000000",
+    "outline_width": 4,
+    "center": [
+      540,
+      1060
+    ],
+    "rating_size": 96
+  },
+  "hook": {
+    "start": 0,
+    "end": 3.5,
+    "top": 1120,
+    "height": 240,
+    "font_size": 60,
+    "background": "#FFFFFF",
+    "text_color": "#000000",
+    "emphasis_color": "#FF0000",
+    "corner_radius": 26,
+    "placement": "immediately below captions"
+  },
+  "images": {
+    "top": 1130,
+    "max_width": 640,
+    "max_height": 470,
+    "fit": "contain",
+    "transition": "hard pop",
+    "timing": "question through answer"
+  },
+  "audio": {
+    "source": "original recording",
+    "gain": 1,
+    "voiceover": false,
+    "music": false,
+    "sound_effects": false
+  }
+}
