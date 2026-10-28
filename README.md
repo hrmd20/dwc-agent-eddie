@@ -145,14 +145,20 @@ Request iPhone messages or notifications on screen to enable the optional glass-
 
 EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **4 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
 
-## Master Editor: three modes
+## Master Editor: four modes
 
 1. **Captions + text hook** — no topic pictures.
 2. **Captions + Google images + text hook** — supporting pictures below captions.
 3. **Rapid Fire** — automatically selected for short Q&A/ranking scripts; hook, captions, Google images and large /10 scores.
 
-All three default to a **4-second hook** and **200% audio gain**, applied once with peak protection. Explicit user choices override defaults. iPhone message overlays remain optional.
+4. **Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
+
+The first three modes default to a **4-second hook**. All four use **200% audio gain**, applied once with peak protection. Reaction uses its own synchronized layout and an optional approved hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
-All three Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.
+All four Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.
+
+### Reaction inside Master Editor
+
+Ask “Use EDDIE MASTER EDITOR for this reaction video.” Supply the source clip and reaction recording, or your approved combined recording. Master Editor selects its embedded Reaction mode, preserves synchronization and source captions, then switches to full-screen commentary. Script-only input produces a plan until footage is provided. The standalone Reaction skill remains available for existing projects.
