@@ -1,6 +1,6 @@
 # EDDIE MASTER EDITOR 1.1.0 — Preview 3 treatment
 
-The optional iPhone-message reference overrides only notification animation and sound when explicitly enabled; all other defaults remain.
+The main skill defines three modes, 4-second hooks and 200% audio. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
 
 ## Picture and cuts
 

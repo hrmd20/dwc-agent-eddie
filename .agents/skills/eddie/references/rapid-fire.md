@@ -4,7 +4,7 @@ This is also the Rapid Fire mode inside EDDIE MASTER EDITOR.
 
 ## Approved treatment
 - Portrait 1080 × 1920, usually 30 fps. Preserve the presenter framing.
-- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Retain original audio; no added voiceover, music, click or volume boost unless requested.
+- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 200% gain (2× amplitude, approximately +6.02 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
 - Stationary Arial Bold white speech captions with black outline and subtle shadow. Use short 1–3 word phrases; keep short questions together. Calibrate once just below the beard; do not track head movement.
 - Display numerical rankings as `0/10`, `8/10`, `9.5/10`, etc., matching the actual answer. Use larger type for ratings. Preserve additional commentary rather than replacing a qualified answer with a number alone.
 - Hook: bold black text on a white rounded rectangle, one user-selected phrase in bright red (#FF0000). Place immediately below the speech captions, not at the bottom of the frame. Default visibility is start through 4 seconds, then a hard exit. Preserve user-supplied wording; do not invent credentials or claims.
