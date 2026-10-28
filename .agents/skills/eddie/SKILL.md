@@ -1,6 +1,6 @@
 ---
 name: eddie
-description: Edit talking-head videos in EDDIE MASTER EDITOR style with stationary white outlined captions, optional user-supplied still-image pop-ups and optional click-before-image cues. Use for MASTER EDITOR edits and layout previews without motion graphics.
+description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, optional Google topic images, or automatically selected Rapid Fire Q&A/rankings. All modes default to 200% audio; on-screen iPhone messages are opt-in.
 ---
 
 # EDDIE MASTER EDITOR — DWC Agent Eddie
@@ -27,6 +27,10 @@ With a script alone, prepare the hook, question/answer map and visual plan; do n
 Use the user's footage, output folder, any supplied pictures and optional click audio. Captions-only is a complete supported edit; do not require pictures or sound to start it. Inspect available local editing tools and transcription. Preserve originals. Do not assume a paid service or a particular workstation.
 
 Clean recording setup, false starts, coughs and excessive gaps while preserving meaning, natural delivery, complete first/last words and closing phrases. Check every join in context so quiet syllables are not cut off. Keep an approved cut intact when revising only captions or visuals. Retain source ranges and retime captions after editing.
+
+## Shared subject framing — all three modes
+
+Before overlays, read [subject framing](references/framing.md). Automatically correct unintentionally off-center direct-to-camera talking-head shots using a stable, proportional crop. Preserve intended side angles, nurse/interview compositions and reaction layouts. Frame first, then calibrate stationary captions and visuals. The supplied top-hook example is an optional layout, not a replacement for the existing below-caption hook.
 
 ## Compose
 
