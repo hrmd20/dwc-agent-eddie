@@ -2,6 +2,8 @@
 
 This is also the Rapid Fire mode inside EDDIE MASTER EDITOR.
 
+Before overlay placement, apply [shared subject framing](framing.md).
+
 ## Approved treatment
 - Portrait 1080 × 1920, usually 30 fps. Preserve the presenter framing.
 - Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 200% gain (2× amplitude, approximately +6.02 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
