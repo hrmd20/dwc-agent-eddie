@@ -134,3 +134,11 @@ python3 scripts/new_project.py my-reaction-video --style reaction
 ```
 
 Use [.agents/skills/eddie-reaction/SKILL.md](.agents/skills/eddie-reaction/SKILL.md) for Codex or the matching `.claude/skills/eddie-reaction/SKILL.md` for Claude Code. Defaults are in `presets/eddie-reaction.json`. Each user provides their own recordings and click sound. The agent measures synchronization for each recording; the preset does not hardcode an example offset. Existing projects retain their copied settings.
+
+## EDDIE Rapid Fire (Text hook, captions, images)
+
+Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 3.5 seconds.
+
+> Use EDDIE Rapid Fire to edit my recording. Add the hook directly below the captions for 0–3.5 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
+
+Create a private project with `python3 scripts/new_project.py my-rapid-fire --style rapid-fire`. Read [.agents/skills/eddie-rapid-fire/SKILL.md](.agents/skills/eddie-rapid-fire/SKILL.md) for Codex or the matching `.claude/skills/eddie-rapid-fire/SKILL.md` for Claude. Defaults: [presets/eddie-rapid-fire.json](presets/eddie-rapid-fire.json).

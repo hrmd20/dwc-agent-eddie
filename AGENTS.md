@@ -1,6 +1,7 @@
 # DWC Agent Eddie
 
 Choose the requested workflow before editing:
+- EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–3.5 second hook below captions, numerical ratings and topic pictures with original audio.
 - EDDIE Reaction: read `.agents/skills/eddie-reaction/SKILL.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
 - EDDIE Landscape: read `.agents/skills/eddie-landscape/SKILL.md`; use 4K 16:9 presenter footage, stationary lower-center captions and clean speech cuts.
 - EDDIE Classic: read `.agents/skills/eddie/SKILL.md` and its reference; users supply their own pictures.
