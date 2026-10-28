@@ -6,7 +6,7 @@
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE MASTER EDITOR** | 1.1.0 | Stationary white outlined captions; 4-second hook, captions, optional Google images and 200% audio | Video, optional own images and click audio |
+| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 4-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 4-second hook.<br><br>**4. Reaction:** Synchronizes the original clip with your reaction inset, then switches to full-screen commentary. | Your recording; for Reaction, the original clip and your reaction recording |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
