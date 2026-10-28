@@ -1,11 +1,11 @@
 ---
 name: eddie
-description: Edit talking-head videos in EDDIE Classic style with stationary white outlined captions, optional user-supplied still-image pop-ups and optional click-before-image cues. Use for Classic edits and layout previews without motion graphics.
+description: Edit talking-head videos in EDDIE MASTER EDITOR style with stationary white outlined captions, optional user-supplied still-image pop-ups and optional click-before-image cues. Use for MASTER EDITOR edits and layout previews without motion graphics.
 ---
 
-# EDDIE Classic — DWC Agent Eddie
+# EDDIE MASTER EDITOR — DWC Agent Eddie
 
-Classic 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. No motion graphics or animated text. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
+MASTER EDITOR 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. No motion graphics or animated text by default. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
 
 ## Establish the edit
 
@@ -20,6 +20,10 @@ Keep the presenter visible as the base layer. Use bold white captions with a bla
 Use only pictures supplied or explicitly selected by the user, matched to the spoken concept. Preserve their content and proportions; do not generate replacements or add stock, logos, title cards, diagrams or a workflow animation automatically. Pictures appear immediately below the captions with a small gap, hold still, and disappear or replace instantly when the topic changes. Here, a pop-up means a hard on/off appearance, not a scale or fade animation. EDDIE is the skill name, not an instruction to add a robot image.
 
 For captions-only requests, omit all picture and click events. For a requested short preview, deliver that duration; do not silently move topic cues just to fit pictures into it. Otherwise complete the authorized full edit.
+
+## Optional iPhone messages
+
+Enable only when the user requests text messages or iPhone notifications on camera/on screen. Ordinary speech captions and text hooks do not trigger this mode. Read [iPhone message treatment](references/iphone-messages.md) when enabled; keep normal captions stationary.
 
 ## Sound and delivery
 
