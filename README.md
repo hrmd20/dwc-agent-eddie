@@ -6,14 +6,14 @@
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE MASTER EDITOR** | 1.1.0 | Stationary white outlined captions; optional still-image pop-ups and click cues; no animations | Video, optional own images and click audio |
+| **EDDIE MASTER EDITOR** | 1.1.0 | Stationary white outlined captions; 4-second hook, captions, optional Google images and 200% audio | Video, optional own images and click audio |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
 
 MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
-The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. No motion graphics or animations. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. Notification animation is opt-in. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -85,7 +85,7 @@ This is an **agent-guided skill package**, not a standalone editor or automatic 
 - A compositor supported by the agent, such as HyperFrames or Python/Pillow.
 - Locally available, properly licensed fonts. No proprietary fonts are bundled.
 
-The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; MASTER EDITOR users supply their own pictures if they want image pop-ups; click audio is optional for MASTER EDITOR.
+The agent should check tools before editing. No video style requires a paid service. Users supply source footage, sound and any licensed music; MASTER EDITOR can use supplied pictures or Google images in image modes; click audio is optional for MASTER EDITOR.
 
 For the broader toolkit, see [Nate Herk's HyperFrames Student Kit](https://github.com/nateherkai/hyperframes-student-kit). Its installation guide covers the original toolkit and dependencies; EDDIE's chosen style controls the resulting edit.
 
@@ -129,9 +129,9 @@ Use [.agents/skills/eddie-reaction/SKILL.md](.agents/skills/eddie-reaction/SKILL
 
 ## EDDIE Rapid Fire (Text hook, captions, images)
 
-Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 3.5 seconds.
+Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 4 seconds.
 
-> Use EDDIE Rapid Fire to edit my recording. Add the hook directly below the captions for 0–3.5 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
+> Use EDDIE Rapid Fire to edit my recording. Add the hook directly below the captions for 0–4 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
 
 Create a private project with `python3 scripts/new_project.py my-rapid-fire --style rapid-fire`. Read [.agents/skills/eddie-rapid-fire/SKILL.md](.agents/skills/eddie-rapid-fire/SKILL.md) for Codex or the matching `.claude/skills/eddie-rapid-fire/SKILL.md` for Claude. Defaults: [presets/eddie-rapid-fire.json](presets/eddie-rapid-fire.json).
 
@@ -140,3 +140,19 @@ Create a private project with `python3 scripts/new_project.py my-rapid-fire --st
 EDDIE MASTER EDITOR is the new name for EDDIE Classic. The `eddie` skill path and `presets/eddie.json` remain stable. Use `--style master`; legacy `--style classic` commands still work. Existing projects keep their copied settings.
 
 Request iPhone messages or notifications on screen to enable the optional glass-message treatment: sender and timestamp, smooth upward entrance, notification sound, and optional blurred introduction followed by a readable reveal. Captions or a text hook alone do not enable it.
+
+### Automatic Rapid Fire mode
+
+EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **4 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
+
+## Master Editor: three modes
+
+1. **Captions + text hook** — no topic pictures.
+2. **Captions + Google images + text hook** — supporting pictures below captions.
+3. **Rapid Fire** — automatically selected for short Q&A/ranking scripts; hook, captions, Google images and large /10 scores.
+
+All three default to a **4-second hook** and **200% audio gain**, applied once with peak protection. Explicit user choices override defaults. iPhone message overlays remain optional.
+
+### Shared subject framing
+
+All three Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.

@@ -1,10 +1,10 @@
 # DWC Agent Eddie
 
 Choose the requested workflow before editing:
-- EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–3.5 second hook below captions, numerical ratings and topic pictures with original audio.
+- EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–4 second hook below captions, numerical ratings and topic pictures with original audio.
 - EDDIE Reaction: read `.agents/skills/eddie-reaction/SKILL.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
 - EDDIE Landscape: read `.agents/skills/eddie-landscape/SKILL.md`; use 4K 16:9 presenter footage, stationary lower-center captions and clean speech cuts.
-- EDDIE MASTER EDITOR: read `.agents/skills/eddie/SKILL.md` and its reference; users supply their own pictures.
+- EDDIE MASTER EDITOR: read `.agents/skills/eddie/SKILL.md` and its reference; automatically detect ranking/Q&A scripts and load its embedded Rapid Fire reference; enable iPhone messages only when requested.
 
 - EDDIE Carousel: read `.agents/skills/eddie-carousel/SKILL.md`; ask for the user's own editable Canva template, topic and inspiration. Preserve the template by working in a copy.
 
