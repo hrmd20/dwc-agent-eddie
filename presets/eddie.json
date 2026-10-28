@@ -76,7 +76,8 @@
   "modes": [
     "captions-hook",
     "captions-google-images-hook",
-    "rapid-fire"
+    "rapid-fire",
+    "reaction"
   ],
   "hook": {
     "enabled": true,
@@ -88,7 +89,7 @@
   },
   "framing": {
     "enabled": true,
-    "appliesTo": "all three Master Editor modes",
+    "appliesTo": "all four Master Editor modes",
     "reference": "references/framing.md",
     "directToCamera": "center unintentionally off-center single presenter",
     "preserveIntentionalAngles": true,
@@ -96,5 +97,12 @@
     "crop": "stable per shot; smooth follow only when needed",
     "syntheticEyeContact": false,
     "topHookLayout": "optional; preserve below-caption hook default"
+  },
+  "reaction": {
+    "reference": "references/reaction.md",
+    "autoSelect": "source clip plus presenter reaction, or explicit reaction request",
+    "layout": "source with bottom-left presenter inset, then full-screen commentary",
+    "googleImages": false,
+    "hook": "optional approved hook, clear of source captions and faces"
   }
 }
