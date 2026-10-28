@@ -1,0 +1,30 @@
+---
+name: eddie-rapid-fire
+description: Edit rapid-fire question-and-answer or ranking videos with EDDIE captions, a brief text hook and topic images below captions. Use for EDDIE Rapid Fire; preserve the original recorded audio unless the user requests voice generation.
+---
+
+# EDDIE Rapid Fire (Text hook, captions, images)
+
+## Approved treatment
+- Portrait 1080 × 1920, usually 30 fps. Preserve the presenter framing.
+- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Retain original audio; no added voiceover, music, click or volume boost unless requested.
+- Stationary Arial Bold white speech captions with black outline and subtle shadow. Use short 1–3 word phrases; keep short questions together. Calibrate once just below the beard; do not track head movement.
+- Display numerical rankings as `0/10`, `8/10`, `9.5/10`, etc., matching the actual answer. Use larger type for ratings. Preserve additional commentary rather than replacing a qualified answer with a number alone.
+- Hook: bold black text on a white rounded rectangle, one user-selected phrase in bright red (#FF0000). Place immediately below the speech captions, not at the bottom of the frame. Default visibility is start through 3.5 seconds, then a hard exit. Preserve user-supplied wording; do not invent credentials or claims.
+- Images: one per topic, directly below captions. Pop in at the question, hold through the answer, disappear or replace at the next topic. Preserve aspect ratio. Default to still pop-ups; mix slide transitions only if requested.
+- The hook and images share a region. In the approved example, the introductory hook ends before the first question/image. If they overlap in a new recording, resolve the layout/timing without covering either; ask only if the user's constraints conflict.
+
+## Image sourcing
+Use supplied images first unless the user requests search. When asked for the first Google image, search each actual spoken term and select the first displayed matching image; sponsored product images are allowed. Honor explicit choices such as Echo Flask for hydrogen water. Record the search term, source page and chosen image in the private project. Do not silently substitute generated art or a different search engine. Prefer a usable resolution of that same selected image. Preserve watermarks; if unavailable, explain the substitution needed. A product image illustrates the topic, not a new endorsement or medical claim.
+
+## Baseline coordinates
+Read `presets/eddie-rapid-fire.json` at the repository root. These values reproduce the approved framing; recalibrate for different footage. At 1080 × 1920: captions center (540,1060), 67 px, outline 4 px; scores 96 px. Hook starts y=1120, about 240 px tall, 60 px type, corner radius 26 px. Images start y=1130, fit within 640 × 470. The caption bottom must clear the hook/image with a visible gap. Scale together for other resolutions.
+
+## Workflow and delivery
+1. Inspect framing and transcribe the actual recording with word timestamps. Verify terms, numbers and cut boundaries; correct recognition errors such as Berberine and VO2.
+2. Save a topic/cut plan and retime captions and image cues to the edited timeline. Preserve an approved cut for layout-only revisions.
+3. Render a new version. For hook revisions, start from the clean caption-and-image master so old hooks are not burned into the new version.
+4. Inspect encoded opening, each image/score, joins, hook exit at 3.5 s, and ending. Check audio for clipped words and synchronization. Full decoding supplements visual/audio review.
+5. Save to the user's selected destination. Upload only when requested. When replacing an old export, verify the new copy before removing the specifically identified old one. Keep raw footage intact.
+
+Private recordings, downloaded images, transcripts and renders stay in ignored `projects/`; publish only reusable instructions and presets.
