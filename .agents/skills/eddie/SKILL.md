@@ -7,6 +7,16 @@ description: Edit talking-head videos in EDDIE MASTER EDITOR style with stationa
 
 MASTER EDITOR 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. No motion graphics or animated text by default. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
 
+## Select the treatment automatically
+
+EDDIE MASTER EDITOR is the main entry point. Honor an explicit style choice and preserve an approved edit. Otherwise inspect the supplied script or transcript:
+- Repeated short questions with yes/no answers or numerical rankings: use the embedded [Rapid Fire treatment](references/rapid-fire.md), including the first 4-second hook, Eddie captions, larger /10 scores and Google topic images.
+- Ordinary explanatory or talking-head speech: use the standard treatment below.
+- Explicit on-screen SMS/iPhone messages: also enable the optional iPhone message treatment. A script merely mentioning text or captions does not activate notifications.
+- When the script mixes formats, apply Rapid Fire to the clearly identified Q&A segment and standard treatment elsewhere. Ask one focused question only when the format cannot be inferred.
+
+With a script alone, prepare a question/answer map, proposed hook and visual plan. Do not claim a rendered video exists or invent doctor answers. Use supplied footage when available; generate question audio only when requested. For automatic Rapid Fire selection, propose accurate hook wording for approval if the user has not supplied it. The selected Rapid Fire Google-image workflow authorizes searching for topic images; honor any supplied images or different sourcing preference instead.
+
 ## Establish the edit
 
 Use the user's footage, output folder, any supplied pictures and optional click audio. Captions-only is a complete supported edit; do not require pictures or sound to start it. Inspect available local editing tools and transcription. Preserve originals. Do not assume a paid service or a particular workstation.
