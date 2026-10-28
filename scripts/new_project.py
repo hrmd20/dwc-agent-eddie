@@ -9,8 +9,8 @@ import re
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('name', help='Project name using letters, digits and hyphens')
-    parser.add_argument('--style', choices=('classic', 'motion', 'carousel', 'rapid-fire'), default='classic',
-                        help='Editing style; existing commands keep Classic')
+    parser.add_argument('--style', choices=('master', 'classic', 'carousel', 'landscape', 'reaction', 'rapid-fire'), default='master',
+                        help='Editing style; existing commands keep MASTER EDITOR')
     args = parser.parse_args()
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', args.name):
         parser.error('Use lowercase letters, digits and hyphens, for example my-video.')
@@ -18,7 +18,7 @@ def main():
     project = root / 'projects' / args.name
     if project.exists():
         parser.error(f'Project already exists: {project}')
-    preset_name = {'classic': 'eddie.json', 'motion': 'eddie-motion.json',
+    preset_name = {'master': 'eddie.json', 'classic': 'eddie.json', 'landscape': 'eddie-landscape.json', 'reaction': 'eddie-reaction.json',
                    'carousel': 'eddie-carousel.json', 'rapid-fire': 'eddie-rapid-fire.json'}[args.style]
     preset = json.loads((root / 'presets' / preset_name).read_text())
     project.mkdir(parents=True)
@@ -44,8 +44,7 @@ def main():
         'Style: ' + preset['name'] + '\n\n'
         'Record the source video path, click audio path, '
         'desired duration, approved graphics, and delivery destination here.\n\n'
-        + ('Use motion graphics only; no picture overlays. ' if args.style == 'motion'
-         else 'Record supplied image paths and preserve their proportions. ')
+        + 'Record supplied image paths and preserve their proportions. '
         + 'Calibrate captions to the neckline and visuals to the caption bounds. '
         'Keep the exact cut and asset timing when revising only placement.\n'
     )
