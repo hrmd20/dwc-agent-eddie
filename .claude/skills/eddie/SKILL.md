@@ -7,6 +7,8 @@ description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, opt
 
 MASTER EDITOR 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. Standard captions and topic pictures remain stationary. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
 
+For first-use setup or the START HERE prompt, read [the welcome flow](../../../ONBOARDING.md). Keep normal editing requests direct; do not force onboarding.
+
 ## Five modes: select from the brief and script
 
 Honor an explicit mode or existing approved edit. Otherwise inspect the script/transcript:
