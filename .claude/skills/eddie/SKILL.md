@@ -1,22 +1,23 @@
 ---
 name: eddie
-description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, optional Google topic images, automatically selected Rapid Fire Q&A/rankings, or synchronized reaction videos. All modes default to 200% audio; on-screen iPhone messages are opt-in.
+description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, optional Google topic images, automatically selected Rapid Fire Q&A/rankings, or Sync and Async reaction videos. All modes default to 200% audio; on-screen iPhone messages are opt-in.
 ---
 
 # EDDIE MASTER EDITOR — DWC Agent Eddie
 
 MASTER EDITOR 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. Standard captions and topic pictures remain stationary. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
 
-## Four modes: select from the brief and script
+## Five modes: select from the brief and script
 
 Honor an explicit mode or existing approved edit. Otherwise inspect the script/transcript:
 1. **Captions + text hook**: default for ordinary talking-head speech without an image request. Stationary Eddie captions and a rounded white hook; no topic images.
 2. **Captions + Google images + text hook**: use when the user wants supporting topic pictures with explanatory speech. Search actual spoken terms on Google Images, select the first displayed relevant image (including sponsored results when relevant), retain source URLs in the private project and use supplied/explicitly selected images in preference to search. Preserve aspect ratio and watermarks. Place pictures below captions with a small gap; hold for the discussed concept. Do not silently substitute generated pictures.
 3. **Rapid Fire — text hook + captions + Google images**: auto-select for repeated short questions with yes/no answers or rankings. Read [Rapid Fire](references/rapid-fire.md) for question/answer timing, larger /10 scores, Google images and AI/recorded interviewer options.
 
-4. **Reaction**: select when reacting to an original clip with presenter footage or an approved composite. Read [Reaction](references/reaction.md) for synchronization, source playback, presenter inset, separate caption tracks and full-screen commentary. These mode-specific rules take priority over standard talking-head placement. Script-only reactions receive a plan until the required footage is available.
+4. **EDDIE Sync Reaction**: source clip with synchronized bottom-left doctor inset, then full-screen commentary. Read [reaction selection](references/reaction.md) and [Sync Reaction](references/reaction-sync.md).
+5. **EDDIE Async Reaction**: full-screen source excerpt, then separately recorded full-screen doctor commentary, with optional supporting images/study excerpts below EDDIE captions. Read [reaction selection](references/reaction.md) and [Async Reaction](references/reaction-async.md). Both reaction modes override ordinary talking-head placement during source playback. Script-only input receives a plan until footage is provided.
 
-All four modes use **200% audio gain** (2.0× amplitude, about +6.02 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
+All five modes use **200% audio gain** (2.0× amplitude, about +6.02 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
 
 The first three modes include a text hook for the first **4 seconds** by default: black lettering on a rounded white background, with requested emphasis in bright red. Position below the captions, clear of the face. Use supplied wording; otherwise propose an accurate hook from the script. A captions-only request explicitly excluding a hook overrides this default. Keep hook and image areas from overlapping; show images after the hook or use a separately approved clear area.
 
@@ -30,7 +31,7 @@ Use the user's footage, output folder, any supplied pictures and optional click 
 
 Clean recording setup, false starts, coughs and excessive gaps while preserving meaning, natural delivery, complete first/last words and closing phrases. Check every join in context so quiet syllables are not cut off. Keep an approved cut intact when revising only captions or visuals. Retain source ranges and retime captions after editing.
 
-## Shared subject framing — all four modes
+## Shared subject framing — all five modes
 
 Before overlays, read [subject framing](references/framing.md). Automatically correct unintentionally off-center direct-to-camera talking-head shots using a stable, proportional crop. Preserve intended side angles, nurse/interview compositions and reaction layouts. Frame first, then calibrate stationary captions and visuals. The supplied top-hook example is an optional layout, not a replacement for the existing below-caption hook.
 
