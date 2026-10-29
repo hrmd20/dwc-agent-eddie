@@ -32,7 +32,7 @@ A script alone is enough to plan an edit. EDDIE needs your footage to make your 
 | The doctor reacting in a corner while another clip plays | Sync Reaction |
 | Another clip first, followed by the doctor's full-screen response | Async Reaction |
 
-These five styles are inside **EDDIE MASTER EDITOR**. It uses 200% audio gain once with peak protection; you can request a different volume. The first three styles include a 4-second opening title by default. Reaction hooks are optional.
+These five styles are inside **EDDIE MASTER EDITOR**. It uses 200% audio gain once with peak protection; you can request a different volume. All five styles include a 3-second top-centered title: maximum two lines, white rounded box, black text/red emphasis and equal padding. You can request no title.
 
 Also available: **Landscape** for horizontal videos and **Carousel** for Canva slides using your own editable template.
 

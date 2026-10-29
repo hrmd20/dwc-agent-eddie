@@ -16,7 +16,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 4-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 4-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
+| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Sync Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
@@ -129,9 +129,9 @@ Invoke `eddie-landscape` in your agent, or load [.agents/skills/eddie-landscape/
 
 ## EDDIE Rapid Fire (Text hook, captions, images)
 
-Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 4 seconds.
+Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 3 seconds.
 
-> Use EDDIE Rapid Fire to edit my recording. Add the hook directly below the captions for 0–4 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
+> Use EDDIE Rapid Fire to edit my recording. Add the hook at the top for 0–3 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
 
 Create a private project with `python3 scripts/new_project.py my-rapid-fire --style rapid-fire`. Read [.agents/skills/eddie-rapid-fire/SKILL.md](.agents/skills/eddie-rapid-fire/SKILL.md) for Codex or the matching `.claude/skills/eddie-rapid-fire/SKILL.md` for Claude. Defaults: [presets/eddie-rapid-fire.json](presets/eddie-rapid-fire.json).
 
@@ -143,7 +143,7 @@ Request iPhone messages or notifications on screen to enable the optional glass-
 
 ### Automatic Rapid Fire mode
 
-EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **4 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
+EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **3 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
 
 ## Master Editor: five modes
 
@@ -154,11 +154,11 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
 5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-The first three modes default to a **4-second hook**. All five use **200% audio gain**, applied once with peak protection. Sync and Async Reaction each use their own layout and an optional approved hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+All five modes default to a **3-second top-centered hook**, maximum two lines, wide rounded white background, black text/red emphasis and equal top/bottom padding. All five use **200% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
-All five Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.
+All five Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The shared top-centered hook is the default in all five modes. Reframing preserves recorded gaze and does not synthesize eye contact.
 
 ### Sync and Async Reaction inside Master Editor
 
