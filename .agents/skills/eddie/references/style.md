@@ -1,6 +1,6 @@
 # EDDIE MASTER EDITOR 1.1.0 — Preview 3 treatment
 
-The main skill defines three modes, 4-second hooks and 200% audio. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
+The main skill defines five modes, shared top-centered 3-second hooks and 200% audio. Read [text-hook.md](text-hook.md) for the approved two-line layout and equal padding. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
 
 ## Picture and cuts
 

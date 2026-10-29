@@ -15,7 +15,7 @@ Observed: full-screen vertical source footage, followed by full-screen doctor co
 
 ## Captions and hook
 
-Use the original EDDIE treatment in [style.md](style.md): bold white text, black outline, short speech-synced phrases, stationary below the beard/base of neck. Keep images below the reserved caption bounds and clear of the face. Do not duplicate embedded source captions. The reference's blue words and white caption cards are not the EDDIE default. A supplied or approved hook is optional, up to 4 seconds in a clear area; do not obscure the source's context.
+Use the original EDDIE treatment in [style.md](style.md): bold white text, black outline, short speech-synced phrases, stationary below the beard/base of neck. Keep images below the reserved caption bounds and clear of the face. Do not duplicate embedded source captions. The reference's blue words and white caption cards are not the EDDIE default. Use the [shared top-centered 0–3 second hook](text-hook.md), maximum two lines with equal padding; preserve source context and honor an explicit no-hook request.
 
 ## Audio
 

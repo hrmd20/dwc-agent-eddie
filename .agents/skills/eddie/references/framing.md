@@ -17,7 +17,7 @@ Apply this pass before placing captions, hooks, images or iPhone messages in all
 ## Overlay zones and the supplied example
 Use the supplied example as a centered, upper-body, direct-eye-contact composition, not as a universal font/color treatment or a requirement to copy its product branding.
 
-Default Master Editor/Rapid Fire hooks remain below captions for 0–4 seconds. The reference's **top-hook layout** is an alternate when requested or already approved for the project. It uses the same framing checks in all five modes. Keep the user's selected hook typography; do not automatically change black-on-white/red emphasis to the example's black panel/yellow lettering.
+All five modes use the [shared top-centered hook](text-hook.md) for 0–3 seconds, with two lines maximum and equal padding. Preserve approved wording and red emphasis; do not copy the example’s black panel/yellow lettering.
 
 Approximate portrait zones for the top-hook layout:
 - Hook: top 0–20% (0–384 px), inset from the edges. Keep it above the actual hairline; use natural line breaks.
@@ -26,7 +26,7 @@ Approximate portrait zones for the top-hook layout:
 - Supporting image: roughly 68–88% (1306–1690 px), centered below the actual caption glyph bounds with a visible gap. The nominal zones overlap, so resolve based on actual element bounds, not percentages alone.
 - Bottom 12% (about 1690–1920 px): keep essential text and product details out. Leave side clearance too; platform controls vary, so preview against the intended destination when known.
 
-Keep face, mouth and important gestures visible. Fit images proportionally, reduce their size or split dense text before allowing overlap. A top hook is optional; face clearance is always required.
+Keep face, mouth and important gestures visible. Fit images proportionally, reduce their size or split dense text before allowing overlap. Honor explicit no-hook requests; face clearance is always required.
 
 ## Verify the encoded result
 Check full-size and phone-size frames at start, middle, end, crop changes and largest gestures. Confirm horizontal centering is appropriate, head/hair are intact, natural proportions and eye contact are preserved, motion is smooth, and captions/images/hooks do not collide. Inspect the actual rendered output; a crop configuration alone does not prove good framing. Save per-shot crop decisions privately with the project.
