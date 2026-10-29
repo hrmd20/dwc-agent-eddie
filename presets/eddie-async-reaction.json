@@ -1,0 +1,48 @@
+{
+  "name": "EDDIE Async Reaction",
+  "style": "async-reaction",
+  "version": "1.0.0",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "reference": ".agents/skills/eddie/references/reaction-async.md",
+  "sequence": [
+    "full-screen source excerpt",
+    "full-screen doctor commentary"
+  ],
+  "synchronizedInset": false,
+  "captions": {
+    "position": "fixed-below-beard-base-of-neck",
+    "referenceCenterY": 1150,
+    "fontSize": 67,
+    "maxWords": 3,
+    "color": "#FFFFFF",
+    "highlight": null,
+    "stroke": "#000000",
+    "stationary": true,
+    "fontFamily": "Arial",
+    "fontWeight": "bold",
+    "animation": "none"
+  },
+  "supportingVisuals": {
+    "optional": true,
+    "position": "below captions",
+    "preserveAspectRatio": true
+  },
+  "audio": {
+    "gainMultiplier": 2,
+    "applyGainOnce": true,
+    "peakProtection": true,
+    "addedVoiceOver": false
+  },
+  "export": {
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioSampleRate": 48000,
+    "fastStart": true
+  }
+}

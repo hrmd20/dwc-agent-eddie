@@ -1,6 +1,6 @@
 {
-  "name": "EDDIE Reaction",
-  "style": "reaction",
+  "name": "EDDIE Sync Reaction",
+  "style": "sync-reaction",
   "version": "1.0.0",
   "canvas": {
     "width": 1080,
@@ -60,10 +60,12 @@
     "clickCount": 1,
     "clickLeadFrames": 2,
     "music": false,
-    "targetLufs": -16,
     "truePeakDb": -1.5,
     "preserveLaughter": true,
-    "avoidDoubledSourceAudio": true
+    "avoidDoubledSourceAudio": true,
+    "gainMultiplier": 2,
+    "applyGainOnce": true,
+    "peakProtection": true
   },
   "export": {
     "codec": "h264",

@@ -77,7 +77,8 @@
     "captions-hook",
     "captions-google-images-hook",
     "rapid-fire",
-    "reaction"
+    "sync-reaction",
+    "async-reaction"
   ],
   "hook": {
     "enabled": true,
@@ -89,7 +90,7 @@
   },
   "framing": {
     "enabled": true,
-    "appliesTo": "all four Master Editor modes",
+    "appliesTo": "all five Master Editor modes",
     "reference": "references/framing.md",
     "directToCamera": "center unintentionally off-center single presenter",
     "preserveIntentionalAngles": true,
@@ -100,9 +101,20 @@
   },
   "reaction": {
     "reference": "references/reaction.md",
-    "autoSelect": "source clip plus presenter reaction, or explicit reaction request",
-    "layout": "source with bottom-left presenter inset, then full-screen commentary",
-    "googleImages": false,
+    "variants": {
+      "sync": {
+        "name": "EDDIE Sync Reaction",
+        "reference": "references/reaction-sync.md",
+        "layout": "continuous source with synchronized bottom-left inset, then full-screen commentary"
+      },
+      "async": {
+        "name": "EDDIE Async Reaction",
+        "reference": "references/reaction-async.md",
+        "layout": "full-screen source excerpt, then separately recorded full-screen doctor commentary",
+        "images": "optional relevant supporting images or study excerpts below captions"
+      }
+    },
+    "selection": "Honor explicit choice or approved edit; use footage and brief to select Sync versus Async",
     "hook": "optional approved hook, clear of source captions and faces"
   }
 }
