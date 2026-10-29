@@ -1,9 +1,11 @@
 ---
 name: eddie-reaction
-description: "Edit paired source and presenter reaction videos in EDDIE Reaction style: continuous source playback, a synchronized bottom-left presenter inset, captions and a click, followed by full-screen commentary."
+description: "Edit paired source and presenter reaction videos in EDDIE Sync Reaction style: continuous source playback, a synchronized bottom-left presenter inset, captions and a click, followed by full-screen commentary."
 ---
 
-# EDDIE Reaction
+# EDDIE Sync Reaction
+
+The existing `eddie-reaction` skill ID is retained for compatibility. For the separate source-first format, use EDDIE MASTER EDITOR’s [Async Reaction](../eddie/references/reaction-async.md).
 
 Use the user's original clip, separate reaction recording, supplied click sound and output folder. Ask for missing files; do not borrow another user's media. Identify which recording is the source and which is the presenter before editing. Discover local FFmpeg, FFprobe, a word-timestamp transcriber and caption renderer. No paid service is required.
 
@@ -39,10 +41,10 @@ Build separate caption tracks for the original and presenter so overlapping spee
 
 Use the clean original audio during playback. Mute redundant microphone bleed to avoid echo, but retain actual laughter and spoken interjections. For overlaps, mix intelligibly with gentle ducking; do not silence the source punchline or the presenter's response. Bring the presenter to normal speech level for full-screen commentary. Confirm no doubled source audio at the transition.
 
-Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Normalize speech around -16 LUFS and target true peak at or below -1.5 dBTP; measure the encoded mix. Never synthesize or clone speech to repair a cut.
+Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Apply 200% speech gain once (2×, +6.02 dB) with peak protection; target true peak at or below -1.5 dBTP and measure the encoded mix. Do not double already processed audio. Never synthesize or clone speech to repair a cut.
 
 ## Deliver and verify
 
 Render a new H.264 MP4 (yuv420p, CRF 18 or comparable quality), AAC 48 kHz, fast-start metadata. Keep originals and earlier exports intact. Inspect the encoded beginning, synchronized reaction moments, caption bounds, every edited commentary join, final word and consecutive frames around the full-screen transition. Check full decode, duration, frame count, A/V sync and loudness. Automated correlation/transcription supplements listening; label any unperformed listening review honestly.
 
-Save the completed version in the requested folder. Keep recordings, transcripts, synchronization notes, exports and click audio in ignored projects/. The public package contains reusable instructions and presets only. This style is separate from EDDIE Classic, Motion, Carousel and Landscape; current user directions override defaults.
+Save the completed version in the requested folder. Keep recordings, transcripts, synchronization notes, exports and click audio in ignored projects/. The public package contains reusable instructions and presets only. This is the synchronized reaction style also available inside EDDIE MASTER EDITOR; current user directions override defaults.
