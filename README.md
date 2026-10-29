@@ -2,6 +2,16 @@
 
 **Five Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction and Rapid Fire. Async Reaction is included inside Master Editor.**
 
+## New here? Start here
+
+**No editing commands needed.** Download and unzip this folder, open it in an AI assistant that can edit local files, and paste:
+
+> Read AGENTS.md and ONBOARDING.md in this folder. Help me make my first EDDIE video. Check what is ready on this computer, explain anything missing in plain language, and recommend a style from my footage. Start with a short preview before making the full video.
+
+**[Read the practice's Start Here guide](START%20HERE.md)** · After downloading, double-click **START HERE.html** for a visual guide.
+
+EDDIE guides your first edit, recommends a style and checks the tools. The download contains instructions and presets; it is not a standalone editor and cannot launch itself. Your assistant may need one-time tool setup. See [requirements](#requirements).
+
 ## Choose your style
 
 | Style | Style version | Visual treatment | You provide |

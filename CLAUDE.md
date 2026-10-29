@@ -1,5 +1,7 @@
 # DWC Agent Eddie
 
+For first-time setup, “start EDDIE,” or help using this download, read `ONBOARDING.md` and guide the practice in plain language. `START HERE.html` is the user-facing welcome guide. Skip onboarding questions already answered by a concrete edit request.
+
 Choose the requested workflow before editing:
 - EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–4 second hook below captions, numerical ratings and topic pictures with original audio.
 - EDDIE Sync Reaction: read `.agents/skills/eddie/SKILL.md` and its `references/reaction.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
