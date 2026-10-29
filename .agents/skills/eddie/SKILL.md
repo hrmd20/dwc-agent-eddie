@@ -21,7 +21,7 @@ Honor an explicit mode or existing approved edit. Otherwise inspect the script/t
 
 All five modes use **200% audio gain** (2.0× amplitude, about +6.02 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
 
-The first three modes include a text hook for the first **4 seconds** by default: black lettering on a rounded white background, with requested emphasis in bright red. Position below the captions, clear of the face. Use supplied wording; otherwise propose an accurate hook from the script. A captions-only request explicitly excluding a hook overrides this default. Keep hook and image areas from overlapping; show images after the hook or use a separately approved clear area.
+All five modes use the [shared text hook](references/text-hook.md): top-centered wide rounded white box, maximum two lines, bold black text with selected red emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
 
 Explicit on-screen SMS/iPhone messages enable the additional [iPhone message treatment](references/iphone-messages.md). Ordinary captions, hooks, or merely saying “text” do not activate notifications.
 
@@ -35,7 +35,7 @@ Clean recording setup, false starts, coughs and excessive gaps while preserving 
 
 ## Shared subject framing — all five modes
 
-Before overlays, read [subject framing](references/framing.md). Automatically correct unintentionally off-center direct-to-camera talking-head shots using a stable, proportional crop. Preserve intended side angles, nurse/interview compositions and reaction layouts. Frame first, then calibrate stationary captions and visuals. The supplied top-hook example is an optional layout, not a replacement for the existing below-caption hook.
+Before overlays, read [subject framing](references/framing.md). Automatically correct unintentionally off-center direct-to-camera talking-head shots using a stable, proportional crop. Preserve intended side angles, nurse/interview compositions and reaction layouts. Frame first, then calibrate stationary captions and visuals. Use the shared top-hook layout in all five modes.
 
 ## Compose
 
