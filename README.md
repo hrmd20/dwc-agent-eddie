@@ -127,16 +127,6 @@ python3 scripts/new_project.py my-landscape-video --style landscape
 Invoke `eddie-landscape` in your agent, or load [.agents/skills/eddie-landscape/SKILL.md](.agents/skills/eddie-landscape/SKILL.md). Matching Claude instructions live in `.claude/skills/eddie-landscape/`; reusable defaults are in `presets/eddie-landscape.json`. The project starter creates a private brief and preset; the editing agent performs the edit using separately installed local video tools.
 
 
-## EDDIE Sync Reaction 1.0.0
-
-> Use EDDIE Sync Reaction with my original clip and separate reaction recording. Synchronize them, keep the original playing continuously, put me in the bottom-left corner with a click when I appear, and add the reaction captions. Then show my commentary full-screen, keeping natural laughter and removing recording setup, abandoned takes and long pauses. Save a new MP4 in my output folder.
-
-```sh
-python3 scripts/new_project.py my-reaction-video --style reaction
-```
-
-Use [.agents/skills/eddie-reaction/SKILL.md](.agents/skills/eddie-reaction/SKILL.md) for Codex or the matching `.claude/skills/eddie-reaction/SKILL.md` for Claude Code. Defaults are in `presets/eddie-reaction.json`. Each user provides their own recordings and click sound. The agent measures synchronization for each recording; the preset does not hardcode an example offset. Existing projects retain their copied settings.
-
 ## EDDIE Rapid Fire (Text hook, captions, images)
 
 Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 4 seconds.
