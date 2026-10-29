@@ -2,7 +2,8 @@
 
 Choose the requested workflow before editing:
 - EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–4 second hook below captions, numerical ratings and topic pictures with original audio.
-- EDDIE Reaction: read `.agents/skills/eddie/SKILL.md` and its `references/reaction.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
+- EDDIE Sync Reaction: read `.agents/skills/eddie/SKILL.md` and its `references/reaction.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
+- EDDIE Async Reaction: read `.agents/skills/eddie/SKILL.md` and `references/reaction-async.md`; show the source excerpt full-screen, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 - EDDIE Landscape: read `.agents/skills/eddie-landscape/SKILL.md`; use 4K 16:9 presenter footage, stationary lower-center captions and clean speech cuts.
 - EDDIE MASTER EDITOR: read `.agents/skills/eddie/SKILL.md` and its reference; automatically detect ranking/Q&A scripts and load its embedded Rapid Fire reference; enable iPhone messages only when requested.
 

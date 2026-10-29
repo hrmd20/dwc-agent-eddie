@@ -1,19 +1,19 @@
 # DWC AGENT EDDIE
 
-**Five Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Reaction and Rapid Fire.**
+**Five Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction and Rapid Fire. Async Reaction is included inside Master Editor.**
 
 ## Choose your style
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 4-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 4-second hook.<br><br>**4. Reaction:** Synchronizes the original clip with your reaction inset, then switches to full-screen commentary. | Your recording; for Reaction, the original clip and your reaction recording |
+| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 4-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 4-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
-| **EDDIE Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
+| **EDDIE Sync Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
 
 MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
-The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. Notification animation is opt-in. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Sync Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. Notification animation is opt-in. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -24,7 +24,7 @@ The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Reaction 1.0.0*
    cd dwc-agent-eddie
    ```
 2. Open the folder in your editing agent.
-3. Choose your workflow. For videos, provide footage and an output folder; Reaction uses your supplied click sound. MASTER EDITOR supports captions-only, or your own pictures with an optional click, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
+3. Choose your workflow. For videos, provide footage and an output folder; Sync Reaction can use your supplied click sound; Async Reaction does not require one. MASTER EDITOR supports captions-only, or your own pictures with an optional click, and Reaction needs both the original clip and your reaction recording. For Carousel, share your own editable Canva template, topic and inspiration.
 4. Use one of these prompts:
 
 **EDDIE MASTER EDITOR**
@@ -117,9 +117,9 @@ python3 scripts/new_project.py my-landscape-video --style landscape
 Invoke `eddie-landscape` in your agent, or load [.agents/skills/eddie-landscape/SKILL.md](.agents/skills/eddie-landscape/SKILL.md). Matching Claude instructions live in `.claude/skills/eddie-landscape/`; reusable defaults are in `presets/eddie-landscape.json`. The project starter creates a private brief and preset; the editing agent performs the edit using separately installed local video tools.
 
 
-## EDDIE Reaction 1.0.0
+## EDDIE Sync Reaction 1.0.0
 
-> Use EDDIE Reaction with my original clip and separate reaction recording. Synchronize them, keep the original playing continuously, put me in the bottom-left corner with a click when I appear, and add the reaction captions. Then show my commentary full-screen, keeping natural laughter and removing recording setup, abandoned takes and long pauses. Save a new MP4 in my output folder.
+> Use EDDIE Sync Reaction with my original clip and separate reaction recording. Synchronize them, keep the original playing continuously, put me in the bottom-left corner with a click when I appear, and add the reaction captions. Then show my commentary full-screen, keeping natural laughter and removing recording setup, abandoned takes and long pauses. Save a new MP4 in my output folder.
 
 ```sh
 python3 scripts/new_project.py my-reaction-video --style reaction
@@ -145,20 +145,33 @@ Request iPhone messages or notifications on screen to enable the optional glass-
 
 EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **4 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
 
-## Master Editor: four modes
+## Master Editor: five modes
 
 1. **Captions + text hook** — no topic pictures.
 2. **Captions + Google images + text hook** — supporting pictures below captions.
 3. **Rapid Fire** — automatically selected for short Q&A/ranking scripts; hook, captions, Google images and large /10 scores.
 
-4. **Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
+4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
+5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-The first three modes default to a **4-second hook**. All four use **200% audio gain**, applied once with peak protection. Reaction uses its own synchronized layout and an optional approved hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+The first three modes default to a **4-second hook**. All five use **200% audio gain**, applied once with peak protection. Sync and Async Reaction each use their own layout and an optional approved hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
-All four Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.
+All five Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The reference top-hook composition is optional; the below-caption hook remains the default. Reframing preserves recorded gaze and does not synthesize eye contact.
 
-### Reaction inside Master Editor
+### Sync and Async Reaction inside Master Editor
 
-Ask “Use EDDIE MASTER EDITOR for this reaction video.” Supply the source clip and reaction recording, or your approved combined recording. Master Editor selects its embedded Reaction mode, preserves synchronization and source captions, then switches to full-screen commentary. Script-only input produces a plan until footage is provided. The standalone Reaction skill remains available for existing projects.
+Master Editor includes both reaction styles:
+
+- **EDDIE Sync Reaction:** source clip with synchronized bottom-left doctor inset, then full-screen commentary. The existing standalone `eddie-reaction` skill and `--style reaction` command remain compatible; the displayed name is now EDDIE Sync Reaction.
+- **EDDIE Async Reaction:** full-screen source excerpt first, then separately recorded full-screen doctor commentary. Optional images or study excerpts sit below the original EDDIE captions. No synchronized inset is required. [Approved reference](https://www.instagram.com/reel/Dd46Pe2COyK/).
+
+Say which format you want, or provide footage and a brief so Master Editor can choose. Existing approved edits retain their style. Both apply 200% audio gain once with peak protection. Script-only input produces a plan until footage is supplied.
+
+```bash
+python3 scripts/new_project.py my-sync-reaction --style sync-reaction
+python3 scripts/new_project.py my-async-reaction --style async-reaction
+```
+
+Instructions: [Sync](.agents/skills/eddie/references/reaction-sync.md) · [Async](.agents/skills/eddie/references/reaction-async.md).
