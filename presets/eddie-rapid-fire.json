@@ -20,15 +20,19 @@
   },
   "hook": {
     "start": 0,
-    "end": 4.0,
-    "top": 1120,
-    "height": 240,
-    "font_size": 60,
+    "end": 3,
+    "top": 80,
+    "width": 960,
+    "height": "visible ink height + 44",
+    "font_size": 58,
     "background": "#FFFFFF",
     "text_color": "#000000",
     "emphasis_color": "#FF0000",
     "corner_radius": 26,
-    "placement": "immediately below captions"
+    "placement": "top-centered",
+    "max_lines": 2,
+    "vertical_padding": 22,
+    "center_visible_ink": true
   },
   "images": {
     "top": 1130,

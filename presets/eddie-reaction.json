@@ -74,5 +74,28 @@
     "audioCodec": "aac",
     "audioSampleRate": 48000,
     "fastStart": true
+  },
+  "hook": {
+    "enabled": true,
+    "startSeconds": 0,
+    "durationSeconds": 3,
+    "position": "top-centered",
+    "referenceCanvas": [
+      1080,
+      1920
+    ],
+    "top": 80,
+    "width": 960,
+    "maxLines": 2,
+    "fontFamily": "Arial Bold",
+    "fontSize": 58,
+    "background": "#FFFFFF",
+    "textColor": "#000000",
+    "emphasisColor": "#FF0000",
+    "cornerRadius": 26,
+    "verticalPadding": 22,
+    "height": "visible text ink bounds plus twice verticalPadding",
+    "centerVisibleInk": true,
+    "reference": "references/text-hook.md"
   }
 }

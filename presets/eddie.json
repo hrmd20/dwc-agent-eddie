@@ -64,7 +64,7 @@
   "rapidFire": {
     "selection": "Auto-detect repeated short Q&A, yes/no or ranking script unless user specifies otherwise",
     "reference": "references/rapid-fire.md",
-    "hookDurationSeconds": 4,
+    "hookDurationSeconds": 3,
     "imageSource": "Google images, unless user supplies or selects alternatives"
   },
   "audioGain": {
@@ -82,11 +82,26 @@
   ],
   "hook": {
     "enabled": true,
-    "durationSeconds": 4,
-    "background": "white rounded rectangle",
-    "textColor": "black",
+    "startSeconds": 0,
+    "durationSeconds": 3,
+    "position": "top-centered",
+    "referenceCanvas": [
+      1080,
+      1920
+    ],
+    "top": 80,
+    "width": 960,
+    "maxLines": 2,
+    "fontFamily": "Arial Bold",
+    "fontSize": 58,
+    "background": "#FFFFFF",
+    "textColor": "#000000",
     "emphasisColor": "#FF0000",
-    "position": "below captions"
+    "cornerRadius": 26,
+    "verticalPadding": 22,
+    "height": "visible text ink bounds plus twice verticalPadding",
+    "centerVisibleInk": true,
+    "reference": "references/text-hook.md"
   },
   "framing": {
     "enabled": true,
@@ -97,7 +112,7 @@
     "scale": "uniform",
     "crop": "stable per shot; smooth follow only when needed",
     "syntheticEyeContact": false,
-    "topHookLayout": "optional; preserve below-caption hook default"
+    "topHookLayout": "default in all five modes; shared text-hook.md"
   },
   "reaction": {
     "reference": "references/reaction.md",
@@ -115,6 +130,6 @@
       }
     },
     "selection": "Honor explicit choice or approved edit; use footage and brief to select Sync versus Async",
-    "hook": "optional approved hook, clear of source captions and faces"
+    "hook": "shared top-centered 0\u20133 second hook; preserve source text and face clearance"
   }
 }
