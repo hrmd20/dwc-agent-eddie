@@ -29,6 +29,8 @@ With a script alone, prepare the hook, question/answer map and visual plan; do n
 
 ## Establish the edit
 
+For recorded speech in every video mode, read and apply [speech cleanup and delivery review](references/speech-cleanup.md). A first source transcript is not sufficient: review a fresh transcript of the cleaned intermediate, inspect every suspect repeat and cut in context, and resolve known errors before sharing.
+
 Use the user's footage, output folder, any supplied pictures and optional click audio. Captions-only is a complete supported edit; do not require pictures or sound to start it. Inspect available local editing tools and transcription. Preserve originals. Do not assume a paid service or a particular workstation.
 
 Clean recording setup, false starts, coughs and excessive gaps while preserving meaning, natural delivery, complete first/last words and closing phrases. Check every join in context so quiet syllables are not cut off. Keep an approved cut intact when revising only captions or visuals. Retain source ranges and retime captions after editing.
