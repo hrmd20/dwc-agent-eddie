@@ -36,6 +36,15 @@ These five styles are inside **EDDIE MASTER EDITOR**. It uses 200% audio gain on
 
 Also available: **EDDIE Claude** for tightly cut vertical videos with centered framing and AI noise removal, **Landscape** for horizontal videos and **Carousel** for Canva slides using your own editable template.
 
+### Using EDDIE Claude in Claude Code
+
+1. Download the ZIP, unzip it and open the folder in **Claude Code** (the Code tab of the Claude desktop app, or `claude` in Terminal inside the folder).
+2. Paste this, with your own video path and hook wording:
+
+> Read CLAUDE.md, then use EDDIE Claude to edit my raw talking-head video at /path/to/my-video.mp4. Set up any missing tools yourself. Keep the best take of every line, center my face in every shot, remove background noise and chair creaks, add white captions and the text hook "Normal Total Testosterone? / Check Your Free T", and save the finished video to /path/to/output. Verify sync and that no words are cut off, then show me.
+
+3. The first run installs its editing tools into the folder and downloads a speech-recognition model (a few minutes, one time). After that, each edit of a 5-minute recording takes about 5 minutes. Add pictures by saying where they are and which line each should appear on.
+
 ## Your first edit
 
 1. EDDIE checks the recording and available editing tools.
@@ -56,7 +65,7 @@ Your assistant checks for video inspection/export tools, transcription and capti
 
 - **“EDDIE isn't recognized.”** Ask: “Read `.agents/skills/eddie/SKILL.md` in this folder and follow it for my video.” Claude Code can use the matching `.claude/skills/eddie/SKILL.md`.
 - **The assistant cannot see my video.** Attach it using your assistant's file picker or give it the correct local path and grant access when prompted.
-- **An editing tool is missing.** Ask: “Tell me exactly what needs installing for this edit and help me set it up.”
+- **An editing tool is missing.** Ask: “Tell me exactly what needs installing for this edit and help me set it up.” For EDDIE Claude, ask: “Run scripts/setup_eddie_claude.sh for me.”
 - **Only have a script?** Ask for the style recommendation and recording plan first.
 
 Keep recordings, transcripts and exports in private project folders, not in the public GitHub repository. Use footage your practice is authorized to edit and share.

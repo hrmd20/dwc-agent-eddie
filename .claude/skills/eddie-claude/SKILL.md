@@ -13,7 +13,16 @@ Settings live in `presets/eddie-claude.json` (copied into each project as `eddie
 
 Ask only for what is missing: the raw recording, an output folder, the hook wording and any pictures (and an optional hook image such as a product vial). Keep everything inside the ignored `projects/<name>/` folder.
 
-Tools: FFmpeg with libass (or `pip install imageio-ffmpeg`, or set `FFMPEG`), Python 3 with `numpy`, `pillow`, `faster-whisper`, `opencv-python-headless<5` (OpenCV 5 removed the face detector used here) and, for strong noise removal, `deepfilternet` with `torch`. Install into a virtual environment. Discover local paths; never hardcode a workstation.
+## Setup (do this for the user)
+
+Before the first edit, check for `.venv/bin/python` in the repository root and that `import faster_whisper, cv2, PIL, imageio_ffmpeg` succeeds with it. If anything is missing, run the setup yourself; do not send the user to install tools:
+
+```sh
+bash scripts/setup_eddie_claude.sh            # core tools, a few minutes
+bash scripts/setup_eddie_claude.sh --denoise  # adds DeepFilterNet for the strongest noise removal (large download)
+```
+
+It creates an ignored `.venv` with `numpy`, `pillow`, `faster-whisper`, `opencv-python-headless<5` (OpenCV 5 removed the face detector used here) and a bundled FFmpeg via `imageio-ffmpeg` when none is installed. Run every toolkit step with `.venv/bin/python` and, if the system has no `ffmpeg`, export `FFMPEG` to the path the setup prints. Without DeepFilterNet the toolkit falls back to FFmpeg's denoiser; tell the user the cleanup is lighter and offer the `--denoise` install. The first transcription downloads the Whisper `small.en` model (about 500 MB) once. Discover local paths; never hardcode a workstation. Nothing here needs a paid service or an account.
 
 ## Workflow
 

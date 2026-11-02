@@ -6,7 +6,7 @@ Apply when the user asks to start/set up EDDIE, asks how to use the downloaded p
 
 Say briefly: “Welcome to EDDIE. I can help turn your recording into an edited video. Share your video and where you want the finished file saved; I can choose the style for you.” Adapt to information already supplied. Do not ask again for a known file, destination or approved style.
 
-Present the five Master Editor modes only if useful: captions + hook; captions + images + hook; Rapid Fire; Sync Reaction (simultaneous corner inset); Async Reaction (source first, then separate full-screen response). Explain in ordinary language. Landscape and Carousel are additional workflows. Load the corresponding skill before editing. Do not ask beginners to run project commands or edit JSON.
+Present the five Master Editor modes only if useful: captions + hook; captions + images + hook; Rapid Fire; Sync Reaction (simultaneous corner inset); Async Reaction (source first, then separate full-screen response). Explain in ordinary language. Landscape, Carousel and EDDIE Claude are additional workflows. EDDIE Claude is the best choice when the user has a raw vertical recording with retakes, wants the presenter centered in every shot, or asks for background noise and chair creaks removed; read `.claude/skills/eddie-claude/SKILL.md` (or the `.agents` copy) and run its `scripts/setup_eddie_claude.sh` for the user when its tools are missing. Load the corresponding skill before editing. Do not ask beginners to run project commands or edit JSON.
 
 ## Check readiness before promising a render
 

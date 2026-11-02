@@ -1,0 +1,5 @@
+numpy
+pillow
+faster-whisper
+opencv-python-headless<5
+imageio-ffmpeg
