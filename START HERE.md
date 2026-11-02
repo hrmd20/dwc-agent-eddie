@@ -34,7 +34,7 @@ A script alone is enough to plan an edit. EDDIE needs your footage to make your 
 
 These five styles are inside **EDDIE MASTER EDITOR**. It uses 200% audio gain once with peak protection; you can request a different volume. All five styles include a 3-second top-centered title: maximum two lines, white rounded box, black text/red emphasis and equal padding. You can request no title.
 
-Also available: **Landscape** for horizontal videos and **Carousel** for Canva slides using your own editable template.
+Also available: **EDDIE Claude** for tightly cut vertical videos with centered framing and AI noise removal, **Landscape** for horizontal videos and **Carousel** for Canva slides using your own editable template.
 
 ## Your first edit
 
