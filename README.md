@@ -124,6 +124,8 @@ The upstream MIT notice is preserved in `LICENSE`. Third-party tools and assets 
 python3 scripts/new_project.py my-claude-video --style claude
 ```
 
+**Quick start in Claude Code:** download the ZIP, open the folder in Claude Code and paste the prompt above with your video path. Claude installs the tools into the folder on first use with `bash scripts/setup_eddie_claude.sh` (add `--denoise` for DeepFilterNet), so no manual setup is needed. See the [Start Here guide](START%20HERE.md#using-eddie-claude-in-claude-code).
+
 The toolkit `scripts/eddie_claude.py` inside the skill runs each step (`transcribe`, `clean-audio`, `cut`, `audit`, `faces`, `render`, `captions`, `compose`, `verify`). It needs FFmpeg with libass, `numpy`, `pillow`, `faster-whisper`, `opencv-python-headless<5` and, for strong noise removal, `deepfilternet`. See [.agents/skills/eddie-claude/SKILL.md](.agents/skills/eddie-claude/SKILL.md). Defaults: [presets/eddie-claude.json](presets/eddie-claude.json).
 
 ## EDDIE Landscape 1.0.0
