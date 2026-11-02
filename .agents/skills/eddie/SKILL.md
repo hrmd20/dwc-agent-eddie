@@ -5,7 +5,7 @@ description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, opt
 
 # EDDIE MASTER EDITOR — DWC Agent Eddie
 
-MASTER EDITOR 1.1.0 follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. Standard captions and topic pictures remain stationary. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
+MASTER EDITOR follows the simplified Preview 3 treatment: clean talking-head cuts, stationary captions, and optional supplied still pictures with a click cue. Standard captions and topic pictures remain stationary. The explicitly requested iPhone-message option below is an exception. Read [the style specification](references/style.md) before editing. Current user directions override defaults. Other EDDIE styles remain separate.
 
 For first-use setup or the START HERE prompt, read [the welcome flow](../../../ONBOARDING.md). Keep normal editing requests direct; do not force onboarding.
 
@@ -29,7 +29,7 @@ With a script alone, prepare the hook, question/answer map and visual plan; do n
 
 ## Establish the edit
 
-For recorded speech in every video mode, read and apply [speech cleanup and delivery review](references/speech-cleanup.md). A first source transcript is not sufficient: review a fresh transcript of the cleaned intermediate, inspect every suspect repeat and cut in context, and resolve known errors before sharing.
+For recorded speech in every video mode, read and apply [speech cleanup and delivery review](references/speech-cleanup.md). Run the four-pass workflow: source and overlapping excerpt audit, clean speech and join review, rebuilt captions/visual timing, then actual export playback and technical checks. Use the bundled candidate scanner; resolve every issue in a private ledger. A full-length transcript or successful render is not a release check. Unresolved issues block final delivery; unavailable listening requires an explicitly provisional review.
 
 Use the user's footage, output folder, any supplied pictures and optional click audio. Captions-only is a complete supported edit; do not require pictures or sound to start it. Inspect available local editing tools and transcription. Preserve originals. Do not assume a paid service or a particular workstation.
 
@@ -46,6 +46,8 @@ Keep the presenter visible as the base layer. Use bold white captions with a bla
 For images, follow the selected mode above and match each picture to the spoken concept. Preserve their content and proportions; do not generate replacements or add unrelated logos, diagrams or workflow animations. Pictures appear immediately below the captions with a small gap, hold still, and disappear or replace instantly when the topic changes. Here, a pop-up means a hard on/off appearance, not a scale or fade animation. EDDIE is the skill name, not an instruction to add a robot image.
 
 For mode 1, omit all picture and click events. For a requested short preview, deliver that duration; do not silently move topic cues just to fit pictures into it. Otherwise complete the authorized full edit.
+
+For user-requested screenshot matching, persistent hooks, full-screen stills, transparent product cutouts, or slide/whoosh cues, read [requested visual revisions](references/requested-overrides.md). These opt-in treatments override defaults only for the requested edit.
 
 ## Optional iPhone messages
 
