@@ -39,7 +39,17 @@ Clean recording setup, false starts, coughs and excessive gaps while preserving 
 
 Before overlays, read [subject framing](references/framing.md). Automatically correct unintentionally off-center direct-to-camera talking-head shots using a stable, proportional crop. Preserve intended side angles, nurse/interview compositions and reaction layouts. Frame first, then calibrate stationary captions and visuals. Use the shared top-hook layout in all five modes.
 
+### Clean voice and centered talking-head cuts
+
+For new direct-to-camera talking-head edits, keep the head centered horizontally in both the base shot and tighter shots. Reframe the clean footage before overlays; preserve the complete hairline, natural headroom and useful gestures. Use a stable crop rather than chasing small head movements. Preserve intentional side angles, interviews and reaction compositions.
+
+Use restrained cut-ins and cut-outs at meaningful sentence/section transitions or to conceal a necessary speech edit. Start with a modest tighter crop (roughly 1.08–1.15 times the base crop, only if resolution permits), hold through the thought, then return to the base crop. These are purposeful shot changes, not continuous zooms or changes on a fixed timer. Keep the head centered at both scales; inspect the join for distracting head jumps. Apply crops before captions/hooks/images so overlays remain stationary, readable and unscaled. Preserve approved framing for unrelated revisions.
+
+Assess room hiss, hum and background noise before the single 200% gain stage. Use conservative noise reduction only when noise is audible; compare processed and original speech at matched loudness. Preserve consonants, breaths and a natural voice; reduce or bypass processing if it creates metallic, watery or gated sound. Never repeatedly denoise or amplify an already processed export. Check quiet phrases, pauses, sibilants and edit joins by listening to the actual export. Record the filter/settings and whether listening was completed; signal measurements cannot certify natural sound. If a supplied reference is byte-identical to the previous export, disclose that and do not claim to have learned new processing from it.
+
 ## Compose
+
+Do not add bottom explanatory notes, claim explanations, or educational footnote panels in any EDDIE mode. Keep spoken captions, the requested hook and topic images; explanation notes require a new explicit request for that specific video.
 
 Keep the presenter visible as the base layer. Use bold white captions with a black outline in short speech-synced phrases. Calibrate one fixed position just below the beard/base of the neck, then keep it stationary: no tracking, bouncing, sliding, scaling or animated word emphasis.
 
