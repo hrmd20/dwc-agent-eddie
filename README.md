@@ -20,7 +20,6 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Claude** | 1.0.0 | Best-take cuts with audited word edges, face-centered alternating zooms, AI noise removal, EDDIE captions, white text hook and your pictures, frame-accurate sync | Raw video, hook wording, optional pictures and hook image |
-| **EDDIE Sync Reaction** | 1.0.0 | Synced bottom-left reaction inset, captions, then full-screen commentary | Original clip, reaction recording and click sound |
 
 MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
