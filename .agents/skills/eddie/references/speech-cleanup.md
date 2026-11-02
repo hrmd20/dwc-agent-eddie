@@ -1,31 +1,54 @@
-# Speech cleanup and delivery review
+# Speech cleanup and delivery gate
 
-Apply to all EDDIE video modes when cleaning recorded speech. Preserve deliberate emphasis, quotations, clinically meaningful numbers/negations, and approved source/reaction timing. A layout-only change must not reopen approved cuts.
+Use for recorded speech in every Master Editor mode. This is an editorial workflow, not model fine-tuning or a guarantee of error-free output. Layout-only revisions preserve approved speech. User instructions override defaults.
 
-## Two editorial passes
+## Pass 1 — establish the exact source and issues
 
-1. Inspect the source in short sections. List competing takes, abandoned sentences, setup talk, repeated lead-ins, repeated words, coughs and long gaps. Select complete takes before captions or overlays. A script is a reference, never evidence that a missing phrase was spoken.
-2. Produce a clean speech intermediate, then transcribe that intermediate again with fresh word timings. Read its entire transcript in sequence. Raw transcripts often compress repeated takes into a single sentence or stretch one word across silence; they cannot certify a clean edit. Check repeated sentence openings and repeated 3–8-word sequences in adjacent passages. Flag candidates for contextual review, not automatic deletion.
-3. For each suspect passage, inspect/listen to the actual audio with context on both sides. Re-transcribe a short excerpt when timing or wording is uncertain. If a word spans a long gap, check the waveform before choosing a boundary. Do not cut directly from a suspicious word timestamp.
-4. After each new cut, retime every caption, image, hook and audio cue from the same edit map. Use a clean source for new overlays and apply the approved gain only once. Never stack a new image over an old burned-in product image.
+Identify the exact file/version the user reviewed. User timestamps belong to that export, not the raw recording. Save a reversible source-to-output keep-range map. Add every user-reported issue to a private issue ledger with source time, review time, evidence, action and verification status. Do not mark a complaint resolved merely because the main transcript omits it.
 
-## Cut quality
+Transcribe with word timestamps, then independently transcribe overlapping short excerpts (start with 6–10 seconds and 2 seconds of overlap). Deduplicate overlap in the analysis; never mistake overlap copies for spoken repetition. At each suspected restart, use a tighter 2–4-second excerpt with context. Full-length ASR can silently collapse repeated takes and stretch a word across the missing speech. An apparently fluent transcript is not evidence of a clean recording.
 
-- Start just before the first complete intended word; remove setup delay without losing its initial consonant.
-- Prefer an entire good take over splicing several fragments. Remove the abandoned repetition, retain the complete replacement, and preserve natural breathing.
-- Check each join with roughly two seconds before and after it. Confirm complete syllables, logical grammar, no extra “and/so/only,” no repeated numbering, no abrupt audio clicks, and no frozen/black frame.
-- Do not automatically cut intentional repetition, emphatic lists, or a later recap. Never edit a dose, comparison, qualification or negation into a new medical meaning.
-- Remove trailing setup talk and preserve the entire closing sentence/CTA. Do not invent a CTA that was not recorded.
+## Conditional review rules
 
-## Release gate
+| Signal | Required action |
+|---|---|
+| Adjacent repeated word, or repeated 2–8-word opening within about 5 seconds | Inspect the recording; retain the complete intended take and remove the abandoned one. When the user explicitly identifies back-to-back repetition as their mistake marker, prioritize it accordingly. Preserve deliberate quotations, emphasis and later recaps. |
+| Silence over 0.4 seconds | Flag for contextual review. Shorten accidental delays; preserve intentional breathing, emphasis, reaction timing and interviewer response windows. This threshold is a configurable review trigger, never an automatic cut rule. |
+| Word duration over 0.8 seconds, zero/negative timing, overlap, or ASR disagreement | Review waveform and short excerpt. Long medical terms may be valid. Do not trust that timestamp as a cut boundary. |
+| Repeated lead-in such as “remember most,” “you're going to have,” or “because the peaks and troughs” | Check the whole surrounding sentence for multiple false starts, including a second restart hidden in the replacement take. |
+| Stray syllable, “the,” “going,” filler or clipped ending at a join | Reopen the clean/raw source, restore enough audio to retain the complete word, then remove the actual error. Do not trim progressively tighter based only on ASR. |
+| Clinical number, unit, drug name or negation touches a cut | Confirm the entire phrase remains audible and unchanged, including endings such as “14 days.” Never change medical meaning to improve fluency. |
 
-Before sharing an edited review copy, check the actual encoded output:
-- Full speech sequence: no unresolved false starts, duplicate takes, repeated filler or unfinished sentence fragments.
-- Every join and the opening/ending have been reviewed; separate actual listening from transcription/waveform checks in the review record.
-- Captions match the retained audio; medical names and numbers are checked; adjacent caption intervals never overlap. Reject empty, negative or out-of-range events.
-- Supplied profanity edits mute the complete word and align the beep and censored caption. Pictures match the concept currently spoken, not an earlier timeline.
-- Inspect the hook's start/exit and image changes; verify full-file decode, A/V duration and audio peaks.
+Use `scripts/audit_speech.py` on each word-timestamp transcript to generate candidates. It finds text/timing issues only; it cannot discover words ASR omitted or prove that silence contains no quiet speech. Independently run a waveform/silence detector with a noise threshold appropriate to that recording. Keep these findings in the same ledger. Review the entire recording, not just user timestamps.
 
-Record unresolved issues with timestamps. Fix known errors before delivery. If actual listening is unavailable, say that verification used transcript/signal checks; do not describe it as a full listen-through or perfect cleanup. A successful export and a fluent-looking transcript do not prove an error-free edit.
+## Pass 2 — cut speech before decorating
 
-User-reported timestamps refer to the exact delivered version. Inspect that file first and map its timing back to the clean source; do not assume it matches an older export. Recheck nearby joins after the correction.
+Prefer a complete good take over assembling fragments. Choose cut boundaries from playback and waveform with a small natural margin, not exactly at an ASR boundary. Keep initial consonants, final plural sounds, complete CTA and meaningful pauses. Very short audio fades may remove clicks; they cannot repair a clipped word.
+
+Make a clean intermediate without burned-in overlays. Freshly transcribe it; repeat the overlapping excerpt scan and inspect each cut with roughly two seconds on each side. Compare against the ledger. If a repeat, clipped syllable or gap remains, revise and recheck the affected neighborhood. A changed cut invalidates earlier checks for that neighborhood.
+
+## Pass 3 — rebuild timing and visuals
+
+Regenerate captions from the retained speech. Do not map a three-word caption across a removed phrase while keeping its deleted words. Correct medical spelling against the recording. Reject empty, negative, overlapping or out-of-range caption intervals.
+
+Retime images, hooks, censor beeps, motion and other audio cues using the same edit map. Preserve user-approved framing and style. Apply 200% gain once to the clean source, with peak protection; never double an already processed export. Check the complete profanity mute and beep when requested.
+
+## Pass 4 — actual export review
+
+Review the encoded export, not only the intermediate:
+- Play the entire export at normal speed with audio; inspect every changed join, first word and last word.
+- Check the hook, images and captions at entry/exit frames and at mobile size. Check full-screen crops, transparent edges and any requested slide/sound synchronization.
+- Verify full-file decode, duration, dimensions, audio/video sync, peaks and caption bounds.
+- Run focused short-transcript checks on the encoded problem sections; automated checks supplement listening, not replace it.
+
+## Gate before final delivery
+
+Every ledger item must be `fixed-and-rechecked` or `intentional-and-reviewed`, with a reason and checked output timestamp. No unresolved user issue, repeat, clipped word, accidental gap, stale caption or failed technical check may be called final.
+
+Keep a private review record bound to the exact output filename/hash: source ranges, findings, resolutions, fresh transcript, join checks, full playback, visual checks, decode and audio checks. Rerendering invalidates output verification; repeat checks relevant to the change.
+
+If audio playback is unavailable, do all available checks, state that limitation, and label the result **provisional review — listening check pending**, not final/fully verified/perfect. Do not mark a listening check passed from transcription, waveform or a successful render. If a known defect cannot be resolved, report its timestamp and blocker rather than delivering it as completed.
+
+## Regression cases before changing the workflow
+
+Use synthetic/public fixtures in the repository; keep private footage/transcripts out of GitHub. Verify that the workflow detects a repeated two-word lead-in, a restart hidden inside a long ASR token, a one-second pause, and a clipped final consonant; also verify that it preserves intentional emphasis and Q&A pauses. Scanner success alone cannot certify the audio cases. Use previously troublesome private excerpts locally for playback checks when available.
