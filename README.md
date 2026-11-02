@@ -1,6 +1,6 @@
 # DWC AGENT EDDIE
 
-**Five Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction and Rapid Fire. Async Reaction is included inside Master Editor.**
+**Six Digital White Coat content workflows: EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction, Rapid Fire and EDDIE Claude. Async Reaction is included inside Master Editor.**
 
 ## New here? Start here
 
@@ -19,6 +19,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 | **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
+| **EDDIE Claude** | 1.0.0 | Best-take cuts with audited word edges, face-centered alternating zooms, AI noise removal, EDDIE captions, white text hook and your pictures, frame-accurate sync | Raw video, hook wording, optional pictures and hook image |
 
 MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
@@ -74,6 +75,8 @@ Omitting `--style` keeps the original MASTER EDITOR default. The helper copies t
 | `.claude/skills/` | Matching skills for Claude Code |
 | `presets/eddie.json` | EDDIE MASTER EDITOR 1.1.0 defaults |
 | `presets/eddie-carousel.json` | Carousel defaults; monitoring starts disabled |
+| `.agents/skills/eddie-claude/` | EDDIE Claude skill and `scripts/eddie_claude.py` toolkit |
+| `presets/eddie-claude.json` | EDDIE Claude 1.0.0 defaults |
 | `scripts/new_project.py` | Private project starter with style selection |
 | `AGENTS.md` / `CLAUDE.md` | Style routing and workspace instructions |
 
@@ -110,6 +113,18 @@ Built from the DWC editing workflow developed with Digital White Coat and inform
 
 The upstream MIT notice is preserved in `LICENSE`. Third-party tools and assets retain their own licenses. No AIS branding or upstream showcase videos are included.
 
+
+## EDDIE Claude 1.0.0
+
+**EDDIE Claude** is a separate vertical style built and tested with Claude Code. It keeps the cleanest take of every line, checks every cut edge so no word is clipped or doubled, centers the presenter's face in every shot with alternating 1.12×/1.30× zooms, removes background noise and chair creaks with DeepFilterNet plus a voice-energy gate, and cuts on exact frames so audio never drifts. It uses stationary white EDDIE captions, the white rounded text hook with red emphasis, an optional hook image and your own pictures below the captions. No explainer notes are added.
+
+> Use EDDIE Claude to edit this raw talking-head video. Keep the best take of every line, center my face in every shot, remove background noise and chair creaks, and use white captions, the text hook "Normal Total Testosterone? / Check Your Free T" and my pictures. Verify sync and that no words are cut off.
+
+```sh
+python3 scripts/new_project.py my-claude-video --style claude
+```
+
+The toolkit `scripts/eddie_claude.py` inside the skill runs each step (`transcribe`, `clean-audio`, `cut`, `audit`, `faces`, `render`, `captions`, `compose`, `verify`). It needs FFmpeg with libass, `numpy`, `pillow`, `faster-whisper`, `opencv-python-headless<5` and, for strong noise removal, `deepfilternet`. See [.agents/skills/eddie-claude/SKILL.md](.agents/skills/eddie-claude/SKILL.md). Defaults: [presets/eddie-claude.json](presets/eddie-claude.json).
 
 ## EDDIE Landscape 1.0.0
 

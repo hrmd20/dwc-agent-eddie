@@ -1,0 +1,84 @@
+{
+  "name": "EDDIE Claude",
+  "style": "claude",
+  "version": "1.0.0",
+  "reference": ".agents/skills/eddie-claude/SKILL.md",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "editing": {
+    "selectBestTakes": true,
+    "removeAbandonedTakes": true,
+    "removeStutters": true,
+    "tightenPausesOverSeconds": 0.28,
+    "dropFragmentsUnderSeconds": 0.2,
+    "frameAccurateCuts": true,
+    "auditEveryClipEdge": true,
+    "preserveCompleteWords": true
+  },
+  "framing": {
+    "centerFaceEveryShot": true,
+    "zoomLevels": [1.12, 1.30],
+    "alternateZoomEachCut": true,
+    "faceHeightFraction": 0.30
+  },
+  "captions": {
+    "font": "Arial",
+    "bold": true,
+    "fontSize": 67,
+    "color": "#FFFFFF",
+    "outline": 4,
+    "shadow": 1,
+    "centerY": 980,
+    "maxWords": 3,
+    "case": "as-spoken",
+    "highlight": null,
+    "stationary": true,
+    "replacements": {"tea": "T", "shpg": "SHBG", "s8": "SHBG", "s80": "SHBG"}
+  },
+  "hook": {
+    "enabled": true,
+    "durationSeconds": 3,
+    "top": 1040,
+    "font": "Arial Bold",
+    "fontSize": 58,
+    "background": "#FFFFFF",
+    "textColor": "#000000",
+    "emphasisColor": "#FF0000",
+    "cornerRadius": 24,
+    "hookImage": {"top": 1260, "start": 1.32, "end": 3.76}
+  },
+  "images": {
+    "source": "user-supplied",
+    "top": 1040,
+    "maxWidth": 640,
+    "maxHeight": 400,
+    "preserveAspectRatio": true,
+    "animation": "none"
+  },
+  "explainerNotes": false,
+  "progressBar": {
+    "enabled": true,
+    "heightPx": 14,
+    "color": "#FFFFFF"
+  },
+  "audio": {
+    "denoise": "DeepFilterNet",
+    "gate": "voice-energy",
+    "gateOpenDb": -52,
+    "gateFloorDb": -30,
+    "targetLufs": -14,
+    "truePeakDb": -1.5
+  },
+  "export": {
+    "codec": "h264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "audioCodec": "aac",
+    "audioBitrate": "192k",
+    "audioSampleRate": 48000,
+    "fastStart": true
+  }
+}

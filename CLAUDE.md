@@ -7,6 +7,7 @@ Choose the requested workflow before editing:
 - EDDIE Sync Reaction: read `.agents/skills/eddie/SKILL.md` and its `references/reaction.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
 - EDDIE Async Reaction: read `.agents/skills/eddie/SKILL.md` and `references/reaction-async.md`; show the source excerpt full-screen, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 - EDDIE Landscape: read `.agents/skills/eddie-landscape/SKILL.md`; use 4K 16:9 presenter footage, stationary lower-center captions and clean speech cuts.
+- EDDIE Claude: read `.agents/skills/eddie-claude/SKILL.md`; cut the best takes with audited word edges, center the face in every shot, remove noise with DeepFilterNet and a voice-energy gate, add EDDIE captions, the white text hook and the user's pictures, and verify frame-accurate sync. No explainer notes.
 - EDDIE MASTER EDITOR: read `.agents/skills/eddie/SKILL.md` and its reference; automatically detect ranking/Q&A scripts and load its embedded Rapid Fire reference; enable iPhone messages only when requested.
 
 - EDDIE Carousel: read `.agents/skills/eddie-carousel/SKILL.md`; ask for the user's own editable Canva template, topic and inspiration. Preserve the template by working in a copy.
