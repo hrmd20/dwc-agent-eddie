@@ -1,0 +1,4 @@
+interface:
+  display_name: "EDDIE POST"
+  short_description: "Schedule videos and link Vista Social comment automations"
+  default_prompt: "Use $eddie-post to schedule my approved videos in Vista Social, one per day at 9 AM, with descriptions, first comments and matching automations."

@@ -3,6 +3,7 @@
 For first-time setup, “start EDDIE,” or help using this download, read `ONBOARDING.md` and guide the practice in plain language. `START HERE.html` is the user-facing welcome guide. Skip onboarding questions already answered by a concrete edit request.
 
 Choose the requested workflow before editing:
+- EDDIE POST: read `.agents/skills/eddie-post/SKILL.md` (or matching Claude copy); schedule approved videos in Vista Social with descriptions, first comments, and linked automations.
 - EDDIE Rapid Fire (Text hook, captions, images): read `.agents/skills/eddie-rapid-fire/SKILL.md`; use a 0–3 second top-centered hook, numerical ratings and topic pictures with original audio.
 - EDDIE Sync Reaction: read `.agents/skills/eddie/SKILL.md` and its `references/reaction.md`; synchronize the source and presenter recordings, use a bottom-left inset, then full-screen commentary.
 - EDDIE Async Reaction: read `.agents/skills/eddie/SKILL.md` and `references/reaction-async.md`; show the source excerpt full-screen, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
