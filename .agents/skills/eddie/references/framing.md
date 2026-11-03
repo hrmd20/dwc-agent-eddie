@@ -10,7 +10,7 @@ Apply this pass before placing captions, hooks, images or iPhone messages in all
 ## Reframe safely
 1. Inspect opening, middle, ending and the widest head/hand movement before choosing scale and crop. Use face/head and shoulder bounds as guides, not an exact nose tracker.
 2. For portrait direct-to-camera shots, start with the face center near x=50% and eyes near the upper third (approximately y=25–35%). Preserve complete hair/head, modest headroom, both shoulders where source permits and useful upper-body gestures. These are targets, not hard constraints: source content and overlay clearance take priority.
-3. Translate and uniformly scale the source within a 9:16 canvas, normally 1080×1920. Never stretch the person or invent missing head/body detail. Avoid aggressive enlargement; report when a low-resolution crop softens the image. Do not add generative background extension or synthetic eye contact by default.
+3. Translate and uniformly scale the source within a 9:16 canvas, normally 4K 2160×3840. Never stretch the person or invent missing head/body detail. Avoid aggressive enlargement; report when a low-resolution crop softens the image. Do not add generative background extension or synthetic eye contact by default.
 4. Prefer a fixed crop per shot. If substantial sustained movement requires following the subject, use restrained, smoothly eased reframing with a dead zone; do not chase every small movement or create camera jitter. Keep overlays fixed in screen space after framing.
 5. If the source cannot fill the frame without cutting the head or essential gestures, use a less tight crop or a contained layout with unobtrusive background fill. Ask only if a materially different layout needs the user's preference.
 
@@ -19,7 +19,7 @@ Use the supplied example as a centered, upper-body, direct-eye-contact compositi
 
 All five modes use the [shared top-centered hook](text-hook.md) for 0–3 seconds, with two lines maximum and equal padding. Preserve approved wording and red emphasis; do not copy the example’s black panel/yellow lettering.
 
-Approximate portrait zones for the top-hook layout:
+Approximate portrait zones for the top-hook layout (pixel examples use a 1080×1920 reference; double for 4K):
 - Hook: top 0–20% (0–384 px), inset from the edges. Keep it above the actual hairline; use natural line breaks.
 - Face: upper region, with eyes near 25–35% where possible. Inspect actual head bounds; the example diagram's approximate zones overlap and are not exact crop coordinates.
 - Captions: roughly 55–70% (1056–1344 px), calibrated below the beard, not across the mouth.
@@ -27,6 +27,9 @@ Approximate portrait zones for the top-hook layout:
 - Bottom 12% (about 1690–1920 px): keep essential text and product details out. Leave side clearance too; platform controls vary, so preview against the intended destination when known.
 
 Keep face, mouth and important gestures visible. Fit images proportionally, reduce their size or split dense text before allowing overlap. Honor explicit no-hook requests; face clearance is always required.
+
+## Accidental black borders
+Inspect all four edges at opening, middle, ending and each shot/crop change. Measure unwanted bars and apply the minimum proportional crop before overlays. Preserve natural dark scene content and intentional reaction layouts. Keep approved audio and timing unchanged for crop-only revisions. See quality-defaults.md.
 
 ## Verify the encoded result
 Check full-size and phone-size frames at start, middle, end, crop changes and largest gestures. Confirm horizontal centering is appropriate, head/hair are intact, natural proportions and eye contact are preserved, motion is smooth, and captions/images/hooks do not collide. Inspect the actual rendered output; a crop configuration alone does not prove good framing. Save per-shot crop decisions privately with the project.

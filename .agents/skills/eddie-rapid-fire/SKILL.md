@@ -8,8 +8,8 @@ description: Edit rapid-fire question-and-answer or ranking videos with EDDIE ca
 This is also the Rapid Fire mode inside EDDIE MASTER EDITOR.
 
 ## Approved treatment
-- Portrait 1080 × 1920, usually 30 fps. Preserve the presenter framing.
-- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 200% gain (2× amplitude, approximately +6.02 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
+- Portrait 4K 2160 × 3840, usually 30 fps. Preserve the presenter framing.
+- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 150% gain (1.5× amplitude, approximately +3.52 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
 - Stationary Arial Bold white speech captions with black outline and subtle shadow. Use short 1–3 word phrases; keep short questions together. Calibrate once just below the beard; do not track head movement.
 - Display numerical rankings as `0/10`, `8/10`, `9.5/10`, etc., matching the actual answer. Use larger type for ratings. Preserve additional commentary rather than replacing a qualified answer with a number alone.
 - Hook: follow [the shared Master Editor hook](../eddie/references/text-hook.md): top-centered, 0–3 seconds, wide white rounded box, maximum two lines, black text/red emphasis and equal padding.
@@ -48,3 +48,5 @@ Read `presets/eddie-rapid-fire.json` at the repository root. These values reprod
 5. Save to the user's selected destination. Upload only when requested. When replacing an old export, verify the new copy before removing the specifically identified old one. Keep raw footage intact.
 
 Private recordings, downloaded images, transcripts and renders stay in ignored `projects/`; publish only reusable instructions and presets.
+
+Apply the shared [Master Editor quality defaults](../eddie/references/quality-defaults.md) for cleanup passes, voice isolation/denoise, 150% gain, black-bar checks and 4K review delivery.

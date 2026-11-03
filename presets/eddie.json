@@ -2,14 +2,14 @@
   "name": "EDDIE MASTER EDITOR",
   "version": 2,
   "canvas": {
-    "width": 1080,
-    "height": 1920,
+    "width": 2160,
+    "height": 3840,
     "fps": 30
   },
   "captions": {
     "position": "fixed-below-beard-base-of-neck",
-    "referenceCenterY": 1150,
-    "fontSize": 67,
+    "referenceCenterY": 2300,
+    "fontSize": 134,
     "maxWords": 3,
     "color": "#FFFFFF",
     "highlight": null,
@@ -21,10 +21,10 @@
   },
   "images": {
     "position": "directly-below-captions",
-    "referenceTopY": 1200,
-    "gapPixels": 20,
-    "maxWidth": 860,
-    "maxHeight": 540,
+    "referenceTopY": 2400,
+    "gapPixels": 40,
+    "maxWidth": 1720,
+    "maxHeight": 1080,
     "preserveAspectRatio": true,
     "optional": true,
     "entry": "instant",
@@ -46,7 +46,13 @@
     "clickEnabledWhen": "user-supplied-and-requested",
     "clickOnExit": false,
     "clickOnCaptionChange": false,
-    "addedMusic": false
+    "addedMusic": false,
+    "voiceCleanup": {
+      "speechIsolation": "conservative; assess and bypass if unnecessary",
+      "denoise": "gentle; preserve natural voice",
+      "applyOnce": true,
+      "encodedPeakCheck": true
+    }
   },
   "graphics": {
     "mode": "none",
@@ -55,7 +61,7 @@
   },
   "calibration": "Calibrate once just below the beard/base of neck; keep captions stationary and pictures directly below the reserved caption bounds. Reference coordinates are starting points.",
   "styleId": "eddie-classic",
-  "releaseVersion": "1.1.0",
+  "releaseVersion": "1.2.0",
   "iphoneMessages": {
     "enabled": false,
     "activation": "Explicit request for text messages or iPhone notifications on screen",
@@ -68,8 +74,8 @@
     "imageSource": "Google images, unless user supplies or selects alternatives"
   },
   "audioGain": {
-    "multiplier": 2.0,
-    "decibels": 6.0206,
+    "multiplier": 1.5,
+    "decibels": 3.5218,
     "applyOnceToCleanSource": true,
     "peakProtection": true
   },
@@ -86,19 +92,19 @@
     "durationSeconds": 3,
     "position": "top-centered",
     "referenceCanvas": [
-      1080,
-      1920
+      2160,
+      3840
     ],
-    "top": 80,
-    "width": 960,
+    "top": 160,
+    "width": 1920,
     "maxLines": 2,
     "fontFamily": "Arial Bold",
-    "fontSize": 58,
+    "fontSize": 116,
     "background": "#FFFFFF",
     "textColor": "#000000",
     "emphasisColor": "#FF0000",
-    "cornerRadius": 26,
-    "verticalPadding": 22,
+    "cornerRadius": 52,
+    "verticalPadding": 44,
     "height": "visible text ink bounds plus twice verticalPadding",
     "centerVisibleInk": true,
     "reference": "references/text-hook.md"
@@ -131,5 +137,6 @@
     },
     "selection": "Honor explicit choice or approved edit; use footage and brief to select Sync versus Async",
     "hook": "shared top-centered 0\u20133 second hook; preserve source text and face clearance"
-  }
+  },
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
 }

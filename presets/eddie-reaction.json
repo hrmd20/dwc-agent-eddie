@@ -3,8 +3,8 @@
   "style": "sync-reaction",
   "version": "1.0.0",
   "canvas": {
-    "width": 1080,
-    "height": 1920,
+    "width": 2160,
+    "height": 3840,
     "fps": 30
   },
   "sync": {
@@ -13,18 +13,18 @@
     "preserveContinuousSource": true
   },
   "sourceRect": {
-    "x": 60,
-    "y": 32,
-    "width": 960,
-    "height": 1706,
+    "x": 120,
+    "y": 64,
+    "width": 1920,
+    "height": 3412,
     "fit": "contain"
   },
   "reactionInset": {
-    "x": 24,
-    "y": 1464,
-    "width": 324,
-    "height": 432,
-    "border": 3,
+    "x": 48,
+    "y": 2928,
+    "width": 648,
+    "height": 864,
+    "border": 6,
     "entryFrame": 2
   },
   "captions": {
@@ -34,26 +34,26 @@
     "fill": "#FFFFFF",
     "activeWord": "#F1D688",
     "outline": "#080C12",
-    "outlineWidth": 3,
-    "shadow": 1,
+    "outlineWidth": 6,
+    "shadow": 2,
     "maxWords": 3,
     "maxCharacters": 23,
     "stationaryWithinLayout": true,
     "coordinateUnits": "ASS/libass",
     "source": {
-      "x": 540,
-      "y": 1260,
-      "size": 62
+      "x": 1080,
+      "y": 2520,
+      "size": 124
     },
     "insetSpeech": {
-      "x": 720,
-      "y": 1810,
-      "size": 46
+      "x": 1440,
+      "y": 3620,
+      "size": 92
     },
     "commentary": {
-      "x": 540,
-      "y": 930,
-      "size": 68
+      "x": 1080,
+      "y": 1860,
+      "size": 136
     }
   },
   "audio": {
@@ -63,9 +63,15 @@
     "truePeakDb": -1.5,
     "preserveLaughter": true,
     "avoidDoubledSourceAudio": true,
-    "gainMultiplier": 2,
+    "gainMultiplier": 1.5,
     "applyGainOnce": true,
-    "peakProtection": true
+    "peakProtection": true,
+    "voiceCleanup": {
+      "speechIsolation": "conservative; assess and bypass if unnecessary",
+      "denoise": "gentle; preserve natural voice",
+      "applyOnce": true,
+      "encodedPeakCheck": true
+    }
   },
   "export": {
     "codec": "h264",
@@ -81,21 +87,22 @@
     "durationSeconds": 3,
     "position": "top-centered",
     "referenceCanvas": [
-      1080,
-      1920
+      2160,
+      3840
     ],
-    "top": 80,
-    "width": 960,
+    "top": 160,
+    "width": 1920,
     "maxLines": 2,
     "fontFamily": "Arial Bold",
-    "fontSize": 58,
+    "fontSize": 116,
     "background": "#FFFFFF",
     "textColor": "#000000",
     "emphasisColor": "#FF0000",
-    "cornerRadius": 26,
-    "verticalPadding": 22,
+    "cornerRadius": 52,
+    "verticalPadding": 44,
     "height": "visible text ink bounds plus twice verticalPadding",
     "centerVisibleInk": true,
     "reference": "references/text-hook.md"
-  }
+  },
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
 }

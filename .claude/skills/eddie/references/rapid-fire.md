@@ -5,8 +5,8 @@ This is also the Rapid Fire mode inside EDDIE MASTER EDITOR.
 Before overlay placement, apply [shared subject framing](framing.md).
 
 ## Approved treatment
-- Portrait 1080 × 1920, usually 30 fps. Preserve the presenter framing.
-- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 200% gain (2× amplitude, approximately +6.02 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
+- Portrait 4K 2160 × 3840, usually 30 fps. Preserve the presenter framing.
+- Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 150% gain (1.5× amplitude, approximately +3.52 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
 - Stationary Arial Bold white speech captions with black outline and subtle shadow. Use short 1–3 word phrases; keep short questions together. Calibrate once just below the beard; do not track head movement.
 - Display numerical rankings as `0/10`, `8/10`, `9.5/10`, etc., matching the actual answer. Use larger type for ratings. Preserve additional commentary rather than replacing a qualified answer with a number alone.
 - Hook: follow [the shared top-centered 0–3 second hook](text-hook.md), maximum two lines, white rounded box, black text/red emphasis and equal vertical padding.

@@ -170,7 +170,7 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
 5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-All five modes default to a **3-second top-centered hook**, maximum two lines, wide rounded white background, black text/red emphasis and equal top/bottom padding. All five use **200% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+All five modes default to a **3-second top-centered hook**, maximum two lines, wide rounded white background, black text/red emphasis and equal top/bottom padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
@@ -183,7 +183,7 @@ Master Editor includes both reaction styles:
 - **EDDIE Sync Reaction:** source clip with synchronized bottom-left doctor inset, then full-screen commentary. The existing standalone `eddie-reaction` skill and `--style reaction` command remain compatible; the displayed name is now EDDIE Sync Reaction.
 - **EDDIE Async Reaction:** full-screen source excerpt first, then separately recorded full-screen doctor commentary. Optional images or study excerpts sit below the original EDDIE captions. No synchronized inset is required. [Approved reference](https://www.instagram.com/reel/Dd46Pe2COyK/).
 
-Say which format you want, or provide footage and a brief so Master Editor can choose. Existing approved edits retain their style. Both apply 200% audio gain once with peak protection. Script-only input produces a plan until footage is supplied.
+Say which format you want, or provide footage and a brief so Master Editor can choose. Existing approved edits retain their style. Both apply 150% audio gain once with peak protection. Script-only input produces a plan until footage is supplied.
 
 ```bash
 python3 scripts/new_project.py my-sync-reaction --style sync-reaction
@@ -191,3 +191,9 @@ python3 scripts/new_project.py my-async-reaction --style async-reaction
 ```
 
 Instructions: [Sync](.agents/skills/eddie/references/reaction-sync.md) · [Async](.agents/skills/eddie/references/reaction-async.md).
+
+### Master Editor quality defaults for every practice
+
+All five Master Editor modes now default to **4K delivery**, **150% audio applied once**, conservative **voice isolation and denoise**, a second speech-cleanup pass, and checks for accidental black edge bars. Keep the presenter centered, preserve complete words and natural pauses, and retime captions/images after edits. User overrides and approved edits take precedence. Preview links come before posting-folder moves or uploads.
+
+Read the [quality defaults](.agents/skills/eddie/references/quality-defaults.md). These instructions require actual export review; automated transcripts and successful renders cannot guarantee that every mistake was removed. An export without a full listening check must be labeled provisional.

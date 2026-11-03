@@ -7,4 +7,4 @@ Both formats are supported. Honor the user's selected style and existing approve
 
 Select Sync for explicit inset/simultaneous reaction requests; select Async for source-first/separate-response requests. For an unspecified new reaction request, use Async when the footage supports that sequence. Do not turn a supplied synchronized composite into Async without direction. If the intended timing is unclear from footage or brief, ask one focused question. A script alone supports planning, not a claim that video has been rendered.
 
-Both use Master Editor's 200% audio gain once with peak protection. Sync retains its existing reaction-specific caption treatment; Async uses the original EDDIE captions. Current user directions override either default.
+Both use Master Editor's 150% audio gain once with peak protection. Sync retains its existing reaction-specific caption treatment; Async uses the original EDDIE captions. Current user directions override either default.

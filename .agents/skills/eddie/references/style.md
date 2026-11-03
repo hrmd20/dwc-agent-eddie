@@ -1,10 +1,10 @@
 # EDDIE MASTER EDITOR 1.1.0 — Preview 3 treatment
 
-The main skill defines five modes, shared top-centered 3-second hooks and 200% audio. Read [text-hook.md](text-hook.md) for the approved two-line layout and equal padding. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
+The main skill defines five modes, shared top-centered 3-second hooks and 150% audio. Read [text-hook.md](text-hook.md) for the approved two-line layout and equal padding. Those instructions override older captions-only and user-supplied-image defaults below. Optional iPhone messages override only notification animation and sound when enabled.
 
 ## Picture and cuts
 
-- Portrait 9:16, normally 1080 × 1920 at 30 fps; honor an existing approved format.
+- Portrait 9:16, normally 4K 2160 × 3840 at 30 fps; honor an existing approved format.
 - Talking-head footage remains visible. No motion graphics, diagrams, workflow animations, title cards, animated text, decorative zooms or automatic intro/outro.
 - Start promptly on the complete first word. Remove setup, abandoned takes, coughs and excessive gaps without clipping syllables. Preserve purposeful pauses, meaning and complete closing words. Review each join against audio, not transcription alone.
 - Preserve an approved cut and picture timing for layout-only revisions.

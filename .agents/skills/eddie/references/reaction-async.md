@@ -19,8 +19,8 @@ Use the original EDDIE treatment in [style.md](style.md): bold white text, black
 
 ## Audio
 
-Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Apply 200% gain once (2×, +6.02 dB) to the clean balanced speech with peak protection; do not double processed exports. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
+Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Apply 150% gain once (1.5×, +3.52 dB) to the clean balanced speech with peak protection; do not double processed exports. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
 
 ## Deliver and verify
 
-Export a new 1080×1920 H.264 MP4, AAC 48 kHz, fast-start, preserving originals. Check the encoded opening, source-to-doctor cut, caption timing and bounds, supporting visual timing/readability, final word, full-file decode, A/V sync and audio peaks. Distinguish visual/listening review from automated checks. Keep footage, transcripts, assets, edit decisions and verification notes in ignored projects/. Publish only reusable skill instructions, never private media.
+Export a new 4K 2160×3840 H.264 MP4, AAC 48 kHz, fast-start, preserving originals. Check the encoded opening, source-to-doctor cut, caption timing and bounds, supporting visual timing/readability, final word, full-file decode, A/V sync and audio peaks. Distinguish visual/listening review from automated checks. Keep footage, transcripts, assets, edit decisions and verification notes in ignored projects/. Publish only reusable skill instructions, never private media.

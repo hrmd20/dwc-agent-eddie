@@ -14,7 +14,7 @@ Keep the original clip playing continuously at normal speed. Remove the presente
 
 ## Layout
 
-Default output: 1080 × 1920, 30 fps. Original clip is the main picture; the presenter appears in the bottom-left inset during playback, then becomes full-screen when the source finishes. Preserve aspect ratios and faces. Adapt framing to each user's footage and avoid covering source captions.
+Default output: 4K 2160 × 3840, 30 fps. Original clip is the main picture; the presenter appears in the bottom-left inset during playback, then becomes full-screen when the source finishes. Preserve aspect ratios and faces. Adapt framing to each user's footage and avoid covering source captions.
 
 Approved portrait reference coordinates, to calibrate rather than blindly force:
 - Original: contain inside a 960 × 1706 rectangle at (60,32), on dark background #080C12.
@@ -38,7 +38,7 @@ Build separate caption tracks for the original and presenter so overlapping spee
 
 Use the clean original audio during playback. Mute redundant microphone bleed to avoid echo, but retain actual laughter and spoken interjections. For overlaps, mix intelligibly with gentle ducking; do not silence the source punchline or the presenter's response. Keep the presenter intelligible for full-screen commentary. Confirm no doubled source audio at the transition.
 
-Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Apply Master Editor’s 200% gain once to the clean, balanced speech mix, with peak protection; do not double already processed tracks or normalize away the requested boost. Target true peak at or below -1.5 dBTP and measure the encoded mix. Never synthesize or clone speech to repair a cut.
+Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Apply Master Editor’s 150% gain once to the clean, balanced speech mix, with peak protection; do not double already processed tracks or normalize away the requested boost. Target true peak at or below -1.5 dBTP and measure the encoded mix. Never synthesize or clone speech to repair a cut.
 
 ## Deliver and verify
 

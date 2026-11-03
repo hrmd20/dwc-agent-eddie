@@ -17,7 +17,7 @@ Keep the original clip playing continuously at normal speed. Remove the presente
 
 ## Layout
 
-Default output: 1080 × 1920, 30 fps. Original clip is the main picture; the presenter appears in the bottom-left inset during playback, then becomes full-screen when the source finishes. Preserve aspect ratios and faces. Adapt framing to each user's footage and avoid covering source captions.
+Default output: 4K 2160 × 3840, 30 fps. Original clip is the main picture; the presenter appears in the bottom-left inset during playback, then becomes full-screen when the source finishes. Preserve aspect ratios and faces. Adapt framing to each user's footage and avoid covering source captions.
 
 Approved portrait reference coordinates, to calibrate rather than blindly force:
 - Original: contain inside a 960 × 1706 rectangle at (60,32), on dark background #080C12.
@@ -41,10 +41,12 @@ Build separate caption tracks for the original and presenter so overlapping spee
 
 Use the clean original audio during playback. Mute redundant microphone bleed to avoid echo, but retain actual laughter and spoken interjections. For overlaps, mix intelligibly with gentle ducking; do not silence the source punchline or the presenter's response. Bring the presenter to normal speech level for full-screen commentary. Confirm no doubled source audio at the transition.
 
-Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Apply 200% speech gain once (2×, +6.02 dB) with peak protection; target true peak at or below -1.5 dBTP and measure the encoded mix. Do not double already processed audio. Never synthesize or clone speech to repair a cut.
+Play the user's click once, two frames before inset entry; no other effects, music, graphics or stock images by default. Apply 150% speech gain once (1.5×, +3.52 dB) with peak protection; target true peak at or below -1.5 dBTP and measure the encoded mix. Do not double already processed audio. Never synthesize or clone speech to repair a cut.
 
 ## Deliver and verify
 
 Render a new H.264 MP4 (yuv420p, CRF 18 or comparable quality), AAC 48 kHz, fast-start metadata. Keep originals and earlier exports intact. Inspect the encoded beginning, synchronized reaction moments, caption bounds, every edited commentary join, final word and consecutive frames around the full-screen transition. Check full decode, duration, frame count, A/V sync and loudness. Automated correlation/transcription supplements listening; label any unperformed listening review honestly.
 
 Save the completed version in the requested folder. Keep recordings, transcripts, synchronization notes, exports and click audio in ignored projects/. The public package contains reusable instructions and presets only. This is the synchronized reaction style also available inside EDDIE MASTER EDITOR; current user directions override defaults.
+
+Apply the shared [Master Editor quality defaults](../eddie/references/quality-defaults.md) for cleanup passes, voice isolation/denoise, 150% gain, black-bar checks and 4K review delivery.

@@ -22,4 +22,4 @@ If the user invokes the START HERE prompt, deliver a short preview (normally 10 
 
 Use a private project folder and keep original media intact. Record style, supplied preferences, source ranges and output location there as needed. Do not put practice preferences, medical footage, transcripts or credentials into public repository files. Do not create recurring tasks or connect/post to social accounts as part of onboarding.
 
-For delivery, link the actual output, state what was checked and mention any concrete limitation. Never claim a render or listening review occurred if it did not. Follow the selected skill's framing/caption rules and 200% gain once with peak protection for all Master Editor modes.
+For delivery, link the actual output, state what was checked and mention any concrete limitation. Never claim a render or listening review occurred if it did not. Follow the selected skill's framing/caption rules and 150% gain once with peak protection for all Master Editor modes.

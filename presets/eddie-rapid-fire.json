@@ -2,42 +2,42 @@
   "name": "EDDIE Rapid Fire (Text hook, captions, images)",
   "version": "1.0.0",
   "canvas": {
-    "width": 1080,
-    "height": 1920,
+    "width": 2160,
+    "height": 3840,
     "fps": 30
   },
   "captions": {
     "font": "Arial Bold",
-    "size": 67,
+    "size": 134,
     "color": "#FFFFFF",
     "outline_color": "#000000",
-    "outline_width": 4,
+    "outline_width": 8,
     "center": [
-      540,
-      1060
+      1080,
+      2120
     ],
-    "rating_size": 96
+    "rating_size": 192
   },
   "hook": {
     "start": 0,
     "end": 3,
-    "top": 80,
-    "width": 960,
-    "height": "visible ink height + 44",
-    "font_size": 58,
+    "top": 160,
+    "width": 1920,
+    "height": "visible ink height + 88",
+    "font_size": 116,
     "background": "#FFFFFF",
     "text_color": "#000000",
     "emphasis_color": "#FF0000",
-    "corner_radius": 26,
+    "corner_radius": 52,
     "placement": "top-centered",
     "max_lines": 2,
-    "vertical_padding": 22,
+    "vertical_padding": 44,
     "center_visible_ink": true
   },
   "images": {
-    "top": 1130,
-    "max_width": 640,
-    "max_height": 470,
+    "top": 2260,
+    "max_width": 1280,
+    "max_height": 940,
     "fit": "contain",
     "transition": "hard pop",
     "timing": "question through answer",
@@ -45,10 +45,16 @@
   },
   "audio": {
     "source": "original recording",
-    "gain": 2,
+    "gain": 1.5,
     "voiceover": false,
     "music": false,
-    "sound_effects": false
+    "sound_effects": false,
+    "voiceCleanup": {
+      "speechIsolation": "conservative; assess and bypass if unnecessary",
+      "denoise": "gentle; preserve natural voice",
+      "applyOnce": true,
+      "encodedPeakCheck": true
+    }
   },
   "interviewer": {
     "mode": "infer from brief or ask",
@@ -63,9 +69,10 @@
     "embedded_question_audio": "reuse; never duplicate"
   },
   "audioGain": {
-    "multiplier": 2.0,
-    "decibels": 6.0206,
+    "multiplier": 1.5,
+    "decibels": 3.5218,
     "applyOnceToCleanSource": true,
     "peakProtection": true
-  }
+  },
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
 }

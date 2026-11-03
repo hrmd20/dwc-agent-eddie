@@ -1,6 +1,6 @@
 ---
 name: eddie
-description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, optional Google topic images, automatically selected Rapid Fire Q&A/rankings, or Sync and Async reaction videos. All modes default to 200% audio; on-screen iPhone messages are opt-in.
+description: Edit videos with EDDIE MASTER EDITOR using captions and a hook, optional Google topic images, automatically selected Rapid Fire Q&A/rankings, or Sync and Async reaction videos. All modes default to 150% audio; on-screen iPhone messages are opt-in.
 ---
 
 # EDDIE MASTER EDITOR — DWC Agent Eddie
@@ -19,13 +19,17 @@ Honor an explicit mode or existing approved edit. Otherwise inspect the script/t
 4. **EDDIE Sync Reaction**: source clip with synchronized bottom-left doctor inset, then full-screen commentary. Read [reaction selection](references/reaction.md) and [Sync Reaction](references/reaction-sync.md).
 5. **EDDIE Async Reaction**: full-screen source excerpt, then separately recorded full-screen doctor commentary, with optional supporting images/study excerpts below EDDIE captions. Read [reaction selection](references/reaction.md) and [Async Reaction](references/reaction-async.md). Both reaction modes override ordinary talking-head placement during source playback. Script-only input receives a plan until footage is provided.
 
-All five modes use **200% audio gain** (2.0× amplitude, about +6.02 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
+All five modes use **150% audio gain** (1.5× amplitude, about +3.52 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
 
 All five modes use the [shared text hook](references/text-hook.md): top-centered wide rounded white box, maximum two lines, bold black text with selected red emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
 
 Explicit on-screen SMS/iPhone messages enable the additional [iPhone message treatment](references/iphone-messages.md). Ordinary captions, hooks, or merely saying “text” do not activate notifications.
 
 With a script alone, prepare the hook, question/answer map and visual plan; do not claim a rendered video or invent doctor answers. Use available footage and generate question audio only when requested. For mixed or unclear formats, follow clear segments or ask one focused question only when necessary.
+
+## Default quality pass for every practice
+
+For every new edit in all five modes, apply [quality defaults](references/quality-defaults.md): complete speech cleanup and second-pass review, conservative voice isolation/denoise, a single 150% audio gain, centered proportional framing without accidental edge bars, and 4K delivery. Honor user overrides and preserve approved audio/cuts during visual-only revisions. These are editing instructions, not model fine-tuning or a promise of error-free results.
 
 ## Establish the edit
 
@@ -45,7 +49,7 @@ For new direct-to-camera talking-head edits, keep the head centered horizontally
 
 Use restrained cut-ins and cut-outs at meaningful sentence/section transitions or to conceal a necessary speech edit. Start with a modest tighter crop (roughly 1.08–1.15 times the base crop, only if resolution permits), hold through the thought, then return to the base crop. These are purposeful shot changes, not continuous zooms or changes on a fixed timer. Keep the head centered at both scales; inspect the join for distracting head jumps. Apply crops before captions/hooks/images so overlays remain stationary, readable and unscaled. Preserve approved framing for unrelated revisions.
 
-Assess room hiss, hum and background noise before the single 200% gain stage. Use conservative noise reduction only when noise is audible; compare processed and original speech at matched loudness. Preserve consonants, breaths and a natural voice; reduce or bypass processing if it creates metallic, watery or gated sound. Never repeatedly denoise or amplify an already processed export. Check quiet phrases, pauses, sibilants and edit joins by listening to the actual export. Record the filter/settings and whether listening was completed; signal measurements cannot certify natural sound. If a supplied reference is byte-identical to the previous export, disclose that and do not claim to have learned new processing from it.
+Assess room hiss, hum and background noise before the single 150% gain stage. Use conservative noise reduction only when noise is audible; compare processed and original speech at matched loudness. Preserve consonants, breaths and a natural voice; reduce or bypass processing if it creates metallic, watery or gated sound. Never repeatedly denoise or amplify an already processed export. Check quiet phrases, pauses, sibilants and edit joins by listening to the actual export. Record the filter/settings and whether listening was completed; signal measurements cannot certify natural sound. If a supplied reference is byte-identical to the previous export, disclose that and do not claim to have learned new processing from it.
 
 ## Compose
 
@@ -65,7 +69,7 @@ Enable only when the user requests text messages or iPhone notifications on came
 
 ## Sound and delivery
 
-When the user supplies and wants a click, play it approximately two frames before each picture appears. Do not require or synthesize a substitute sound. No exit click, repeated caption clicks, other sound effects, added music or new speech by default. Apply the shared 200% gain once, preserving an approved treatment and any explicitly requested music. Remove cues belonging to removed pictures.
+When the user supplies and wants a click, play it approximately two frames before each picture appears. Do not require or synthesize a substitute sound. No exit click, repeated caption clicks, other sound effects, added music or new speech by default. Apply the shared 150% gain once, preserving an approved treatment and any explicitly requested music. Remove cues belonging to removed pictures.
 
 Inspect the encoded opening, picture events, stationary captions, every revised join and final spoken word. Verify caption timing/bounds, image separation, full-file decode, duration, dimensions, A/V sync and audio levels. Distinguish signal/transcription checks from actual listening; report review limits honestly.
 

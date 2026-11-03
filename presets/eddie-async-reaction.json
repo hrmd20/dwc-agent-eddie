@@ -3,8 +3,8 @@
   "style": "async-reaction",
   "version": "1.0.0",
   "canvas": {
-    "width": 1080,
-    "height": 1920,
+    "width": 2160,
+    "height": 3840,
     "fps": 30
   },
   "reference": ".agents/skills/eddie/references/reaction-async.md",
@@ -15,8 +15,8 @@
   "synchronizedInset": false,
   "captions": {
     "position": "fixed-below-beard-base-of-neck",
-    "referenceCenterY": 1150,
-    "fontSize": 67,
+    "referenceCenterY": 2300,
+    "fontSize": 134,
     "maxWords": 3,
     "color": "#FFFFFF",
     "highlight": null,
@@ -32,10 +32,16 @@
     "preserveAspectRatio": true
   },
   "audio": {
-    "gainMultiplier": 2,
+    "gainMultiplier": 1.5,
     "applyGainOnce": true,
     "peakProtection": true,
-    "addedVoiceOver": false
+    "addedVoiceOver": false,
+    "voiceCleanup": {
+      "speechIsolation": "conservative; assess and bypass if unnecessary",
+      "denoise": "gentle; preserve natural voice",
+      "applyOnce": true,
+      "encodedPeakCheck": true
+    }
   },
   "export": {
     "codec": "h264",
@@ -51,21 +57,22 @@
     "durationSeconds": 3,
     "position": "top-centered",
     "referenceCanvas": [
-      1080,
-      1920
+      2160,
+      3840
     ],
-    "top": 80,
-    "width": 960,
+    "top": 160,
+    "width": 1920,
     "maxLines": 2,
     "fontFamily": "Arial Bold",
-    "fontSize": 58,
+    "fontSize": 116,
     "background": "#FFFFFF",
     "textColor": "#000000",
     "emphasisColor": "#FF0000",
-    "cornerRadius": 26,
-    "verticalPadding": 22,
+    "cornerRadius": 52,
+    "verticalPadding": 44,
     "height": "visible text ink bounds plus twice verticalPadding",
     "centerVisibleInk": true,
     "reference": "references/text-hook.md"
-  }
+  },
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
 }
