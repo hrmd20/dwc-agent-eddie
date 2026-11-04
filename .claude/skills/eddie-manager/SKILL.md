@@ -1,8 +1,8 @@
 ---
-name: eddie-post
-description: Prepare and schedule approved videos in Vista Social with script-based descriptions, correct brand profiles, first comments, and linked comment-to-DM automations. Use for EDDIE POST and video publishing batches; editing footage belongs to EDDIE MASTER EDITOR.
+name: eddie-manager
+description: Prepare and schedule approved videos in Vista Social with script-based descriptions, correct brand profiles, first comments, and linked comment-to-DM automations. Use for EDDIE MANAGER and video publishing batches; editing footage belongs to EDDIE MASTER EDITOR.
 ---
-# EDDIE POST
+# EDDIE MANAGER
 
 Turn approved video files and their scripts/transcripts into verified Vista Social scheduled posts. Training this skill is not a request to publish a batch. Draft, schedule, publish-now and automation activation are distinct actions; carry out the action authorized in the current task. Do not make a Codex recurring task to implement a Vista Social posting calendar.
 

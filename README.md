@@ -1,6 +1,6 @@
 # DWC AGENT EDDIE
 
-**Seven Digital White Coat content workflows: EDDIE POST, EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction, Rapid Fire and EDDIE Claude. Async Reaction is included inside Master Editor.**
+**Seven Digital White Coat content workflows: EDDIE MANAGER, EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction, Rapid Fire and EDDIE Claude. Async Reaction is included inside Master Editor.**
 
 ## New here? Start here
 
@@ -17,7 +17,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
 | **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
-| **EDDIE POST** | 1.0.0 | Vista Social descriptions, first comments, daily 9 AM scheduling and linked comment-to-DM automations | Approved videos, matching scripts and connected Vista Social profiles |
+| **EDDIE MANAGER** | 1.0.0 | Vista Social descriptions, first comments, daily 9 AM scheduling and linked comment-to-DM automations | Approved videos, matching scripts and connected Vista Social profiles |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Claude** | 1.0.0 | Best-take cuts with audited word edges, face-centered alternating zooms, AI noise removal, EDDIE captions, white text hook and your pictures, frame-accurate sync | Raw video, hook wording, optional pictures and hook image |
@@ -199,10 +199,10 @@ All five Master Editor modes now default to **4K delivery**, **150% audio applie
 
 Read the [quality defaults](.agents/skills/eddie/references/quality-defaults.md). These instructions require actual export review; automated transcripts and successful renders cannot guarantee that every mistake was removed. An export without a full listening check must be labeled provisional.
 
-## EDDIE POST
+## EDDIE MANAGER
 
-Use [EDDIE POST](.agents/skills/eddie-post/SKILL.md) to prepare and schedule approved videos in Vista Social, one per day at 9 AM in your practice timezone, with script-based descriptions, first comments and matching comment-to-DM automations. It checks the calendar and exact account/profile IDs to avoid duplicate posts or the wrong brand. The included Haris/Telemed setup is an example; other practices supply their own accounts, footer, CTA, automation template and destination links.
+Use [EDDIE MANAGER](.agents/skills/eddie-manager/SKILL.md) to prepare and schedule approved videos in Vista Social, one per day at 9 AM in your practice timezone, with script-based descriptions, first comments and matching comment-to-DM automations. It checks the calendar and exact account/profile IDs to avoid duplicate posts or the wrong brand. The included Haris/Telemed setup is an example; other practices supply their own accounts, footer, CTA, automation template and destination links.
 
-Example: “Use EDDIE POST to schedule these approved videos, one per day at 9 AM, on my selected practice channels. Add descriptions and first comments, and duplicate the matching automation for each scheduled video.”
+Example: “Use EDDIE MANAGER to schedule these approved videos, one per day at 9 AM, on my selected practice channels. Add descriptions and first comments, and duplicate the matching automation for each scheduled video.”
 
 Requires connected Vista Social MCP tools or an authenticated browser for unsupported actions. Installing the skill does not schedule posts or activate automations.
