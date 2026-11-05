@@ -5,9 +5,17 @@ Use this treatment when MASTER EDITOR's image mode is selected. It does not add 
 ## Choose the picture
 
 1. Use the user's supplied or selected image for that cue first. Otherwise search Google Images for the actual spoken subject, adding context and `landscape` or `16:9` when helpful. Prefer a relevant landscape photograph near 16:9 over a square graphic, portrait crop, or unrelated product bottle. The video itself remains portrait 9:16 unless requested otherwise.
-2. Pick the first suitable result that communicates the concept clearly at phone size, has usable resolution, and leaves the essential subject/labels intact. Do not pick an irrelevant first result just because it appears first. For a symptom such as erectile dysfunction, a non-explicit photograph of a concerned adult or couple may communicate the topic better than anatomy; use an anatomical image when the spoken point is anatomy. Product/drug mentions can use the actual package or vial; ingredients should show the ingredient unless a product is requested.
+2. Compare a small set of promising results and choose the strongest match for the spoken point, phone-size clarity, resolution and composition. Search position alone is not a quality signal. Prefer a crisp original image large enough for its displayed bounds; reject visibly blurred, pixelated, cluttered or misleading images. For a symptom such as erectile dysfunction, a non-explicit photograph of a concerned adult or couple may communicate the topic better than anatomy; use an anatomical image when the spoken point is anatomy. Product/drug mentions can use the actual package or vial; ingredients should show the ingredient unless a product is requested.
 3. Open the result and inspect the actual image. Keep the Google query, source-page URL, image URL and local asset in the private project. If Google is unavailable, report that and identify any substitute search service. Do not silently substitute generated art.
 4. Fit supplied images proportionally even if they are not 16:9. Do not stretch them or crop off clinical labels, key subjects or watermarks to force a ratio. Prefer a better landscape search result when a sourced asset does not fit. Transparent vial cutouts and useful anatomical/conversion diagrams remain valid exceptions to the photographic-card preference.
+
+## Build queries from the spoken meaning
+
+Map each picture cue to the final edited transcript before searching. Turn the keyword into a concrete visual brief, then add useful context rather than searching a vague medical term alone. Examples: `erectile dysfunction concerned adult couple bedroom landscape`, `coronary artery blockage angiogram`, `heart attack coronary artery illustration`, and `blood glucose laboratory test landscape`. Use anatomy or mechanisms when those are the spoken subject, and relatable non-explicit photos when discussing a symptom. These are query examples, not a fixed asset list or a claim that a pictured person has a condition.
+
+Use the user's approved images as the quality/style benchmark: clear main subject, relevant medical meaning, readable detail and a clean landscape composition. Default new photographic cards to 16:9; a 1700 px-wide card is about 956 px tall before shadow padding. Crop only dispensable background, never essential anatomy, labels or watermarks. Preserve supplied images and transparent cutouts as described above.
+
+For each chosen image, record the exact spoken cue, search phrase, source and a short selection reason in the private project. Reuse an already-approved image rather than searching again unless the user asks for a replacement or the asset fails quality review.
 
 ## Style the overlay
 
