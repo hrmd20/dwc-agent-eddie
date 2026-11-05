@@ -1,6 +1,6 @@
 # Haris / Telemed Doctor demonstrated setup
 
-User-provided screenshots, November 3, 2026. These are reference settings; verify live profile IDs and the complete template at execution time.
+Historical Protocol example from user-provided screenshots, November 3, 2026. For the current BASIC public reply → Opening DM → resource DM flow, read [the November 5 reference](ed-basic-example.md); do not copy the old consultation button into BASIC. These are reference settings; verify live profile IDs and the complete template at execution time.
 
 ## Selected brand and channels
 

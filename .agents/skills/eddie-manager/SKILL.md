@@ -2,7 +2,7 @@
 name: eddie-manager
 description: Prepare and schedule approved videos in Vista Social with script-based descriptions, correct brand profiles, first comments, and linked comment-to-DM automations. Use for EDDIE MANAGER and video publishing batches; editing footage belongs to EDDIE MASTER EDITOR.
 ---
-# EDDIE MANAGER
+# EDDIE MANAGER — BASIC
 
 Turn approved video files and their scripts/transcripts into verified Vista Social scheduled posts. Training this skill is not a request to publish a batch. Draft, schedule, publish-now and automation activation are distinct actions; carry out the action authorized in the current task. Do not make a Codex recurring task to implement a Vista Social posting calendar.
 
@@ -13,6 +13,12 @@ Identify the exact approved version of each video; revisions of one topic are al
 Resolve the brand/account and connected profiles using live Vista Social data. Read [the Haris/Telemed example](references/haris-example.md) for this user's demonstrated settings. Do not select every connected account: similar display names can belong to different brands. Store exact platform/profile IDs in the private batch record. Verify selected profiles before submission.
 
 Prefer the Vista Social MCP for supported operations. Discover its actual tools and schemas; do not invent endpoints or assume it supports local-file upload, first comments or automation duplication. Use the authenticated browser for missing operations. Read the existing live automation before copying it; screenshots establish the desired treatment, not current account state.
+
+## BASIC content and delivery contract
+
+BASIC is an educational information exchange: upload approved media, select the intended connected channels, schedule at the requested local time, add a caption and approved first comment, then link a keyword-triggered public reply, Opening DM and resource DM on supported profiles. Do not add booking links, consultation offers or sales CTAs to BASIC captions. Use an approved topic keyword and deliver the promised information. Do not carry consultation links/buttons over from an older automation template.
+
+Preserve the user's latest manual corrections and per-platform customizations. Do not reset all customizations or replace approved wording with an older draft. A latest explicit instruction or final reference supersedes earlier no-comment/no-public-reply instructions. Keep first comments, automated public replies, Opening DMs and resource DMs as separate fields.
 
 ## Description and first comment
 
@@ -30,6 +36,15 @@ Schedule each video separately with its description, first comments and correct 
 
 ## Link the comment automation
 
+BASIC action order on a compatible profile:
+1. **Comment (Text):** the approved public acknowledgement/reply variations.
+2. **Opening DM:** the approved introductory message and engagement button.
+3. **Direct message (Text):** deliver the approved resource after the recipient taps the Opening DM button. Preserve the complete message and signature.
+
+Use the Opening DM's engagement button, not an invented external URL button. Test the preview through the button step and confirm the resource is gated by that interaction. Do not silently collapse the flow to an unsolicited resource DM. Do not claim that Instagram prohibits every unsolicited DM; describe this as the chosen user-initiated automation flow, subject to the platform's current messaging rules. Verify support per profile rather than assuming all upload channels support comment-to-DM automation.
+
+For Haris's exact latest example, read [the November 5 ED BASIC reference](references/ed-basic-example.md). The final three-action reference replaces the older two-action Protocol example for this style. Preserve an existing correct live setup; training alone is not authorization to recreate or alter it.
+
 When authorized, duplicate the specified existing automation (the demonstrated template is `B2C Comment "Protocol" to DM`). Preserve the original automation and its post associations. In the new copy, use Specific posts and replace the inherited target with the newly scheduled post belonging to the automation's exact profile. Do not select All posts. If Vista cannot target the scheduled post yet, record the dependency and leave the automation pending; do not attach a similar-looking reel.
 
 Preserve the live template's keyword matching, followers setting, exclusions, delivery limits, action order, reply variations, full DM and button URL unless the task calls for changes. Name the copy with the keyword and video title. Check for an existing matching copy before creating one. Protocol is not the default keyword for unrelated CTAs: different keywords/resources need matching approved content, not an unchanged fertility checklist.
@@ -38,6 +53,6 @@ The supplied screenshots establish the Protocol trigger configuration; do not as
 
 ## Verify and hand back
 
-Read back every scheduled post: correct video version/thumbnail, selected account IDs, description, first comment where supported, 09:00 date and timezone, and scheduled status. Check each automation's exact target post, keyword, complete actions and status. A scheduled post is not a published post; a saved automation is not proof a DM was delivered. Capture UI evidence when using the browser.
+Read back every scheduled post: correct video version/thumbnail, selected account IDs, description, first comment where supported, requested date/time (09:00 only when using the default) and timezone, and scheduled status. Check each automation's exact target post, keyword, complete actions and status. A scheduled post is not a published post; a saved automation is not proof a DM was delivered. Capture UI evidence when using the browser.
 
 Return a compact list/table of title, date/time/timezone, selected channels, post link/ID and automation status. Report partial failures precisely, with no duplicate retries or edits to unrelated posts. Keep account IDs, screenshots, private scripts, media and live manifests out of public reusable skill packages.

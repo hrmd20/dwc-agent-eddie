@@ -17,7 +17,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
 | **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
-| **EDDIE MANAGER** | 1.0.0 | Vista Social descriptions, first comments, daily 9 AM scheduling and linked comment-to-DM automations | Approved videos, matching scripts and connected Vista Social profiles |
+| **EDDIE MANAGER — BASIC** | 1.1.0 | Vista Social uploads, channels, captions, scheduling, public replies, Opening DM and resource DM | Approved videos, matching scripts and connected Vista Social profiles |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
 | **EDDIE Claude** | 1.0.0 | Best-take cuts with audited word edges, face-centered alternating zooms, AI noise removal, EDDIE captions, white text hook and your pictures, frame-accurate sync | Raw video, hook wording, optional pictures and hook image |
@@ -199,10 +199,21 @@ All five Master Editor modes now default to **4K delivery**, **150% audio applie
 
 Read the [quality defaults](.agents/skills/eddie/references/quality-defaults.md). These instructions require actual export review; automated transcripts and successful renders cannot guarantee that every mistake was removed. An export without a full listening check must be labeled provisional.
 
-## EDDIE MANAGER
+## EDDIE MANAGER — BASIC
 
-Use [EDDIE MANAGER](.agents/skills/eddie-manager/SKILL.md) to prepare and schedule approved videos in Vista Social, one per day at 9 AM in your practice timezone, with script-based descriptions, first comments and matching comment-to-DM automations. It checks the calendar and exact account/profile IDs to avoid duplicate posts or the wrong brand. The included Haris/Telemed setup is an example; other practices supply their own accounts, footer, CTA, automation template and destination links.
+[EDDIE MANAGER — BASIC](.agents/skills/eddie-manager/SKILL.md) takes approved videos and their matching scripts through an educational publishing workflow:
 
-Example: “Use EDDIE MANAGER to schedule these approved videos, one per day at 9 AM, on my selected practice channels. Add descriptions and first comments, and duplicate the matching automation for each scheduled video.”
+- Upload approved videos to Vista Social without changing the approved edit.
+- Select all intended connected brand channels, while keeping unrelated accounts unselected.
+- Add script-based captions and approved first comments, preserving platform-specific edits.
+- Schedule at the requested date, time and timezone; the default is one video per day at 9 AM.
+- Attach a keyword trigger to the exact post on supported profiles.
+- Reply publicly to the keyword comment, send an Opening DM with a button, then deliver the approved information after the recipient taps the button.
 
-Requires connected Vista Social MCP tools or an authenticated browser for unsupported actions. Installing the skill does not schedule posts or activate automations.
+BASIC captions focus on exchanging useful information: **no booking links or consultation offers**. The keyword, caption and promised resource must agree. Public replies and DMs are configured only where supported; publishing to a channel does not imply that channel supports DM automation.
+
+Example: “Use EDDIE MANAGER BASIC to upload these approved videos to my selected practice channels, schedule one per day at 9 AM, and add educational captions and first comments. Link each keyword to a public reply, an Opening DM button, and the approved resource DM.”
+
+It checks the calendar and exact profile/post IDs to avoid duplicates and wrong-brand uploads. The included [Telemed ED example](.agents/skills/eddie-manager/references/ed-basic-example.md) records the approved three-action flow. Other practices use their own approved accounts, wording and resources. Saved/active status is verified separately from actual delivery.
+
+Requires connected Vista Social tools or an authenticated browser for unsupported actions. Installing or updating the skill does not itself schedule posts or activate automations.
