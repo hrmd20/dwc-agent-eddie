@@ -13,7 +13,7 @@ For first-use setup or the START HERE prompt, read [the welcome flow](../../../O
 
 Honor an explicit mode or existing approved edit. Otherwise inspect the script/transcript:
 1. **Captions + text hook**: default for ordinary talking-head speech without an image request. Stationary Eddie captions and a rounded white hook; no topic images.
-2. **Captions + Google images + text hook**: use when the user wants supporting topic pictures with explanatory speech. Search actual spoken terms on Google Images, select the first displayed relevant image (including sponsored results when relevant), retain source URLs in the private project and use supplied/explicitly selected images in preference to search. Preserve aspect ratio and watermarks. Place pictures below captions with a small gap; hold for the discussed concept. Do not silently substitute generated pictures.
+2. **Captions + Google images + text hook**: use when the user wants supporting topic pictures with explanatory speech. Search actual spoken terms on Google Images, select a suitable landscape image, preferably 16:9, using [image selection and rounded cards](references/image-selection.md), retain source URLs in the private project and use supplied/explicitly selected images in preference to search. Preserve aspect ratio and watermarks. Place pictures below captions with a small gap; hold for the discussed concept. Do not silently substitute generated pictures.
 3. **Rapid Fire — text hook + captions + Google images**: auto-select for repeated short questions with yes/no answers or rankings. Read [Rapid Fire](references/rapid-fire.md) for question/answer timing, larger /10 scores, Google images and AI/recorded interviewer options.
 
 4. **EDDIE Sync Reaction**: source clip with synchronized bottom-left doctor inset, then full-screen commentary. Read [reaction selection](references/reaction.md) and [Sync Reaction](references/reaction-sync.md).
@@ -62,6 +62,8 @@ For images, follow the selected mode above and match each picture to the spoken 
 For mode 1, omit all picture and click events. For a requested short preview, deliver that duration; do not silently move topic cues just to fit pictures into it. Otherwise complete the authorized full edit.
 
 For user-requested screenshot matching, persistent hooks, full-screen stills, transparent product cutouts, or slide/whoosh cues, read [requested visual revisions](references/requested-overrides.md). These opt-in treatments override defaults only for the requested edit.
+
+For sourced and supplied topic images, apply [image selection and rounded cards](references/image-selection.md): prefer relevant 16:9 landscape photos, with rounded corners and a subtle shadow on rectangular cards. Preserve transparent cutouts and explicit user overrides.
 
 ## Optional iPhone messages
 

@@ -19,7 +19,7 @@ The earlier 1080 × 1920 reference used approximately 67 px type and center y=11
 
 ## Optional still-image pop-ups
 
-Use the user's supplied or explicitly selected pictures. Captions-only requires no pictures. Match images to exact spoken concepts, preserving aspect ratios, legibility and face visibility. Do not generate or source extra assets without the user's request.
+Use the user's supplied or explicitly selected pictures first. When image search is enabled, follow [image selection and rounded cards](image-selection.md): relevant landscape photos near 16:9, rounded corners and subtle shadows. Captions-only requires no pictures. Match images to exact spoken concepts, preserving aspect ratios, legibility and face visibility. Do not generate or source extra assets without the user's request.
 
 Place each picture immediately below the caption area, about 12–24 px away at 1080-wide output (roughly the requested 3 mm visual gap). Reserve the tallest caption bounds so changing words do not move the picture. Starting maximum picture size is 860 × 540 within the canvas; fit proportionally rather than clipping.
 

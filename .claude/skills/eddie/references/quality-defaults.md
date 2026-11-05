@@ -21,6 +21,8 @@ Apply these defaults to new videos for every practice. A supplied reference, exp
 - Use the shared 0–3 second hook: maximum two lines, rounded white background, bold black text and selected red emphasis, centered visible glyphs and equal tight padding. User-requested duration/placement/reference overrides this. Keep faces clear.
 - Verify medical caption spelling against the audio and supplied script. Images appear only for the matching topic and leave when it ends, below captions and clear of the face. Prefer supplied assets and relevant actual ingredient images over unrelated product packaging. Pop/left-slide/whoosh treatments are available when requested; do not add automatic effects to every practice's video.
 
+- For picture-enabled modes, follow [image selection and rounded cards](image-selection.md): Google topic search, relevant landscape photos near 16:9, rounded rectangular cards and subtle shadows. Preserve supplied aspect ratios and transparent cutouts.
+
 ## Export and release
 - Default portrait output is 2160×3840 (4K); preserve requested landscape as 3840×2160. Scale overlay geometry with the canvas. Disclose when footage is upscaled; 4K export does not restore source detail.
 - Save a separately named review copy; preserve originals and prior approvals. Inspect actual encoded frames, not just layout previews. Verify full-file decode, timing, dimensions, A/V sync, captions, visual cues, peak levels and every revised join.

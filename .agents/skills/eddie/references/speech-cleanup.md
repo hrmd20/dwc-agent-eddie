@@ -27,6 +27,14 @@ Prefer a complete good take over assembling fragments. Choose cut boundaries fro
 
 Make a clean intermediate without burned-in overlays. Freshly transcribe it; repeat the overlapping excerpt scan and inspect each cut with roughly two seconds on each side. Compare against the ledger. If a repeat, clipped syllable or gap remains, revise and recheck the affected neighborhood. A changed cut invalidates earlier checks for that neighborhood.
 
+### Boundary repairs learned from review
+
+- Treat reports of a sound error at a timestamp separately from wording mistakes. Identify the exact version and listen around the join; a fluent transcript does not clear clicks, clipped consonants or abrupt noise changes.
+- When revisions cut an already concatenated master, map back through every edit layer. Check whether the boundary accidentally retains a few frames or milliseconds from the next discarded take. Replace the damaged neighborhood from the raw recording when necessary; use the same documented audio treatment once on restored raw sections.
+- After removing a lead-in, check both sides for a leftover syllable from the removed phrase and preserve the full first retained word. Do not cut blindly at rounded seconds or at an ASR timestamp. Tiny fades can suppress clicks but cannot recover missing speech.
+- For a clipped closing phrase such as “I'll send it over,” reopen the raw source and include the full final word plus a short natural trailing pause (often 0.3–0.6 seconds). Do not substitute a freeze frame or silence for missing word audio. If the raw source itself lacks the ending, disclose that rather than claim it restored.
+- Compare the retained audio words with the rebuilt captions after each repair: include short words such as “here's,” “you're,” and “popping”; exclude words from deleted phrases. Clamp caption intervals to the kept speech without dropping an entire retained word merely because its timestamp straddles a cut.
+
 ## Pass 3 — rebuild timing and visuals
 
 Regenerate captions from the retained speech. Do not map a three-word caption across a removed phrase while keeping its deleted words. Correct medical spelling against the recording. Reject empty, negative, overlapping or out-of-range caption intervals.
