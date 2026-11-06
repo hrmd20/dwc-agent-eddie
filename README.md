@@ -171,7 +171,7 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
 5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-All five modes default to a **3-second hook positioned just above the doctor’s head**, maximum two lines, wide translucent charcoal background, white text/yellow emphasis and equal top/bottom padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+All five modes default to a **3-second hook positioned just above the doctor’s head**, maximum two lines, snug translucent charcoal background fitted to the words, large bold white text/yellow keyword emphasis and minimal equal padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 

@@ -12,7 +12,7 @@ For first-use setup or the START HERE prompt, read [the welcome flow](../../../O
 ## Five modes: select from the brief and script
 
 Honor an explicit mode or existing approved edit. Otherwise inspect the script/transcript:
-1. **Captions + text hook**: default for ordinary talking-head speech without an image request. Stationary Eddie captions and a rounded translucent charcoal hook; no topic images.
+1. **Captions + text hook**: default for ordinary talking-head speech without an image request. Stationary Eddie captions and a snug translucent charcoal hook; no topic images.
 2. **Captions + Google images + text hook**: use when the user wants supporting topic pictures with explanatory speech. Search actual spoken terms on Google Images, select a suitable landscape image, preferably 16:9, using [image selection and rounded cards](references/image-selection.md), retain source URLs in the private project and use supplied/explicitly selected images in preference to search. Preserve aspect ratio and watermarks. Place pictures below captions with a small gap; hold for the discussed concept. Do not silently substitute generated pictures.
 3. **Rapid Fire — text hook + captions + Google images**: auto-select for repeated short questions with yes/no answers or rankings. Read [Rapid Fire](references/rapid-fire.md) for question/answer timing, larger /10 scores, Google images and AI/recorded interviewer options.
 
@@ -21,7 +21,7 @@ Honor an explicit mode or existing approved edit. Otherwise inspect the script/t
 
 All five modes use **150% audio gain** (1.5× amplitude, about +3.52 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
 
-All five modes use the [shared text hook](references/text-hook.md): head-relative, horizontally centered translucent charcoal box just above the doctor’s head, maximum two lines, bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
+All five modes use the [shared text hook](references/text-hook.md): head-relative, horizontally centered translucent charcoal box just above the doctor’s head, maximum two lines, large bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
 
 Explicit on-screen SMS/iPhone messages enable the additional [iPhone message treatment](references/iphone-messages.md). Ordinary captions, hooks, or merely saying “text” do not activate notifications.
 
