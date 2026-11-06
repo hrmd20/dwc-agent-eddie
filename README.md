@@ -146,7 +146,7 @@ Invoke `eddie-landscape` in your agent, or load [.agents/skills/eddie-landscape/
 
 ## EDDIE Rapid Fire (Text hook, captions, images)
 
-Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded white hook with red emphasis for the first 3 seconds.
+Rapid-fire questions and rankings with original audio, stationary Eddie captions, clear /10 scores, topic images beneath captions, and a rounded translucent charcoal hook with white text and yellow emphasis, positioned just above the head for the first 3 seconds.
 
 > Use EDDIE Rapid Fire to edit my recording. Add the hook at the top for 0–3 seconds, highlight my selected phrase in red, and show one image per question below the captions. Keep my original audio.
 
@@ -160,7 +160,7 @@ Request iPhone messages or notifications on screen to enable the optional glass-
 
 ### Automatic Rapid Fire mode
 
-EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded white hook with selected red emphasis for the first **3 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
+EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and rankings from your script or recording. It uses Eddie captions, a rounded translucent charcoal hook with white text and selected yellow emphasis just above the doctor’s head for the first **3 seconds**, larger /10 scores and Google topic images directly below captions. Supplied images and explicit style choices take priority. With a script alone it prepares the plan; footage or requested voice generation is needed to produce the video. AI interviewer and recorded nurse options are supported.
 
 ## Master Editor: five modes
 
@@ -171,11 +171,11 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
 5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-All five modes default to a **3-second top-centered hook**, maximum two lines, wide rounded white background, black text/red emphasis and equal top/bottom padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+All five modes default to a **3-second hook positioned just above the doctor’s head**, maximum two lines, wide translucent charcoal background, white text/yellow emphasis and equal top/bottom padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
-All five Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The shared top-centered hook is the default in all five modes. Reframing preserves recorded gaze and does not synthesize eye contact.
+All five Master Editor modes inspect the footage before overlays. Direct-to-camera talking heads are centered when needed with a stable proportional crop, intact headroom and room for captions and images. Intentional side angles, interviews and reaction layouts remain intact. The shared head-relative hook is the default in all five modes. Reframing preserves recorded gaze and does not synthesize eye contact.
 
 ### Sync and Async Reaction inside Master Editor
 

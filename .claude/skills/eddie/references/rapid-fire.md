@@ -9,7 +9,7 @@ Before overlay placement, apply [shared subject framing](framing.md).
 - Start on the first complete spoken word. Remove setup and excessive gaps; keep complete questions, responses and meaningful qualifiers. Use original recorded speech with 150% gain (1.5× amplitude, approximately +3.52 dB), applied once to the clean source, with peak limiting as needed to prevent clipping. No added voiceover, music or click unless requested. Do not double already boosted exports; honor an explicit gain override.
 - Stationary Arial Bold white speech captions with black outline and subtle shadow. Use short 1–3 word phrases; keep short questions together. Calibrate once just below the beard; do not track head movement.
 - Display numerical rankings as `0/10`, `8/10`, `9.5/10`, etc., matching the actual answer. Use larger type for ratings. Preserve additional commentary rather than replacing a qualified answer with a number alone.
-- Hook: follow [the shared top-centered 0–3 second hook](text-hook.md), maximum two lines, white rounded box, black text/red emphasis and equal vertical padding.
+- Hook: follow [the shared top-centered 0–3 second hook](text-hook.md), maximum two lines, translucent charcoal rounded box, white text/yellow emphasis and equal vertical padding.
 - Images: one per topic, directly below captions. Pop in at the question, hold through the answer, disappear or replace at the next topic. Preserve aspect ratio. Default to still pop-ups; mix slide transitions only if requested.
 - The hook stays at the top; images stay below captions. Preserve both without overlap.
 

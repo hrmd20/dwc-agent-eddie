@@ -17,10 +17,10 @@ Apply this pass before placing captions, hooks, images or iPhone messages in all
 ## Overlay zones and the supplied example
 Use the supplied example as a centered, upper-body, direct-eye-contact composition, not as a universal font/color treatment or a requirement to copy its product branding.
 
-All five modes use the [shared top-centered hook](text-hook.md) for 0–3 seconds, with two lines maximum and equal padding. Preserve approved wording and red emphasis; do not copy the example’s black panel/yellow lettering.
+All five modes use the [shared top-centered hook](text-hook.md) for 0–3 seconds, with two lines maximum and equal padding. Preserve approved wording. The November 6 shared hook uses a translucent charcoal panel, white lettering and yellow keyword emphasis.
 
 Approximate portrait zones for the top-hook layout (pixel examples use a 1080×1920 reference; double for 4K):
-- Hook: top 0–20% (0–384 px), inset from the edges. Keep it above the actual hairline; use natural line breaks.
+- Hook: derive its position from actual head/hair bounds after cropping, using the shared hook reference. Keep a modest gap above the head; never default to the top edge or a fixed high inset. Use natural line breaks.
 - Face: upper region, with eyes near 25–35% where possible. Inspect actual head bounds; the example diagram's approximate zones overlap and are not exact crop coordinates.
 - Captions: roughly 55–70% (1056–1344 px), calibrated below the beard, not across the mouth.
 - Supporting image: roughly 68–88% (1306–1690 px), centered below the actual caption glyph bounds with a visible gap. The nominal zones overlap, so resolve based on actual element bounds, not percentages alone.
