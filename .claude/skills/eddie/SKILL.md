@@ -21,7 +21,7 @@ Honor an explicit mode or existing approved edit. Otherwise inspect the script/t
 
 All five modes use **150% audio gain** (1.5× amplitude, about +3.52 dB), plus peak protection to prevent clipping. Apply this once to the clean source; do not repeatedly double already processed exports. Inspect source gain/history and output peaks, preserve sync, and use a limiter as needed without uncontrolled loudness normalization. Explain if peak limiting reduces the gain on loud peaks. Honor any explicit audio override.
 
-All five modes use the [shared text hook](references/text-hook.md): head-relative, horizontally centered translucent charcoal box just above the doctor’s head, maximum two lines, large bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
+All five modes use the [shared text hook](references/text-hook.md): head-relative, horizontally centered ONE translucent gray rounded box enclosing both lines at the hairline, nudged slightly upward, maximum two lines, large bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
 
 Explicit on-screen SMS/iPhone messages enable the additional [iPhone message treatment](references/iphone-messages.md). Ordinary captions, hooks, or merely saying “text” do not activate notifications.
 

@@ -1,18 +1,25 @@
-# Shared EDDIE Master Editor text hook
+# Shared EDDIE MASTER EDITOR text hook
 
-Approved 2026-11-06. Applies to all five Master Editor modes: captions + hook, captions + images + hook, Rapid Fire, Sync Reaction and Async Reaction. This replaces the fixed high top inset and opaque white/red treatment. Timing remains 0–3 seconds. Honor explicit user overrides and preserve an existing approved edit unless a change is requested.
+Approved 2026-11-06: Dr. Vass-style single panel, refined with the APX batch. Applies to Master Editor captions + hook, captions + images + hook, Rapid Fire, Sync Reaction and Async Reaction. Explicit user instructions and an existing approved edit take precedence.
 
-- Show from 0 seconds up to but not including 3 seconds; disappear cleanly at 3.000 seconds.
-- Horizontally centered snug, content-width translucent dark charcoal rounded rectangle; bold white text with the selected keyword in golden yellow (#FFC400). Start with background rgba(40,40,40,0.55), adjusting within roughly 45–65% opacity for legibility while keeping the scene visibly readable through the panel. Text itself remains fully opaque; do not apply opacity to the whole overlay.
-- Maximum TWO lines. Use more characters per line and natural phrase breaks before reducing font size. Preserve approved wording.
-- Center the actual visible text horizontally and vertically inside the box, with EQUAL top and bottom padding. Do not use nominal font line-height as the visible text height: it causes excess empty space beneath the last line.
-- Render all colored runs on the SAME baseline. Measure the complete rendered text's nontransparent bounds, crop to those bounds, then center that text block in the background. Set box width AND height from visible ink bounds plus small equal padding. Never stretch a short hook into a full-width banner or leave empty wings beside the words.
-- Reference for a 1080×1920 canvas: center x=540, Arial Bold approximately 80 px for a short hook, line advance about 1.15× font size, 18–24 px horizontal padding and 12–16 px equal vertical padding around visible glyphs, corner radius about 24. Use measured content width, capped at about 960 px including padding; this cap is not a target width. Scale proportionally for other resolutions. Keep lettering large; wrap long wording naturally to two lines before shrinking only as needed. Box dimensions are dynamic. Do not use a fixed top y=80.
-- Place the box a little above the doctor’s actual head after the final crop, not against the top edge. Use the approved PCP preview as the relationship: a modest visible gap above the hair, rather than the large unused gap in the original. Start with a gap of about 3–5% of canvas height; tune to the shot and supplied reference. Compute box bottom from the highest hair/head position during the hook interval minus that clearance, and box top from bottom minus measured box height. No universal vertical percentage or fixed top inset works for every doctor.
-- Keep one stable hook position per shot; do not make it bounce with head motion. Inspect the whole visible interval and each punch-in, preserving head/hair, side margins and source text. For reaction/split-screen layouts preserve the mode’s composition and choose a clear region rather than attaching the hook to a tiny inset. If insufficient room remains, adjust line breaks/type size or present a framing alternative; never cover the hair or silently move below captions.
-- Leave existing speech captions and supporting images in their own zones. Hook-only revisions preserve audio, cut, captions and images; do not apply another 150% gain to an already edited video.
-- Use the supplied hook. Otherwise propose an accurate hook from the actual recording, without inventing claims, ratings or credentials. Explicit requests for no hook override this default.
+## Appearance
 
-For placement approval, show the actual 2-second video frame with the proposed overlay. For batch work, label each frame with its video ID. After approval render the full video and inspect the first three seconds and the exit at 3 seconds. Keep originals intact.
+Use ONE translucent gray rounded rectangle enclosing the ENTIRE hook, including both lines. Never draw separate pills or boxes per line or keyword. Use large bold Arial text, white (#FFFFFF) with one selected keyword or short phrase in golden yellow (#FFC400). Keep text fully opaque; transparency belongs only to the background.
 
-Approved compact example: “What's a PCP?” in large bold sans-serif, “What's a” white and “PCP?” yellow. At a 733×1280 reference size, the box is approximately x=155–585, y=181–251, with the head beginning near y=305: about 54 px clearance. These coordinates illustrate the relationship only; recalculate from each shot’s actual head position. Verify snug padding, readable transparency, large type and head clearance in the encoded frame before delivery.
+Start with background rgba(72,72,69,0.71). At 1080×1920 use approximately 70 px type, 26 px horizontal padding, 25 px equal top/bottom padding, 20 px between the visible ink of lines, and 26 px corner radius. Scale proportionally for 4K. Fit long wording within safe margins; maximum two lines with natural phrase breaks. Size the single box to the widest line plus padding and the combined visible text height plus padding. Do not stretch short text into a full-width banner.
+
+Render colored runs on the same baseline. Measure visible glyph bounds rather than relying on nominal font line height. Center both lines as one block inside the panel; preserve approved wording and capitalization.
+
+## Position
+
+Calibrate from the actual doctor's hairline AFTER final framing. The approved layout sits over the upper hair area, with its lower edge near the hairline; do not leave a large empty gap above the head. Apply the latest small upward adjustment: approximately 8 px on a 1080×1920 frame (16 px at 2160×3840) above the calibrated placement. The user's “2 mm” is a visual approximation, not a physical unit in video. Never hardcode a universal top coordinate.
+
+Keep the panel off eyebrows, eyes and face, and leave speech captions unobstructed. Hold a stable position per shot; inspect all frames during the hook interval and punch-ins so the hook does not bounce or drift onto the face. For split-screen/reaction footage, preserve the approved composition and source text; use a suitable clear region rather than treating a tiny inset as the full-frame presenter. If space is insufficient, show a framing/layout alternative.
+
+## Timing and review
+
+Default timing remains 0–3 seconds, with a clean exit at 3.000 seconds. Do not silently make a hook persistent. INSIDER TEXT retains its separately requested persistent duration. No-hook requests override the default.
+
+For batch changes, show labeled screenshot previews from actual footage first and await approval before rendering when requested. Use a face-visible frame; disclose when it is outside the normal hook interval rather than implying timing approval. After approval inspect the entire hook interval and exit in the encoded video. Preserve originals, cut, speech captions, images and audio for hook-only changes; never apply another 150% gain.
+
+This update changes the editing recipe and presets; it does not retrain an underlying model or authorize uploads.

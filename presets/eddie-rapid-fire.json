@@ -21,18 +21,27 @@
   "hook": {
     "start": 0,
     "end": 3,
-    "top": 160,
-    "width": 1920,
-    "height": "visible ink height + 88",
-    "font_size": 116,
-    "background": "#FFFFFF",
-    "text_color": "#000000",
-    "emphasis_color": "#FF0000",
+    "width": "widest visible line plus twice horizontal padding",
+    "height": "combined visible text bounds plus equal vertical padding",
+    "font_size": 140,
+    "background": "rgba(72,72,69,0.71)",
+    "text_color": "#FFFFFF",
+    "emphasis_color": "#FFC400",
     "corner_radius": 52,
-    "placement": "top-centered",
+    "placement": "hairline-relative-stable-per-shot",
     "max_lines": 2,
-    "vertical_padding": 44,
-    "center_visible_ink": true
+    "vertical_padding": 50,
+    "center_visible_ink": true,
+    "container": "single-rounded-rectangle-for-entire-hook",
+    "horizontal_padding": 52,
+    "line_ink_gap": 40,
+    "upward_adjustment_pixels": 16,
+    "max_width": 2040,
+    "referenceCanvas": [
+      2160,
+      3840
+    ],
+    "reference": "references/text-hook.md"
   },
   "images": {
     "top": 2260,
