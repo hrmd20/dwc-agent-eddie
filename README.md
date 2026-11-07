@@ -1,6 +1,6 @@
 # DWC AGENT EDDIE
 
-**Seven Digital White Coat content workflows: EDDIE MANAGER, EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction, Rapid Fire and EDDIE Claude. Async Reaction is included inside Master Editor.**
+**Digital White Coat content workflows: EDDIE MANAGER, EDDIE MASTER EDITOR, Carousel, Landscape, Sync Reaction, Rapid Fire and EDDIE Claude. Async Reaction is included inside Master Editor. EDDIE INSIDER TEXT is its named message-commentary variant.**
 
 ## New here? Start here
 
@@ -17,6 +17,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
 | **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
+| **EDDIE INSIDER TEXT** | 1.0.0 | Full-video charcoal/yellow hook close above the head, captions below the lips, supplied message screenshots; optional requested blur/beep censorship | Recording, message screenshots and hook wording |
 | **EDDIE MANAGER — BASIC** | 1.1.0 | Vista Social uploads, channels, captions, scheduling, public replies, Opening DM and resource DM | Approved videos, matching scripts and connected Vista Social profiles |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
 | **EDDIE Landscape** | 1.0.0 | 4K 16:9, stationary white outlined captions and clean speech cuts | Video, optional script |
@@ -42,6 +43,10 @@ The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Sync Reaction 1
 
 > Use EDDIE MASTER EDITOR to edit this talking-head video. Keep me visible with stationary bold white captions outlined in black, just below my beard at the base of my neck. Use only my supplied pictures directly below the captions, appearing and disappearing instantly with no animation. If I provide and request a click, play it just before each picture. With no pictures, use captions only. Start with a 10-second placement preview.
 
+**EDDIE INSIDER TEXT**
+
+> Use EDDIE INSIDER TEXT. Keep a large charcoal/yellow hook close above my head throughout the video, captions below my lips and my supplied messages below them. Preserve complete words at the ending and show me a 4K review copy before uploading.
+
 **EDDIE Carousel**
 
 > Use EDDIE Carousel. First ask me for my own Canva template that you are allowed to edit, my topic and audience, and posts or accounts for inspiration. Work in a copy of my template, preserve my branding, and create original slide copy and a social caption. Verify medical claims and return the editable Canva draft for my review.
@@ -63,6 +68,7 @@ A video preview request stops at the preview. After approval, ask for the full v
 ```sh
 python3 scripts/new_project.py my-master-video --style master
 python3 scripts/new_project.py my-carousel --style carousel
+python3 scripts/new_project.py my-insider-video --style insider-text
 ```
 
 Omitting `--style` keeps the original MASTER EDITOR default. The helper copies the chosen preset into an ignored `projects/<name>/` folder. Video projects contain assets, transcripts, renders and QA; Carousel projects contain sources, copy, exports, QA and a private setup brief. It refuses to overwrite an existing project. Updating this repository does not silently change a project's copied preset.

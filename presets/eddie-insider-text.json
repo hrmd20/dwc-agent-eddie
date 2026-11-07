@@ -1,0 +1,59 @@
+{
+  "name": "EDDIE INSIDER TEXT",
+  "styleId": "eddie-insider-text",
+  "version": 1,
+  "releaseVersion": "1.0.0",
+  "canvas": {
+    "width": 2160,
+    "height": 3840,
+    "fps": 30
+  },
+  "hook": {
+    "enabled": true,
+    "duration": "entire-video",
+    "position": "stable-close-above-hairline-calibrated-to-full-clip",
+    "maxLines": 2,
+    "fontFamily": "Arial Bold",
+    "fontSize": 156,
+    "textColor": "#FFFFFF",
+    "emphasisColor": "#FFC400",
+    "background": "rgba(40,40,40,0.55)",
+    "horizontalPadding": 28,
+    "verticalPadding": 20,
+    "cornerRadius": 32,
+    "width": "visible-ink-plus-padding"
+  },
+  "captions": {
+    "position": "stationary-below-lips-above-message-screenshots",
+    "fontFamily": "Arial Bold",
+    "fontSize": 134,
+    "color": "#FFFFFF",
+    "stroke": "#000000",
+    "outline": 8,
+    "shadow": 3,
+    "maxWords": 3
+  },
+  "messages": {
+    "source": "user-supplied",
+    "preserveTiming": true,
+    "preserveAspectRatio": true,
+    "position": "below-captions",
+    "animation": "none"
+  },
+  "audioGain": {
+    "multiplier": 1.5,
+    "applyOnceToCleanSource": true,
+    "peakProtection": true
+  },
+  "censoring": {
+    "enabledWhen": "explicitly-requested",
+    "spokenWord": "mute-and-beep",
+    "visibleWord": "blur-during-entire-appearance",
+    "caption": "[BEEP]"
+  },
+  "ending": {
+    "preserveCompleteFinalWord": true,
+    "tail": "natural-pause-before-next-utterance"
+  },
+  "reference": ".agents/skills/eddie-insider-text/SKILL.md"
+}
