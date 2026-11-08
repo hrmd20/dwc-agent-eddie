@@ -31,6 +31,8 @@ With a script alone, prepare the hook, question/answer map and visual plan; do n
 
 For every new edit in all five modes, apply [quality defaults](references/quality-defaults.md): complete speech cleanup and second-pass review, conservative voice isolation/denoise, a single 150% audio gain, centered proportional framing without accidental edge bars, and 4K delivery. Honor user overrides and preserve approved audio/cuts during visual-only revisions. These are editing instructions, not model fine-tuning or a promise of error-free results.
 
+Before final delivery, run [EDDIE Quality Check](../eddie-quality-check/SKILL.md). Its executable report records Passed / Needs review / Not checked against the exact export. Preserve REVIEW status whenever any required check is unresolved or unperformed.
+
 ## Establish the edit
 
 For recorded speech in every video mode, read and apply [speech cleanup and delivery review](references/speech-cleanup.md). Run the four-pass workflow: source and overlapping excerpt audit, clean speech and join review, rebuilt captions/visual timing, then actual export playback and technical checks. Use the bundled candidate scanner; resolve every issue in a private ledger. A full-length transcript or successful render is not a release check. Unresolved issues block final delivery; unavailable listening requires an explicitly provisional review.

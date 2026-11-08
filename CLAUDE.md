@@ -15,3 +15,5 @@ Choose the requested workflow before editing:
 - EDDIE Carousel: read `.agents/skills/eddie-carousel/SKILL.md`; ask for the user's own editable Canva template, topic and inspiration. Preserve the template by working in a copy.
 
 Honor an existing project's style selection and approved cut. For videos with no style specified, retain the existing selection or default to MASTER EDITOR. Route carousel requests to Carousel; do not apply video requirements to them. Current user instructions override style defaults. Keep originals intact and private media and Canva project details inside ignored `projects/`. Discover local tools rather than hardcoding a developer's paths or cloud credentials. Keep the Codex and Claude skill copies synchronized. Never publish private footage, transcripts or credentials with reusable skill files.
+
+Before final video delivery, apply `.agents/skills/eddie-quality-check/SKILL.md` (or matching Claude copy). All required checks must pass against the exact export; missing listening or unresolved findings keep the file in REVIEW.

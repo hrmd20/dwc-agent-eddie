@@ -223,3 +223,7 @@ Example: “Use EDDIE MANAGER BASIC to upload these approved videos to my select
 It checks the calendar and exact profile/post IDs to avoid duplicates and wrong-brand uploads. The included [Telemed ED example](.agents/skills/eddie-manager/references/ed-basic-example.md) records the approved three-action flow. Other practices use their own approved accounts, wording and resources. Saved/active status is verified separately from actual delivery.
 
 Requires connected Vista Social tools or an authenticated browser for unsupported actions. Installing or updating the skill does not itself schedule posts or activate automations.
+
+## EDDIE Quality Check
+
+Local speech alignment and export QC now produce timestamped findings, optional review clips, and a hash-bound release report. Checks cover cut boundaries, repeats, gaps, ASS captions, decode, black/frozen frames and audio peaks. Full playback, layout and natural audio review remain required; skipped checks cannot silently pass. See [.claude/skills/eddie-quality-check/SKILL.md](.claude/skills/eddie-quality-check/SKILL.md). Install its isolated Python requirements for WhisperX; the scanner itself uses Python plus FFmpeg/FFprobe.
