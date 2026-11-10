@@ -14,6 +14,8 @@ Use the approved Hormozi med-spa edit as the style reference: a full-screen sour
 
 ## Captions and hook
 
+Use the [shot-by-shot placement check](async-overlay-placement.md) after reframing and on the export.
+
 Preserve embedded captions in the source. For the doctor, use heavy white Arial Black with a soft dark shadow and short speech-timed beats, typically two words, with one to three words as the phrase requires. Keep the captions at a stable anchor below the beard or at the neckline. At 2160 × 3840, start with a font size near 172 px and a vertical center near 1988 px, then adjust for the shot. Keep optional visuals below the captions.
 
 Show the hook for the first four seconds by default. Use a single translucent charcoal box, bold white text and one yellow keyword, with up to two lines and snug, even padding. Choose a fixed position for the opening shot that clears the face and any embedded captions. In the Hormozi edit it sat directly below the source captions. When that area is crowded, place it just above the speaker’s head if there is room. Honor explicit placement and duration requests.
