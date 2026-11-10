@@ -21,7 +21,7 @@ Honor an explicit mode or existing approved edit. Otherwise inspect the script/t
 
 All five modes target **−14 LUFS integrated loudness**, verified on the encoded export within ±0.5 LUFS, with true peak at or below −1 dBTP. Use measured two-pass normalization after balancing and conservative noise cleanup. This replaces the historical fixed 150% boost; do not stack gain. Read [mandatory third polishing layer](references/third-polish.md) for the release checklist.
 
-All five modes use the [shared text hook](references/text-hook.md): head-relative, horizontally centered ONE translucent gray rounded box enclosing both lines at the hairline, nudged slightly upward, maximum two lines, large bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. Read the shared reference before placing any hook.
+The [shared text hook](references/text-hook.md) defaults to this treatment: head-relative, horizontally centered ONE translucent gray rounded box enclosing both lines at the hairline, nudged slightly upward, maximum two lines, large bold white text with selected yellow emphasis, visible from 0–3 seconds. Center the visible text with equal top/bottom padding. An explicit no-hook request overrides this default. For Async Reaction, use the four-second hook and shot-specific placement described in [the Async Reaction reference](references/reaction-async.md). Read the applicable reference before placing the hook.
 
 Explicit on-screen SMS/iPhone messages enable the additional [iPhone message treatment](references/iphone-messages.md). Ordinary captions, hooks, or merely saying “text” do not activate notifications.
 

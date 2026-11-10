@@ -1,7 +1,7 @@
 {
   "name": "EDDIE Async Reaction",
   "style": "async-reaction",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "canvas": {
     "width": 2160,
     "height": 3840,
@@ -15,16 +15,23 @@
   "synchronizedInset": false,
   "captions": {
     "position": "fixed-below-beard-base-of-neck",
-    "referenceCenterY": 2300,
-    "fontSize": 134,
+    "referenceCenterY": 1988,
+    "fontSize": 172,
     "maxWords": 3,
     "color": "#FFFFFF",
     "highlight": null,
-    "stroke": "#000000",
+    "stroke": null,
     "stationary": true,
-    "fontFamily": "Arial",
-    "fontWeight": "bold",
-    "animation": "none"
+    "fontFamily": "Arial Black",
+    "fontWeight": "heavy",
+    "animation": "none",
+    "preferredWords": 2,
+    "shadow": {
+      "color": "#000000",
+      "opacity": 0.69,
+      "blurPixels": 13,
+      "offsetYPixels": 10
+    }
   },
   "supportingVisuals": {
     "optional": true,
@@ -32,8 +39,6 @@
     "preserveAspectRatio": true
   },
   "audio": {
-    "gainMultiplier": 1.5,
-    "applyGainOnce": true,
     "peakProtection": true,
     "addedVoiceOver": false,
     "voiceCleanup": {
@@ -41,7 +46,10 @@
       "denoise": "gentle; preserve natural voice",
       "applyOnce": true,
       "encodedPeakCheck": true
-    }
+    },
+    "targetIntegratedLUFS": -14,
+    "maxTruePeakDbTP": -1,
+    "matchSourceAndReaction": true
   },
   "export": {
     "codec": "h264",
@@ -54,8 +62,8 @@
   "hook": {
     "enabled": true,
     "startSeconds": 0,
-    "durationSeconds": 3,
-    "position": "hairline-relative-stable-per-shot",
+    "durationSeconds": 4,
+    "position": "fixed-clear-of-face-and-source-captions",
     "referenceCanvas": [
       2160,
       3840
@@ -71,11 +79,10 @@
     "verticalPadding": 50,
     "height": "combined visible text bounds plus equal vertical padding",
     "centerVisibleInk": true,
-    "reference": "references/text-hook.md",
+    "reference": ".agents/skills/eddie/references/reaction-async.md",
     "container": "single-rounded-rectangle-for-entire-hook",
     "horizontalPadding": 52,
     "lineInkGap": 40,
-    "upwardAdjustmentPixels": 16,
     "maxWidth": 2040
   },
   "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"

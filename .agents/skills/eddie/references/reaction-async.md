@@ -4,23 +4,24 @@ Use when the source clip is shown first and the doctor responds afterward in sep
 
 ## Reference and sequence
 
-User-selected reference: https://www.instagram.com/reel/Dd46Pe2COyK/ (2026-10-28).
-Observed: full-screen vertical source footage, followed by full-screen doctor commentary; a readable study screenshot appears below the commentary captions. Exact transition effects and sound design were not measured. Do not copy medical claims from the reference into unrelated edits.
+Use the approved Hormozi med-spa edit as the style reference: a full-screen source excerpt with its own captions, followed by the doctor’s separately recorded full-screen response. Reuse the editing approach, adapting placement and timing to each recording.
 
 1. Open with the relevant source excerpt full-screen. Preserve its aspect ratio, important context and embedded captions. Avoid a persistent presenter inset.
-2. Cut cleanly to the doctor's full-screen response at a natural speech boundary. Use a separate commentary recording; no simultaneous reaction or audio-correlation offset is required. Preserve an approved composite if supplied.
-3. Frame the doctor using the shared framing reference: stable crop, clear face, natural headroom and upper body visible.
+2. Cut directly to the doctor's first substantive response or the user-selected line. Skip setup, repeated agreement and redundant lead-ins when the remaining line makes sense on its own. Check the speech boundary so the opening word is intact. End the source excerpt on a complete thought before an unrelated promotional CTA when appropriate. Use a separate commentary recording; no simultaneous reaction or audio-correlation offset is required. Preserve an approved composite if supplied.
+3. Use a stable upper-body crop with natural headroom. Keep the face clear and preserve the phone, microphone and useful gestures when they contribute to the shot. Match the supplied framing reference when available. Composite captions after reframing so the text stays fixed.
 4. Add relevant supporting images or readable study excerpts below the captions when they support the spoken point. Keep attribution and private source URLs. Use supplied assets first; find relevant Google images when requested. Do not invent evidence or add an image to every sentence automatically.
 5. Finish on a complete thought; remove setup, abandoned takes and excessive dead air without changing meaning. Keep source ranges and retime captions after cuts.
 
 ## Captions and hook
 
-Use the original EDDIE treatment in [style.md](style.md): bold white text, black outline, short speech-synced phrases, stationary below the beard/base of neck. Keep images below the reserved caption bounds and clear of the face. Do not duplicate embedded source captions. The reference's blue words and white caption cards are not the EDDIE default. Use the [shared top-centered 0–3 second hook](text-hook.md), maximum two lines with equal padding; preserve source context and honor an explicit no-hook request.
+Preserve embedded captions in the source. For the doctor, use heavy white Arial Black with a soft dark shadow and short speech-timed beats, typically two words, with one to three words as the phrase requires. Keep the captions at a stable anchor below the beard or at the neckline. At 2160 × 3840, start with a font size near 172 px and a vertical center near 1988 px, then adjust for the shot. Keep optional visuals below the captions.
+
+Show the hook for the first four seconds by default. Use a single translucent charcoal box, bold white text and one yellow keyword, with up to two lines and snug, even padding. Choose a fixed position for the opening shot that clears the face and any embedded captions. In the Hormozi edit it sat directly below the source captions. When that area is crowded, place it just above the speaker’s head if there is room. Honor explicit placement and duration requests.
 
 ## Audio
 
-Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Normalize the clean balanced mix to −14 LUFS integrated with encoded true peak ≤ −1 dBTP; do not double processed exports. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
+Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Measure the source and reaction separately and balance their perceived loudness at the transition. Use gentle voice cleanup when needed. Target −14 LUFS integrated for the complete export and encoded true peak ≤ −1 dBTP. Preserve approved audio on visual-only revisions and avoid stacking gain on a processed export. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
 
 ## Deliver and verify
 
-Export a new 4K 2160×3840 H.264 MP4, AAC 48 kHz, fast-start, preserving originals. Check the encoded opening, source-to-doctor cut, caption timing and bounds, supporting visual timing/readability, final word, full-file decode, A/V sync and audio peaks. Distinguish visual/listening review from automated checks. Keep footage, transcripts, assets, edit decisions and verification notes in ignored projects/. Publish only reusable skill instructions, never private media.
+Export a new 4K 2160×3840 H.264 MP4, AAC 48 kHz, fast-start, preserving originals. Apply the [third polishing pass](third-polish.md). Check the encoded opening, source-to-doctor cut, caption timing and bounds, supporting visual timing/readability, final word, full-file decode, A/V sync and audio peaks. Distinguish visual/listening review from automated checks. Keep footage, transcripts, assets, edit decisions and verification notes in ignored projects/. Publish only reusable skill instructions, never private media.

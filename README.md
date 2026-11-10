@@ -177,7 +177,7 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
 5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
-All five modes default to a **3-second hook positioned at the doctor’s hairline with a small upward clearance**, maximum two lines, ONE translucent gray rounded rectangle enclosing both lines, fitted to the complete text block, large bold white text/yellow keyword emphasis and minimal equal padding. All five use **150% audio gain**, applied once with peak protection. Sync and Async Reaction retain their layouts and use the same shared hook. Explicit user choices override defaults. iPhone message overlays remain optional.
+The shared default is a **3-second hook positioned at the doctor’s hairline with a small upward clearance**, maximum two lines, ONE translucent gray rounded rectangle enclosing both lines, fitted to the complete text block, large bold white text/yellow keyword emphasis and minimal equal padding. All five target **−14 LUFS integrated** with peak protection. Async Reaction uses a four-second hook placed around the source captions and heavy white reaction captions in short beats. Explicit user choices override defaults. iPhone message overlays remain optional.
 
 ### Shared subject framing
 
@@ -188,7 +188,7 @@ All five Master Editor modes inspect the footage before overlays. Direct-to-came
 Master Editor includes both reaction styles:
 
 - **EDDIE Sync Reaction:** source clip with synchronized bottom-left doctor inset, then full-screen commentary. The existing standalone `eddie-reaction` skill and `--style reaction` command remain compatible; the displayed name is now EDDIE Sync Reaction.
-- **EDDIE Async Reaction:** full-screen source excerpt first, then separately recorded full-screen doctor commentary. Optional images or study excerpts sit below the original EDDIE captions. No synchronized inset is required. [Approved reference](https://www.instagram.com/reel/Dd46Pe2COyK/).
+- **EDDIE Async Reaction:** full-screen source excerpt first, then separately recorded full-screen doctor commentary. Start the doctor’s response on the first substantive line or the requested phrase. Use the Hormozi med-spa treatment for framing, a four-second source hook and short white caption beats. Optional supporting visuals sit below the reaction captions.
 
 Say which format you want, or provide footage and a brief so Master Editor can choose. Existing approved edits retain their style. Both apply 150% audio gain once with peak protection. Script-only input produces a plan until footage is supplied.
 
