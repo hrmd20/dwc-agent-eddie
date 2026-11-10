@@ -8,10 +8,10 @@ Apply these defaults to new videos for every practice. A supplied reference, exp
 - Treat a pause over 0.4 seconds, a repeated 2–8-word opening, unusually long word timing or transcript disagreement as a REVIEW trigger, not an automatic delete. Keep natural breaths and interviewer response windows. Remove opening setup delays while retaining the complete first word.
 - Check every join with surrounding speech. Rebuild caption and visual timing after cuts. A revised join must be checked again; never rely on the prior version's review.
 
-## Voice isolation, denoise and 150% audio
+## Voice isolation, denoise and −14 LUFS loudness
 - Start from the unprocessed source or documented unamplified clean intermediate. Default to conservative speech-focused noise suppression/voice isolation and gentle residual denoise, reducing or bypassing stages when the source is already clean. Discover a locally available speech model/tool; document any unavailable capability rather than describing ordinary gain/EQ as voice isolation.
 - Compare processed and original speech at matched loudness. Preserve quiet consonants, breaths, interviewer questions and natural tone. Lower the strength if processing causes metallic, watery or gated speech. Do not stack a noise gate and several denoisers without a demonstrated need.
-- Balance speakers/source clips, then apply 1.5× amplitude (+3.52 dB) ONCE, followed by peak protection. Never apply 150% to an already amplified export. For visual-only revisions, copy the approved audio unchanged where possible.
+- Balance speakers/source clips, then use measured two-pass normalization to −14 LUFS integrated (±0.5 LUFS), encoded true peak ≤ −1 dBTP. This replaces fixed 150% gain. Never stack gain on processed exports. For visual-only revisions, preserve approved audio if it meets the current target; report conflicts rather than silently changing an explicitly approved treatment.
 - Measure the encoded AAC output, including true peaks when supported. A limiter before encoding does not prove the encoded file is safe: codec overshoot can introduce clipping. Leave headroom, inspect peaks and rerender audio if needed. Record actual settings and any peak limiting.
 
 ## Framing and overlays
@@ -28,3 +28,6 @@ Apply these defaults to new videos for every practice. A supplied reference, exp
 - Save a separately named review copy; preserve originals and prior approvals. Inspect actual encoded frames, not just layout previews. Verify full-file decode, timing, dimensions, A/V sync, captions, visual cues, peak levels and every revised join.
 - Watch AND listen to the entire export at normal speed before calling it final. Bind the review record to the exact output file/hash. If listening is unavailable, clearly label it provisional review with listening pending. Never mark a failed or unchecked gate passed based on ASR or a successful render.
 - Return usable review links first. Do not move to the posting folder or upload unless authorized for that destination. Publish only reusable instructions/presets; keep footage, transcripts, personal assets and review ledgers private.
+
+## Third polishing layer
+Apply [third-polish.md](third-polish.md) to every video before delivery. Missing listening or any unresolved checklist item blocks delivery, including a provisional export unless explicitly requested. Internal QC renders remain allowed.

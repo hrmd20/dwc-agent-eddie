@@ -19,7 +19,7 @@ Use the original EDDIE treatment in [style.md](style.md): bold white text, black
 
 ## Audio
 
-Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Apply 150% gain once (1.5×, +3.52 dB) to the clean balanced speech with peak protection; do not double processed exports. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
+Use source audio during the source excerpt, then the doctor's recorded commentary. Avoid duplicate source audio, abrupt clipped syllables and unintended overlap at the cut. Normalize the clean balanced mix to −14 LUFS integrated with encoded true peak ≤ −1 dBTP; do not double processed exports. No added voice-over, music or notification/click sounds unless requested. Do not synthesize speech to repair cuts.
 
 ## Deliver and verify
 

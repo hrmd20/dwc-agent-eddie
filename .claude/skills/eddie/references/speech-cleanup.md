@@ -39,7 +39,7 @@ Make a clean intermediate without burned-in overlays. Freshly transcribe it; rep
 
 Regenerate captions from the retained speech. Do not map a three-word caption across a removed phrase while keeping its deleted words. Correct medical spelling against the recording. Reject empty, negative, overlapping or out-of-range caption intervals.
 
-Retime images, hooks, censor beeps, motion and other audio cues using the same edit map. Preserve user-approved framing and style. Apply 150% gain once to the clean source, with peak protection; never double an already processed export. Check the complete profanity mute and beep when requested.
+Retime images, hooks, censor beeps, motion and other audio cues using the same edit map. Preserve user-approved framing and style. Normalize the clean balanced mix to −14 LUFS integrated with encoded true peak ≤ −1 dBTP; never stack gain on processed exports. Check the complete profanity mute and beep when requested.
 
 ## Pass 4 — actual export review
 

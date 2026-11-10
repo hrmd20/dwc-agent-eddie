@@ -122,6 +122,9 @@ def main():
     if aus:
         peaks=re.findall(r'Peak:\s+(-?[0-9.]+) dBFS',r.stderr)
         check('true_peak','Passed'if peaks and float(peaks[-1])<=-1 else 'Needs review',f"Encoded true peak {peaks[-1] if peaks else 'unavailable'} dBFS; target <= -1")
+    loudness=re.findall(r'I:\s+(-?[0-9.]+) LUFS',r.stderr)
+    measured=float(loudness[-1]) if loudness else None
+    check('integrated_loudness','Passed' if measured is not None and math.isfinite(measured) and abs(measured+14)<=.5 else 'Needs review',f'Encoded integrated loudness {measured} LUFS; target -14 ±0.5')
     check('signal_scan','Passed'if r.returncode==0 and not findings else 'Needs review','See timestamped candidates; not a perceptual audio certification.')
     ws=None
     if 'export_words'in m:
@@ -148,7 +151,7 @@ def main():
         if expected!=actual:append([dict(kind='transcript_difference',start=0,end=duration,detail=' '.join(difflib.unified_diff(expected,actual,lineterm=''))) ])
         check('export_transcript_comparison','Passed'if expected==actual else 'Needs review','Independent ASR comparison is advisory; ASR can hide clipped syllables.')
     else:check('export_transcript_comparison','Not checked','Expected edited transcript and independently transcribed export required')
-    for name in ['source_word_boundaries','every_join_listening','full_export_playback','caption_visuals_and_layout','audio_processing_review','ending_review']:
+    for name in ['source_word_boundaries','every_join_listening','full_export_playback','caption_visuals_and_layout','audio_processing_review','ending_review','zoom_text_stability','repeated_sentences_review']:
         check(name,'Not checked','Reviewer must inspect exact export and record evidence')
     if 'source_words'in m and 'source_ranges'in m and 'source_media'in m:
         source_data=json.loads(path('source_words').read_text())
@@ -168,6 +171,7 @@ def main():
         if rev.get('fingerprint')!=fingerprint:raise ValueError('Stale review: export or inputs changed')
         for key,val in rev.get('checks',{}).items():
             if key not in checks or val.get('status')!='Passed' or not val.get('evidence') or not val.get('reviewer'):raise ValueError('Review needs valid check, Passed, evidence, reviewer')
+            if key in ('integrated_loudness','true_peak') and checks[key]['status']!='Passed':raise ValueError('Failed loudness/peak measurement requires rerender, not manual override')
             checks[key]=dict(status='Passed',detail=val['evidence'],reviewer=val['reviewer'])
         for f in findings:
             val=rev.get('findings',{}).get(f['id'],{})
