@@ -16,7 +16,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 
 | Style | Style version | Visual treatment | You provide |
 | --- | --- | --- | --- |
-| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Original clip with synchronized doctor inset, then full-screen commentary.<br><br>**5. Async Reaction:** Full-screen source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
+| **EDDIE MASTER EDITOR** | 1.1.0 | **1. Captions + hook:** Eddie captions and a 3-second text hook.<br><br>**2. Captions + Google images + hook:** Adds relevant images below the captions.<br><br>**3. Rapid Fire:** Question-and-answer timing, Google images, large ratings or answer labels, and a 3-second hook.<br><br>**4. Sync Reaction:** Rounded source overlay with original audio, then full-screen commentary.<br><br>**5. Async Reaction:** Source clip, then separate full-screen doctor commentary with supporting images/study excerpts below EDDIE captions. | Your recording; for Reaction, the original clip and your reaction recording |
 | **EDDIE INSIDER TEXT** | 1.0.0 | Full-video charcoal/yellow hook close above the head, captions below the lips, supplied message screenshots; optional requested blur/beep censorship | Recording, message screenshots and hook wording |
 | **EDDIE MANAGER — BASIC** | 1.1.0 | Vista Social uploads, channels, captions, scheduling, public replies, Opening DM and resource DM | Approved videos, matching scripts and connected Vista Social profiles |
 | **EDDIE Carousel** | 1.0.0 | Original educational carousels filled into your own Canva template | Editable Canva template, topic and optional inspiration |
@@ -25,7 +25,7 @@ EDDIE guides your first edit, recommends a style and checks the tools. The downl
 
 MASTER EDITOR keeps the presenter visible and places short captions at the base of the neck. Optional iPhone notifications activate only when requested.
 
-The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Sync Reaction 1.0.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. Notification animation is opt-in. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
+The latest repository adds **EDDIE Landscape 1.0.0** and **EDDIE Sync Reaction 1.1.0** alongside MASTER EDITOR and Carousel. **EDDIE MASTER EDITOR 1.1.0** now uses the simplified Preview 3 treatment: stationary white outlined captions, optional still pictures that appear instantly, and optional click-before-image cues. Notification animation is opt-in. Existing projects keep their copied settings until you request this update. [Classic-only v1.0.0](https://github.com/hrmd20/dwc-agent-eddie/releases/tag/v1.0.0) remains available.
 
 ## Download and start
 
@@ -174,8 +174,8 @@ EDDIE MASTER EDITOR detects repeated short questions, yes/no answers and ranking
 2. **Captions + Google images + text hook** — supporting pictures below captions.
 3. **Rapid Fire** — automatically selected for short Q&A/ranking scripts; hook, captions, Google images and large /10 scores.
 
-4. **Sync Reaction** — original clip with synchronized presenter inset, followed by full-screen commentary.
-5. **Async Reaction** — full-screen source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
+4. **Sync Reaction** — rounded source overlay with original audio, followed by full-screen commentary.
+5. **Async Reaction** — source excerpt, then separately recorded full-screen doctor commentary with optional supporting visuals below EDDIE captions.
 
 The shared default is a **3-second hook positioned at the doctor’s hairline with a small upward clearance**, maximum two lines, ONE translucent gray rounded rectangle enclosing both lines, fitted to the complete text block, large bold white text/yellow keyword emphasis and minimal equal padding. All five target **−14 LUFS integrated** with peak protection. Async Reaction uses a four-second hook placed around the source captions and heavy white reaction captions in short beats. Explicit user choices override defaults. iPhone message overlays remain optional.
 
@@ -185,10 +185,12 @@ All five Master Editor modes inspect the footage before overlays. Direct-to-came
 
 ### Sync and Async Reaction inside Master Editor
 
+Sync Reaction uses a rounded moving source overlay with a subtle drop shadow. Placement follows the shot. The original clip plays with its own audio, then the doctor’s audio starts after the clip. Use the approved charcoal-and-yellow hook at the top. A [doctor cutout](.agents/skills/eddie/references/reaction-cutout.md) is available when needed.
+
 Master Editor includes both reaction styles:
 
-- **EDDIE Sync Reaction:** source clip with synchronized bottom-left doctor inset, then full-screen commentary. The existing standalone `eddie-reaction` skill and `--style reaction` command remain compatible; the displayed name is now EDDIE Sync Reaction.
-- **EDDIE Async Reaction:** full-screen source excerpt first, then separately recorded full-screen doctor commentary. Start the doctor’s response on the first substantive line or the requested phrase. Use the Hormozi med-spa treatment for framing, a four-second source hook and short white caption beats. Optional supporting visuals sit below the reaction captions.
+- **EDDIE Sync Reaction:** rounded source overlay with original audio, then full-screen commentary. The existing standalone `eddie-reaction` skill and `--style reaction` command remain compatible; the displayed name is now EDDIE Sync Reaction.
+- **EDDIE Async Reaction:** source excerpt first, then separately recorded full-screen doctor commentary. Start the doctor’s response on the first substantive line or the requested phrase. Use the Hormozi med-spa treatment for framing, a four-second source hook and short white caption beats. Optional supporting visuals sit below the reaction captions.
 
 Say which format you want, or provide footage and a brief so Master Editor can choose. Existing approved edits retain their style. Both apply 150% audio gain once with peak protection. Script-only input produces a plan until footage is supplied.
 

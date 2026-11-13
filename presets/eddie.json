@@ -130,17 +130,21 @@
       "sync": {
         "name": "EDDIE Sync Reaction",
         "reference": "references/reaction-sync.md",
-        "layout": "continuous source with synchronized bottom-left inset, then full-screen commentary"
+        "layout": "rounded source overlay with a soft shadow and original audio, then full-screen doctor commentary and audio"
       },
       "async": {
         "name": "EDDIE Async Reaction",
         "reference": "references/reaction-async.md",
-        "layout": "full-screen source excerpt, then separately recorded full-screen doctor commentary",
+        "layout": "source excerpt first, then separately recorded full-screen doctor commentary",
         "images": "optional relevant supporting images or study excerpts below captions"
       }
     },
     "selection": "Honor explicit choice or approved edit; use footage and brief to select Sync versus Async",
-    "hook": "shared top-centered 0\u20133 second hook; preserve source text and face clearance"
+    "hook": "approved charcoal and yellow hook in top safe area; use selected reaction timing",
+    "composition": {
+      "default": "use the selected reaction preset",
+      "reference": ".agents/skills/eddie/references/reaction-cutout.md"
+    }
   },
   "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
 }

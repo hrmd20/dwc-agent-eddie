@@ -9,7 +9,7 @@
   },
   "reference": ".agents/skills/eddie/references/reaction-async.md",
   "sequence": [
-    "full-screen source excerpt",
+    "source excerpt with doctor cutout when a matching reaction plate is available",
     "full-screen doctor commentary"
   ],
   "synchronizedInset": false,
@@ -63,7 +63,7 @@
     "enabled": true,
     "startSeconds": 0,
     "durationSeconds": 4,
-    "position": "fixed-clear-of-face-and-source-captions",
+    "position": "top-safe-area-clear-of-faces-and-source-captions",
     "referenceCanvas": [
       2160,
       3840
@@ -85,5 +85,16 @@
     "lineInkGap": 40,
     "maxWidth": 2040
   },
-  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md",
+  "composition": {
+    "default": "doctor-cutout-source-overlay",
+    "layerOrderBackToFront": [
+      "reframed doctor base",
+      "moving source overlay",
+      "masked doctor foreground",
+      "captions and top hook"
+    ],
+    "reference": ".agents/skills/eddie/references/reaction-cutout.md",
+    "fallback": "full-screen source opening when no matching doctor plate is available"
+  }
 }

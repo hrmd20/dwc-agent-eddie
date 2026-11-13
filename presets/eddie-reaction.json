@@ -1,7 +1,7 @@
 {
   "name": "EDDIE Sync Reaction",
   "style": "sync-reaction",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "canvas": {
     "width": 2160,
     "height": 3840,
@@ -11,21 +11,6 @@
     "offsetSeconds": null,
     "measureEachProject": true,
     "preserveContinuousSource": true
-  },
-  "sourceRect": {
-    "x": 120,
-    "y": 64,
-    "width": 1920,
-    "height": 3412,
-    "fit": "contain"
-  },
-  "reactionInset": {
-    "x": 48,
-    "y": 2928,
-    "width": 648,
-    "height": 864,
-    "border": 6,
-    "entryFrame": 2
   },
   "captions": {
     "font": "Arial",
@@ -45,11 +30,6 @@
       "y": 2520,
       "size": 124
     },
-    "insetSpeech": {
-      "x": 1440,
-      "y": 3620,
-      "size": 92
-    },
     "commentary": {
       "x": 1080,
       "y": 1860,
@@ -57,21 +37,13 @@
     }
   },
   "audio": {
-    "clickCount": 1,
-    "clickLeadFrames": 2,
+    "duringSource": "original source audio only",
+    "afterSource": "doctor commentary audio only",
+    "targetIntegratedLUFS": -14,
+    "maxTruePeakDbTP": -1,
+    "click": "only when explicitly requested",
     "music": false,
-    "truePeakDb": -1.5,
-    "preserveLaughter": true,
-    "avoidDoubledSourceAudio": true,
-    "gainMultiplier": 1.5,
-    "applyGainOnce": true,
-    "peakProtection": true,
-    "voiceCleanup": {
-      "speechIsolation": "conservative; assess and bypass if unnecessary",
-      "denoise": "gentle; preserve natural voice",
-      "applyOnce": true,
-      "encodedPeakCheck": true
-    }
+    "peakProtection": true
   },
   "export": {
     "codec": "h264",
@@ -85,7 +57,7 @@
     "enabled": true,
     "startSeconds": 0,
     "durationSeconds": 3,
-    "position": "hairline-relative-stable-per-shot",
+    "position": "top-safe-area-clear-of-faces-and-source-captions",
     "referenceCanvas": [
       2160,
       3840
@@ -108,5 +80,27 @@
     "upwardAdjustmentPixels": 16,
     "maxWidth": 2040
   },
-  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md"
+  "qualityDefaults": ".agents/skills/eddie/references/quality-defaults.md",
+  "composition": {
+    "default": "rounded-source-overlay",
+    "layerOrderBackToFront": [
+      "reframed doctor base",
+      "rounded moving source overlay with soft drop shadow",
+      "optional masked doctor foreground",
+      "captions and top hook"
+    ],
+    "reference": ".agents/skills/eddie/references/reaction-sync.md",
+    "fallback": "approved or explicitly requested layout"
+  },
+  "sourceOverlay": {
+    "placement": "calibrate per shot",
+    "fit": "contain",
+    "cornerRadius": 48,
+    "shadow": {
+      "color": "#000000",
+      "opacity": 0.25,
+      "blurPixels": 24,
+      "offsetYPixels": 12
+    }
+  }
 }
